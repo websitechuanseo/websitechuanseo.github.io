@@ -119,7 +119,6 @@ img {
   fill: #0180f3;
 }
 
-
 .backtop {
   border-radius: 50%;
   background: #132333;
@@ -143,6 +142,18 @@ img {
   color: #ffffff;
   fill: #ffffff;
   font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+  .backtop {
+    bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .backtop {
+    width: 36px;
+    height: 36px;
+    line-height: 42px;
+  }
 }
 
 /* header setting */
@@ -173,7 +184,7 @@ img {
   align-items: center;
 }
 .h-navi .nav li {
-  padding: 0 25px;
+  padding: 0 0 0 40px;
 }
 .h-navi .nav li a {
   color: #ffffff;
@@ -183,20 +194,11 @@ img {
   font-size: 16px;
   letter-spacing: 0.01em;
   position: relative;
-}
-.h-navi .nav li a:after {
-  content: "";
-  background: #ffffff;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  position: absolute;
   transition: all 0.3s ease-out;
 }
-.h-navi .nav li.active a:after,
-.h-navi .nav li a:hover:after {
-  width: 100%;
+.h-navi .nav li.active a,
+.h-navi .nav li a:hover {
+  color: #f4b802;
 }
 .h-utili {
   width: 250px;
@@ -210,6 +212,59 @@ img {
 }
 .h-utili .it:hover .icon {
   color: #333333;
+}
+.btn-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h-navi .nav li {
+    padding: 0 0 0 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .btn-menu {
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    top: 20px;
+    left: -40px;
+  }
+  .btn-menu .icon {
+    fill: #ffffff;
+    font-size: 30px;
+    display: none;
+  }
+  .btn-menu .icon.on {
+    display: block;
+  }
+  .btn-menu.active .icon {
+    fill: #f4b802;
+  }
+  .h-wrap {
+    padding: 15px 0;
+  }
+  .h-navi {
+    background: #015fb6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    bottom: 0;
+    z-index: 99;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out;
+  }
+  .h-navi.on {
+    transform: translateX(0);
+  }
+  .h-navi .nav li {
+    padding: 0;
+    margin: 0 0 10px;
+    width: 100%;
+  }
 }
 
 /* Footer setting */
@@ -247,6 +302,24 @@ img {
 .ft-cont .txt {
   margin: 0 0 30px;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  #footer {
+    padding: 20px 0;
+  }
+  .ft-logo {
+    width: 180px;
+    margin: 0 auto 30px;
+  }
+  .ft-links {
+    margin: 0 0 30px;
+  }
+  .ft-links ul {
+    flex-wrap: wrap;
+  }
+  .ft-links ul li {
+    margin: 0 0 10px;
+  }
 }
 
 /* style setting */
@@ -294,7 +367,7 @@ img {
   background: #ffffff;
   color: #333333;
   border-radius: 7px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   width: 100%;
 }
 .mv-form .page-btn {
@@ -305,6 +378,31 @@ img {
 }
 .mv-form .btn-download .icon {
   font-size: 22px;
+}
+@media only screen and (max-width: 1024px) {
+  .mv-form {
+    right: 15px;
+  }
+  .mv-form .f-ttl {
+    font-size: 18px;
+  }
+  .mv-form .f-txt {
+    font-size: 19px;
+  }
+  .mv-form .page-btn {
+    font-size: 16px;
+  }
+  .mv-form .btn-download .icon {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .mv-form {
+    position: static;
+    margin: 30px auto;
+    max-width: 93%;
+    transform: translate(0, 0);
+  }
 }
 
 .sec_step {
@@ -325,6 +423,15 @@ img {
 .sec_step .steps .item a:hover {
   opacity: 0.7;
 }
+@media only screen and (max-width: 767px) {
+  .sec_step {
+    padding: 20px 0;
+  }
+  .sec_step .steps .item {
+    width: 50%;
+    margin: 0 0 15px;
+  }
+}
 
 .sec_button {
   background: url('../imgs/bg01.png') no-repeat center center;
@@ -339,6 +446,11 @@ img {
 .sec_button .buttons .item {
   width: 290px;
   padding: 0 20px;
+}
+@media only screen and (max-width: 767px) {
+  .sec_button .buttons .item {
+    margin: 0 0 20px;
+  }
 }
 
 .sec_contact {
@@ -380,4 +492,44 @@ img {
 .sec_contact .ct-intro ul li {
   padding-left: 30px;
   margin-top: -5px;
+}
+@media only screen and (max-width: 1024px) {
+  .sec_contact .ct-intro ul li {
+    padding-left: 10px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .sec_contact .ct-btn {
+    order: 1;
+    width: 100%;
+    margin: -12px 0 30px;
+  }
+  .sec_contact .ct-hotline {
+    order: 2;
+    width: auto;
+  }
+  .sec_contact .ct-intro {
+    order: 3;
+    width: auto;
+  }
+  .sec_contact .ct-intro ul li {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sec_contact .ct-hotline {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .sec_contact .ct-intro {
+    width: 100%;
+  }
+  .sec_contact .ct-intro ul {
+    justify-content: center;
+  }
+  .sec_contact .ct-intro ul li {
+    padding: 0 5px;
+  }
 }
