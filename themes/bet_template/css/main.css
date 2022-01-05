@@ -356,6 +356,12 @@ img {
   font-weight: bold;
   width: 40%;
 }
+.sec_contact .ct-hotline .icon {
+  margin-right: 10px;
+  fill: #ffffff;
+  font-size: 22px;
+  vertical-align: top;
+}
 .sec_contact .ct-btn {
   margin-top: -12px;
   align-self: flex-end;
