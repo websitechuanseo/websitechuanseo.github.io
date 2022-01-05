@@ -56,7 +56,8 @@ body {
 .icon {
   width: 1em;
   height: 1em;
-  font-size: 30px;
+  font-size: 20px;
+  transition: all 0.5s ease-out;
 }
 img {
   max-width: 100%;
@@ -85,13 +86,23 @@ img {
   transition: all 0.5s ease-out;
   width: 100%;
 }
+.page-btn .icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
 .btn-register {
   background: #f4b802;
   color: #523b00;
 }
+.btn-register .icon {
+  fill: #523b00;
+}
 .btn-download {
   background: #0180f3;
   color: #ffffff;
+}
+.btn-download .icon {
+  fill: #ffffff;
 }
 .btn-register:hover {
   background: #ffffff;
@@ -101,6 +112,13 @@ img {
   background: #ffffff;
   color: #0180f3;
 }
+.btn-register:hover .icon {
+  fill: #f4b802;
+}
+.btn-download:hover .icon {
+  fill: #0180f3;
+}
+
 
 .backtop {
   border-radius: 50%;
@@ -113,12 +131,18 @@ img {
   right: 25px;
   width: 50px;
   height: 50px;
+  line-height: 50px;
   overflow: hidden;
   transition: all 0.5s ease-out;
   text-align: center;
 }
 .backtop:hover {
   opacity: 0.7;
+}
+.backtop .icon {
+  color: #ffffff;
+  fill: #ffffff;
+  font-size: 18px;
 }
 
 /* header setting */
@@ -215,6 +239,10 @@ img {
 .ft-links ul li a {
   font-weight: bold;
   font-size: 14px;
+  transition: all 0.5s ease-out;
+}
+.ft-links ul li a:hover {
+  opacity: 0.7;
 }
 .ft-cont .txt {
   margin: 0 0 30px;
@@ -275,6 +303,9 @@ img {
 .mv-form .btn-register {
   margin: 0 0 20px;
 }
+.mv-form .btn-download .icon {
+  font-size: 22px;
+}
 
 .sec_step {
   background: #000000;
@@ -323,10 +354,16 @@ img {
 .sec_contact .ct-hotline {
   font-size: 18px;
   font-weight: bold;
+  width: 40%;
 }
 .sec_contact .ct-btn {
   margin-top: -12px;
   align-self: flex-end;
+  width: 20%;
+  text-align: center;
+}
+.sec_contact .ct-intro {
+  width: 40%;
 }
 .sec_contact .ct-intro ul {
   display: flex;
