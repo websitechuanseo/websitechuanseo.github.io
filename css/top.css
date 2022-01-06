@@ -1,9 +1,5 @@
 .mainVisual {
-	background: rgb(0,240,56);
-	background: -moz-linear-gradient(45deg, rgba(0,240,56,0.5046219171262255) 48%, rgba(34,232,255,0.499019676229867) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(0,240,56,0.5046219171262255) 48%, rgba(34,232,255,0.499019676229867) 100%);
-	background: linear-gradient(45deg, rgba(0,240,56,0.5046219171262255) 48%, rgba(34,232,255,0.499019676229867) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00f038",endColorstr="#22e8ff",GradientType=1); 
+	background: #fafafa;
 	position: relative;
 	overflow: hidden;
 	height: 100vh;
