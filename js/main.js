@@ -1,10 +1,14 @@
 (function($){
+
+    $(window).on('load', function(){
+        $('#preloader').fadeOut(1000);
+    });
     
     /* jsHeader
     --------------------------------------------------*/
     var jsHeader = function(){
         var lastScrollTop = 0;
-        $(window).scroll(function(event){
+        $(window).on('scroll',function(){
         var st = $(this).scrollTop();
         if (st > lastScrollTop){
             $('#header').addClass('header-hide');
@@ -31,8 +35,8 @@
     }
 
     $(document).ready(function() {
-        jsHeader();
-        jsSlider();
+        // jsHeader();
+        // jsSlider();
     });
     
 })(jQuery);
