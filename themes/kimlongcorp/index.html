@@ -5,17 +5,14 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>KIM LONG CORP</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/slick/slick.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/slick/slick.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/top.js"></script>
     <link rel="icon" href="imgs/favicon.png">
 </head>
-<body>
+<body class="topPage">
   <div id="wrapper"><!-- #BeginLibraryItem "/Library/header.lbi" -->
 <header id="header">
 	<div class="h-inner">
@@ -53,8 +50,53 @@
 		</div>
 	</div>
 </header><!-- #header --><!-- #EndLibraryItem --><main id="main">
+	<div class="mv-btn-next"><svg class="page-icon"><use xlink:href="#icon-mv-down"></use></svg></div>
+	<div class="mv-nav">
+		<div class="item">
+			<a href="#">
+				<span class="num">01</span>
+				<span class="txt">KLG</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">02</span>
+				<span class="txt">XỬ LÝ<br>NƯỚC THẢI</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">03</span>
+				<span class="txt">XỬ LÝ<br>NƯỚC CẤP</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">04</span>
+				<span class="txt">XỬ LÝ<br>KHÍ THẢI</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">05</span>
+				<span class="txt">XỬ LÝ CHẤT<br>THẢI RẮN</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">06</span>
+				<span class="txt">DỰ ÁN<br>TIÊU BIỂU</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<span class="num">07</span>
+				<span class="txt">LIÊN HỆ</span>
+			</a>
+		</div>
+	</div>
     <div class="mainVisual">
-		<div class="mv-item">
+		<div class="section mv-item">
             <div class="mv-img mv-img-01"></div>
             <div class="mv-info">
                 <h3 class="ttl">KIM LONG CORP</h3>
@@ -65,7 +107,7 @@
                 </a>
             </div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-02"></div>
 			<div class="mv-info">
 				<h3 class="ttl">TIẾT KIỆM DIỆN TÍCH</h3>
@@ -76,7 +118,7 @@
                 </a>
 			</div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-03"></div>
 			<div class="mv-info">
 				<h3 class="ttl">TIÊU CHUẨN CAO</h3>
@@ -87,7 +129,7 @@
                 </a>
 			</div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-04"></div>
 			<div class="mv-info">
 				<h3 class="ttl">CÔNG NGHỆ TIÊN TIẾN</h3>
@@ -98,7 +140,7 @@
                 </a>
 			</div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-05"></div>
 			<div class="mv-info">
 				<h3 class="ttl">TỐI ƯU CHI PHÍ</h3>
@@ -109,10 +151,10 @@
                 </a>
 			</div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-06"></div>
 			<div class="mv-info">
-				<div class="mv-slder">
+				<div class="mv-slider">
 					<div class="slide-item">
 						<div class="s-wrap">
 							<div class="it-img"><img src="imgs/top/slider-01.jpg" alt="NHÀ MÁY CHẾ BIẾN THỦY SẢN HÙNG BANG"></div>
@@ -156,14 +198,90 @@
 				</div>
 			</div>
 		</div>
-		<div class="mv-item">
+		<div class="section mv-item">
 			<div class="mv-img mv-img-07"></div>
+			<div class="mv-info">
+				<div class="form-contact">
+					<h2 class="f-title">LIÊN HỆ TƯ VẤN</h2>
+					<div class="f-wrap">
+						<form action="#" method="GET">
+							<div class="f-content">
+								
+								<div class="f-row">
+									<label class="f-label" for="name">Họ & Tên</label>
+									<div class="f-input"><input id="name" class="page-input" type="text"></div>
+								</div>
+								<div class="f-row">
+									<label class="f-label" for="email">Email</label>
+									<div class="f-input"><input id="email" class="page-input" type="email"></div>
+								</div>
+								<div class="f-row">
+									<label class="f-label" for="phone">Số điện thoại</label>
+									<div class="f-input"><input id="phone" class="page-input" type="text"></div>
+								</div>
+								<div class="f-row full">
+									<label class="f-label" for="message">Nội dung</label>
+									<div class="f-textarea"><textarea id="message" class="page-input" rows="1"></textarea></div>
+								</div>
+								
+							</div>
+							<div class="f-btn"><input class="page-btn" type="submit" value="Gửi"></div>
+						</form>
+					</div>
+				</div>
+				<div class="footer-inner">
+					<div class="footer-wrap">
+						<div class="footer-col">
+							<h4 class="ft-name">CÔNG TY CỔ PHẦN<br>CÔNG NGHỆ MÔI TRƯỜNG KIM LONG</h4>
+							<p class="ft-txt">Văn phòng giao dịch: 280A17 Lương Định Của, P. An Phú, <br>TP. Thủ Đức - TP. HCM</p>
+							<p class="ft-txt">Điện thoại: <a href="tel:0908880128">090 888 0128</a></p>
+							<p class="ft-txt">Email: <a href="mail:infor@klg.com.vn">infor@klg.com.vn</a></p>
+						</div>
+						<div class="footer-col">
+							<h4 class="ft-ttl">ONLINE</h4>
+							<ul class="ft-social">
+								<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+								<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
+								<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4 class="ft-ttl">THÔNG TIN HỖ TRỢ</h4>
+							<ul class="ft-link">
+								<li><a href="#">Điều khoản sử dụng</a></li>
+								<li><a href="#">Chính sách bảo mật</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4 class="ft-ttl">QR CODE</h4>
+							<p class="qr-code"><img src="imgs/common/img_qr.jpg" alt="CÔNG TY CỔ PHẦN CÔNG NGHỆ MÔI TRƯỜNG KIM LONG"></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	  </div>
-    </main><!-- #BeginLibraryItem "/Library/footer.lbi" -->
-<footer id="footer">
-<!-- footer in here -->
-</footer><!-- / #footer --><!-- #EndLibraryItem --></div><!-- #BeginLibraryItem "/Library/svg.lbi" -->
+	  	<div class="mv-copyright">
+			<div class="inner01">
+				<div class="copyright">
+					<p class="c-txt">2022 Kim long Corp All rights reserved</p>
+					<ul class="c-social">
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page-messenger">
+			<a href="#"><img src="imgs/common/ic-messenger.png" alt="icon"></a>
+		</div>
+		<div class="back-top">
+			<svg class="page-icon"><use xlink:href="#icon-back-top"></use></svg>
+			<span class="txt">Lên đầu trang</span>
+		</div>
+    </main>
+</div><!-- #BeginLibraryItem "/Library/svg.lbi" -->
 <div class="svg-hidden" style="position: absolute; width: 0; height: 0; overflow: hidden;">
 	<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
@@ -214,7 +332,21 @@
                 <path d="M0.994142 13.5097L0.994143 8.42171L14.8861 21.0534L29.0004 8.16908L29.0004 12.8915C29.0004 14.235 28.4119 15.5232 27.3651 16.4713L14.8861 27.7734L1.93384 15.6193C1.33115 15.0538 0.994142 14.2972 0.994142 13.5097Z"/>
                 <path d="M3.90039 4.02929L3.90039 0.189815L14.9077 9.7219L26.0911 -0.000823926L26.0911 3.56277C26.0911 4.5766 25.6248 5.54869 24.7954 6.26416L14.9077 14.793L4.64496 5.62127C4.16742 5.1945 3.90039 4.62356 3.90039 4.02929Z"/>
             </symbol>
+			<symbol id="icon-slider-arrow" viewBox="0 0 32 49">
+                <path d="M6.48406 48.416L3.43616 48.416L25.2732 24.4002L2.99943 0.00011961L5.41528 0.000119821C7.73788 0.000120024 9.96483 1.01742 11.6039 2.82716L31.1426 24.4002L10.1311 46.7915C9.15343 47.8334 7.84545 48.416 6.48406 48.416Z"/>
+				<path d="M1.7506 36.375L0.218904 36.375L11.193 24.306L-0.0005758 12.0439L1.2135 12.0439C2.3807 12.0439 3.49984 12.5551 4.32355 13.4646L14.1426 24.306L3.58341 35.5586C3.09208 36.0822 2.43476 36.375 1.7506 36.375Z"/>
+            </symbol>
+			<symbol id="icon-back-top" viewBox="0 0 14 12">
+                <path d="M12.7102 5.29087L7.71019 0.290873C7.61508 0.199832 7.50294 0.128467 7.38019 0.0808729C7.13672 -0.0191451 6.86365 -0.0191451 6.62019 0.0808729C6.49743 0.128467 6.38529 0.199832 6.29019 0.290873L1.29019 5.29087C1.19695 5.38411 1.12299 5.4948 1.07253 5.61662C1.02207 5.73845 0.996094 5.86901 0.996094 6.00087C0.996094 6.26717 1.10188 6.52257 1.29019 6.71087C1.47849 6.89918 1.73388 7.00496 2.00019 7.00496C2.26649 7.00496 2.52188 6.89918 2.71019 6.71087L6.00019 3.41087V11.0009C6.00019 11.2661 6.10554 11.5204 6.29308 11.708C6.48062 11.8955 6.73497 12.0009 7.00019 12.0009C7.2654 12.0009 7.51976 11.8955 7.70729 11.708C7.89483 11.5204 8.00019 11.2661 8.00019 11.0009V3.41087L11.2902 6.71087C11.3831 6.8046 11.4937 6.879 11.6156 6.92976C11.7375 6.98053 11.8682 7.00667 12.0002 7.00667C12.1322 7.00667 12.2629 6.98053 12.3848 6.92976C12.5066 6.879 12.6172 6.8046 12.7102 6.71087C12.8039 6.61791 12.8783 6.50731 12.9291 6.38545C12.9798 6.26359 13.006 6.13288 13.006 6.00087C13.006 5.86886 12.9798 5.73816 12.9291 5.6163C12.8783 5.49444 12.8039 5.38384 12.7102 5.29087Z"/>
+            </symbol>
 		</defs>
 	</svg>
-</div><!-- #EndLibraryItem --></body>
+</div><!-- #EndLibraryItem -->
+	<script src="js/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/top.js"></script>
+</body>
 </html>
