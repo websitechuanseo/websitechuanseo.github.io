@@ -1,4 +1,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <header id="header">
-<!-- header in here -->
+	<div class="h-inner">
+		<div class="h-logo"><a href="./"><img src="../imgs/common/logo.png" alt="KIM LONG CORP"></a></div>
+		<div class="h-nav">
+			<nav id="gnav">
+				<ul>
+					<li>
+						<a href="../gioi-thieu.html">VỀ CHÚNG TÔI</a>
+						<ul>
+							<li><a href="#">Về KLG</a></li>
+							<li><a href="#">Giới thiệu chung</a></li>
+							<li><a href="#">Cơ cấu tổ chức</a></li>
+							<li><a href="#">Chứng nhận</a></li>
+							<li><a href="#">Hồ sơ năng lực</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DỊCH VỤ</a></li>
+					<li><a href="#">CÔNG NGHỆ</a></li>
+					<li><a href="#">DỰ ÁN TIÊU BIỂU</a></li>
+					<li><a href="#">SẢN PHẨM</a></li>
+					<li><a href="#">HỢP TÁC PHÁT TRIỂN</a></li>
+					<li><a href="#">TIN TỨC</a></li>
+					<li><a href="#">LIÊN HỆ</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="h-lang">
+			<ul>
+				<li class="icon-search"><a href="javascript:void(0)"><svg class="page-icon"><use xlink:href="#icon-search"></use></svg></a></li>
+				<li><a href="#" class="current">VN</a></li>
+				<li><a href="#">EN</a></li>
+				<li><a href="#">CN</a></li>				
+			</ul>
+		</div>
+	</div>
 </header><!-- #header -->

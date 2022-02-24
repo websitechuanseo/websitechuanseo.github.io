@@ -63,11 +63,33 @@
         });
     });
 
-
+ 
     $(document).ready(function() {
         jsBacktop();
         jsTabs();
 
+
+    
+    var top = 70;
+    /* smooth scroll
+    --------------------------------------------------*/
+    $("a[href*=\\#]:not([href=\\#])")
+        .not(".j-inline, .j-moveTo, .anchor-foot a")
+        .click(function () {
+            if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+                if (target.length) {
+                    $("html,body").animate(
+                        {
+                            scrollTop: target.offset().top - top,
+                        },
+                        700
+                    );
+                    return false;
+                }
+            }
+        });
         
      /* jsslider
     --------------------------------------------------*/
@@ -75,7 +97,7 @@
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		dots: false,
-		// autoplay: true,
+		autoplay: true,
         arrows: false,
 		infinite: true,
 		autoplaySpeed: 2000,
@@ -93,6 +115,46 @@
 	});
 
 
+    $(".list-project").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		// autoplay: true,
+        arrows: true,
+		infinite: true,
+		autoplaySpeed: 2000,
+		speed: 1000,
+		pauseOnHover: false,
+        prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+	});
+
+
+    $(".list-cooperate").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		autoplay: true,
+        arrows: true,
+		infinite: true,
+		autoplaySpeed: 2000,
+		speed: 1000,
+		pauseOnHover: false,
+        prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
+
     });
+
     
 })(jQuery);
