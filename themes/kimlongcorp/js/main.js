@@ -20,13 +20,13 @@
     /* jsTabs
     --------------------------------------------------*/
     var jsTabs = function(){
-        $('.tab-nav .item').each(function(){
+        $('.tab-nav .item , #tabs-product-detail li').each(function(){
             $(this).on('click', function(){
                 var _index = $(this).index();
-                $('.tab-nav .item').removeClass('active');
-                $('.tab-inner').removeClass('on');
+                $('.tab-nav .item , #tabs-product-detail li').removeClass('active');
+                $('.tab-inner , .tabs-content-wrap').removeClass('on');
                 $(this).addClass('active');
-                $('.tab-inner').eq(_index).addClass('on');
+                $('.tab-inner , .tabs-content-wrap').eq(_index).addClass('on');
             });
         });
     }
@@ -115,7 +115,7 @@
 	});
 
 
-    $(".list-project").slick({
+    $(".list-project,.slide-main").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
@@ -125,8 +125,10 @@
 		autoplaySpeed: 2000,
 		speed: 1000,
 		pauseOnHover: false,
-        prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-        nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+        // prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        // nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+        prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
+        nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
 	});
 
 
@@ -140,8 +142,8 @@
 		autoplaySpeed: 2000,
 		speed: 1000,
 		pauseOnHover: false,
-        prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-        nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+        prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow01"></use></svg></span>',
+        nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow01"></use></svg></span>',
 		responsive: [
 			{
 				breakpoint: 767,
@@ -155,6 +157,11 @@
 
 
     });
+
+    $("#files").change(function() {
+        filename = this.files[0].name;
+    });
+
 
     
 })(jQuery);

@@ -421,7 +421,7 @@
     position: relative;
     background: url("../imgs/common/bg-dots.png") repeat center center;
     background-size: cover;
-    padding: 160px 0;
+    padding: 150px 0;
 }
 .sec-techcore::before {
     content:"";
@@ -544,6 +544,16 @@
     max-width: 80%;
     margin: 0 0 20px;
 }
+.sec-project .prev-arrow {
+    left: -35px;
+    transform: translateY(-50%) rotate(180deg);
+}
+.sec-project .next-arrow {
+    right: -35px;
+}
+.sec-project .page-icon {
+    font-size: 40px;
+}
 
 /* sec-cooperate */
 .sec-cooperate {
@@ -556,7 +566,7 @@
     margin: 0 auto 70px;
 }
 .sec-cooperate .list-cooperate {
-    width: 88%;
+    width: 85%;
     margin: 0 auto;
 }
 .sec-cooperate .slick-prev {
@@ -571,4 +581,438 @@
 }
 .sec-cooperate .list-cooperate .item {
     margin: 0 10px;
+}
+.sec-cooperate .page-icon {
+    font-size: 71px;
+}
+.sec-cooperate .prev-arrow {
+    left: -70px;
+}
+.sec-cooperate .next-arrow {
+    right: -70px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* lien-he */
+.contact-page {
+    padding: 50px 0 90px;
+}
+.contact-page .sec-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 80px;
+}
+.contact-page .sec-info .col-left {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.contact-page .sec-info .col-right {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.contact-page .sec-info .col-left .ttl {
+    color: #1677BE;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+.contact-page .sec-info .box-address {
+    font-size: 18px;
+    margin: 20px 0 0;
+    position: relative;
+}
+.contact-page .sec-info .box-address p {
+    margin: 0 0 15px;
+}
+.contact-page .sec-info .box-address span {
+    color: #1677BE;
+}
+.contact-page .sec-info .box-address .img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100px;
+}
+.contact-page .sec-info .col-left .form .ttl {
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.contact-page .sec-info .form-contact {    
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: none;
+    margin: 0;
+}
+.contact-page .sec-info .form-contact .f-wrap {
+    background: none;
+}
+.contact-page .sec-info .col-right {
+    padding: 0 0 0 50px;
+}
+.contact-page .sec-info .col-right figure {
+    max-width: 480px;
+}
+.contact-page .sec-branch {
+    border-top: 1px solid #b4b4b4;
+    padding-top: 30px;
+}
+.contact-page .sec-branch > .ttl {
+    color: #1677BE;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.contact-page .block-branch {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-page .block-branch .col-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px 0 0;
+}
+.contact-page .block-branch .col-left li {
+    border-bottom: 1px solid #b4b4b4;
+    padding: 15px 0;
+}
+.contact-page .block-branch .col-left li .ttl {
+    color: #1677BE;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact-page .block-branch .col-left li .link {
+    color: #1677BE;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.contact-page .block-branch .col-right {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact-page .block-branch .col-right .wrap-map {
+    max-width: 590px;
+    margin: 0 auto;
+}
+
+/* san pham chi tiet */
+.main-detail {
+    background: url("../imgs/common/bg-dots.png") repeat center center;
+    background-size: cover;
+    padding: 170px 0;
+}
+.main-detail .main-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-detail .main-block .col-left {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding: 0 50px 0 0;
+}
+.main-detail .main-block .col-right {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+.main-detail .main-block .ttl {
+    color: #1677BE;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+.main-detail .main-block .txt {
+    margin: 0 0 50px;
+}
+.slide-main .item figure {
+    text-align: center;
+}
+.slide-main .item img {
+    margin: 0 auto;
+}
+.main-detail .btn-contact a {
+    display: block;
+    border: 1px solid #1677BE;
+    border-radius: 5px;
+    color: #1677BE;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 230px;
+    padding: 10px 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+.main-detail .btn-contact a::after {
+    content: "";
+    width: 14px;
+    height: 17px;
+    background: url("../imgs/common/dupple-arrow-right.svg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: 14%;
+}
+.slide-main .slick-prev {
+    left: 0;
+}
+.slide-main .slick-next {
+    right: 0;
+}
+.slide-main .prev-arrow {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+.slide-main .next-arrow {
+    right: 0;
+}
+.main-detail .slide-main .page-icon {
+    font-size: 40px;
+}
+
+/* sec-product-detail */
+.page-product .sec-chemistry {
+    background: url("../imgs/common/bg-dots.png") repeat center center;
+    background-size: cover;
+}
+.sec-product-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sec-product-detail .tabs-content-wrap {
+    padding: 60px 0;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.sec-product-detail .tabs-content-wrap.on {
+    opacity: 1;
+    position: relative;
+    height: auto;
+    transition: all 0.3s ease-out;
+    z-index: 9;
+}
+.sec-product-detail .list-doc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec-product-detail .list-doc li {
+    display: block;
+    margin: 0 15px;
+    text-align: center;
+}
+.sec-product-detail .list-doc li img {
+    margin: 0 0 20px;
+}
+.sec-product-detail .list-doc li .ttl {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.sec-product-detail .list-doc li .btn a {
+    border: 1px solid #1677BE;
+    border-radius: 5px;
+    color: #1677BE;
+    display: block;
+    max-width: 135px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 30px;
+    text-align: left;
+}
+.sec-product-detail .list-doc li .btn a::after {
+    content: "";
+    height: 15px;
+    width: 13px;
+    background: url("../imgs/common/dupple-arrow-right.svg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: 23%;
+}
+.sec-product-detail .list-overview li {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+.sec-product-detail .list-overview li .text {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.sec-product-detail .list-overview li .text .ttl {
+    color: #002C8F;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.sec-product-detail .list-overview li .text .txt {
+    color: #7889AF;
+}
+.sec-product-detail .list-overview li .img {
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.sec-product-detail .list-overview li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.wrap-comment {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.wrap-comment .form-comment {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+.wrap-comment .form-comment textarea {
+    padding: 10px 0;
+    width: 100%;
+}
+.wrap-comment .form-comment .line-btn {
+    border-top: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.wrap-comment .form-comment input[type="submit"] {
+    border-radius: 5px;
+    background: #1677BE;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px 5px;
+    text-align: center;
+    line-height: 1;
+}
+.wrap-comment .form-comment .line-btn .btn {
+    color: #1677BE;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0 0 30px;
+}
+.wrap-comment .form-comment .line-btn .btn::before {
+    background: url("../imgs/common/camera.svg") no-repeat center center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+}
+.wrap-comment .count-comment {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 10px;
+}
+.wrap-comment .count-comment .num {
+    margin-right: 5px;
+}
+.form-area {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 99;
+}
+.form-area .form-info {
+    max-width: 610px;
+    margin: 10% auto;
+    background:#fff;
+    padding: 25px;
+    position: relative;
+}
+.form-area .form-info .ttl {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 10px;
+}
+.form-area .form-info input:not([type="radio"]) {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin: 0 0 15px;
+}
+.form-area .form-info [type="radio"] {
+    display: inline-block;
+}
+.form-area .form-info .sex {
+    margin: 13px 0;
+}
+.form-area .form-info input::placeholder {
+    color: #000;
+}
+.form-area .form-info input[type="submit"] {
+    color: #fff;
+    background: #1677BE;
+    text-align: center;
+    padding: 13px 10px 10px;
+    margin-bottom: 0;
+}
+.form-area .form-info .close {
+    position: absolute;
+    top: 2px;
+    right: 9px;
+    font-size: 35px;
+    line-height: 1;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 50px;
+}
+.sec-environment {
+    text-align: center;
+}
+.sec-environment .block .headline ,
+.sec-chemistry .block .headline ,
+.sec-additives .block .headline {
+    color: #1677BE;
+    font-size: 36px;
+    font-weight: 600;
+}
+.product-list .block .item-product {
+    flex: 0 0 32%;
+    max-width: 32%;
+}
+.btn-rm {
+    max-width: 280px;
+    margin: 0 auto;
+}
+.btn-rm a {
+    border-radius: 5px;
+    background: #1677BE;
+    color: #fff;
+    font-size: 18px;
+    padding: 11px 100px 8px 85px;
+    position: relative;
+}
+.btn-rm a::after {
+    content: "";
+    position: absolute;
+    right: 25%;
+    width: 15px;
+    height: 15px;
+    background: url("../imgs/common/dupple-arrow-right01.svg") no-repeat center center;
+    background-size: cover;
 }

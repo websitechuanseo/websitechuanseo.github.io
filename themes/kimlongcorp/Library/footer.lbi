@@ -6,24 +6,18 @@
 			<div class="f-wrap">
 				<form action="#" method="GET">
 					<div class="f-content">
-
 						<div class="f-row">
-							<label class="f-label" for="name">Họ & Tên</label>
-							<div class="f-input"><input id="name" class="page-input" type="text"></div>
+							<div class="f-input"><input id="name" class="page-input" type="text" placeholder="Họ & Tên"></div>
 						</div>
 						<div class="f-row">
-							<label class="f-label" for="email">Email</label>
-							<div class="f-input"><input id="email" class="page-input" type="email"></div>
+							<div class="f-input"><input id="email" class="page-input" type="email" placeholder="Email"></div>
 						</div>
 						<div class="f-row">
-							<label class="f-label" for="phone">Số điện thoại</label>
-							<div class="f-input"><input id="phone" class="page-input" type="text"></div>
+							<div class="f-input"><input id="phone" class="page-input" type="text" placeholder="Số điện thoại"></div>
 						</div>
 						<div class="f-row full">
-							<label class="f-label" for="message">Nội dung</label>
-							<div class="f-textarea"><textarea id="message" class="page-input" rows="1"></textarea></div>
+							<div class="f-textarea"><textarea id="message" class="page-input" rows="1" placeholder="Nội dung"></textarea></div>
 						</div>
-
 					</div>
 					<div class="f-btn"><input class="page-btn" type="submit" value="Gửi"></div>
 				</form>
