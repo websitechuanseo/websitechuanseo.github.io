@@ -650,6 +650,12 @@
   font-size: 16px;
   line-height: 1.75;
 }
+.history-slider {
+  padding: 0 15px;
+}
+.history-slider .slick-arrow {
+  top: 28%;
+}
 
 .sec-about-04 {
   background: url('../imgs/gioi-thieu/bg-04.jpg') no-repeat center center;
