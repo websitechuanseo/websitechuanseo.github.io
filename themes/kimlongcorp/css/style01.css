@@ -197,8 +197,15 @@
   fill: #fff;
   width: 38px;
   height: 48px;
+  transition: all 0.3s ease-out;
 }
-.mv-info .mv-slider .slick-dots {
+.mv-info .mv-slider .slick-arrow:hover .page-icon {
+  fill: #333;
+}
+.mv-info .mv-slider .slick-arrow {
+  text-indent: 0;
+}
+/* .mv-info .mv-slider .slick-dots {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -208,20 +215,14 @@
 .mv-info .mv-slider .slick-dots li {
   display: inline-block;
   padding: 0 10px;
-}
-.mv-info .mv-slider .slick-dots li button {
+} */
+.mv-info .mv-slider .slick-dots li {
   color: #333;
-  border: 1px solid #333;
-  border-radius: 50%;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
+  border-color: #333;
   transition: all 0.3s ease-out;
 }
-.mv-info .mv-slider .slick-dots li.slick-active button,
-.mv-info .mv-slider .slick-dots li button:hover {
+.mv-info .mv-slider .slick-dots li.slick-active,
+.mv-info .mv-slider .slick-dots li:hover {
   color: #fff;
   border-color: #fff;
 }
@@ -331,7 +332,7 @@
 .form-contact .f-wrap .f-content .f-row {
   width: 33.33%;
   padding: 0 14px;
-  margin: 0 0 30px;
+  margin: 0 0 50px;
 }
 .form-contact .f-wrap .f-content .f-row.full {
   width: 100%;
@@ -992,4 +993,690 @@
   fill: #fff;
   vertical-align: middle;
   transform: translateY(-3px);
+}
+
+/* service */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.service-list .item {
+  width: 33.33%;
+  margin: 0 0 30px;
+  padding: 0 15px;
+}
+.service-list .item .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-list .item .box .it-img {
+  width: 45%;
+  position: relative;
+}
+.service-list .item .box .it-img .num {
+  background: #9B9B9B;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 52px;
+  text-align: center;
+  line-height: 50px;
+}
+.service-list .item .box .it-img img {
+  height: 100% !important;
+  object-fit: cover;
+}
+.service-list .item .box .it-cont {
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(1,61,97,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 55%;
+  padding: 20px 15px 20px 30px;
+  transition: all 0.3s ease-out;
+}
+.service-list .item:hover .box .it-cont {
+  background: #1677BE;
+  color: #fff;
+  box-shadow: none;
+}
+.service-list .item .box .it-cont .cate {
+  margin: 0 0 5px;
+}
+.service-list .item .box .it-cont .ttl {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.service-list .item .box .it-cont .view-more {
+  color: #1677BE;
+  font-size: 12px;
+  position: relative;
+  padding-left: 35px;
+  margin-top: auto;
+}
+.service-list .item .box .it-cont .view-more:before {
+  background: #1677BE;
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-list .item:hover .box .it-cont .view-more {
+  color: #fff;
+}
+.service-list .item:hover .box .it-cont .view-more:before {
+  background: #fff;
+}
+
+.sec-service-detail-01 .overview-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 100px;
+}
+.sec-service-detail-01 .overview-box .item {
+  width: 25%;
+  padding: 0 10px;
+}
+.sec-service-detail-01 .overview-box .item .box {
+  background: #fff;
+  box-shadow: 0px 0px 27px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 10px;
+  text-align: center;
+}
+.sec-service-detail-01 .overview-box .item .box .it-img {
+  width: 100%;
+  max-width: 126px;
+  margin: 0 auto 30px;
+}
+.sec-service-detail-01 .overview-box .item .box .ttl {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sec-service-detail-01 .overview-list .item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-service-detail-01 .overview-list .item .it-img {
+  width: 50%;
+  order: 2;
+}
+.sec-service-detail-01 .overview-list .item .it-img img {
+  height: 100% !important;
+  object-fit: cover;
+}
+.sec-service-detail-01 .overview-list .item .it-cont {
+  background: #f0f0f0 url('../imgs/common/bg-dots-small.png') repeat top left;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 30px 50px 30px 30px;
+  order: 1;
+}
+.sec-service-detail-01 .overview-list .item .it-cont .box-ct {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+  height: 100%;
+}
+.sec-service-detail-01 .overview-list .item:nth-child(2n) .it-cont {
+  order: 3;
+  justify-content: flex-start;
+  padding: 30px 30px 30px 50px;
+}
+.sec-service-detail-01 .overview-list .item .it-cont .box-ct .ttl {
+  color: #1677BE;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.process-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.process-list .item {
+  width: 33.33%;
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+.process-list .item .box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 27px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  height: 100%;
+}
+.process-list .item .box .lbl {
+  display: inline-block;
+  background: #004988;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: -25px;
+  margin-bottom: 30px;
+  padding: 10px 20px 7px;
+}
+.process-list .item .box .it-img {
+  width: 100%;
+  margin: 0 auto 30px;
+  max-width: 130px;
+}
+.process-list .item .box .ttl {
+  color: #1677BE;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.process-list .item .box .txt {
+  text-align: center;
+  min-height: 165px;
+}
+
+.service-detail-slider-03 {
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+.service-detail-slider-03 .item {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #fff;
+  text-align: center;
+  margin: 0 10px;
+}
+.service-detail-slider-03 .item .text {
+  padding: 20px;
+  min-height: 246px;
+}
+.service-detail-slider-03 .item .ttl {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.page-section.sec-service-detail-04 {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-service-detail-04 .s-left {
+  width: 50%;
+}
+.sec-service-detail-04 .s-left img {
+  height: 100% !important;
+  object-fit: cover;
+}
+.sec-service-detail-04 .s-right {
+  width: 50%;
+  padding: 100px;
+}
+.sec-service-detail-04 .s-right .cont .ct-pos {
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.sec-service-detail-04 .s-right .cont .ct-ttl {
+  color: #1677BE;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+.sec-service-detail-04 .s-right .cont .ct-list {
+  margin: 0 0 30px;
+}
+.sec-service-detail-04 .s-right .cont .ct-list li {
+  margin: 0 0 15px;
+  padding: 0 0 0 15px;
+  position: relative;
+}
+.sec-service-detail-04 .s-right .cont .ct-list li:before {
+  content: "";
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: #333;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.sec-service-detail-04 .s-right .cont .ct-list li .t-bold {
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  min-width: 100px;
+}
+
+.service-detail-slider-06 .item {
+  padding: 50px 15px;
+}
+.service-detail-slider-06 .item .box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 27px rgba(0,0,0,0.1);
+  padding: 30px 5px;
+  text-align: center;
+}
+.service-detail-slider-06 .item .box .it-img {
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto 30px;
+}
+.service-detail-slider-06 .item .box .it-ttl {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 15px;
+  min-height: 68px;
+}
+.service-detail-slider-06 .item .box .it-txt {
+  padding: 0 5px;
+}
+
+.service-detail-slider-07 .item {
+  padding: 0 5px;
+}
+.service-detail-slider-07 .item .it-img + .it-img {
+  margin: 10px 0 0;
+}
+
+.overview-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.overview-gallery .item {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.service-detail-slider-08 .item {
+  padding: 30px 15px;
+}
+.service-detail-slider-08 .item .box {
+  background: #fff;
+  box-shadow: 0px 0px 27px rgba(0,0,0,0.1);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.service-detail-slider-08 .item .box .it-cont {
+  padding: 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.service-detail-slider-08 .item .box .it-cont .ttl {
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+.service-detail-slider-08 .item .box .it-cont .txt {
+  font-weight: 600;
+  min-height: 250px;
+}
+
+/* coperation */
+.coperationPage .bg-01 {
+  background: #004988;
+  color: #fff;
+}
+.coperationPage .bg-02 {
+  background: #1D2C53;
+  color: #fff;
+}
+.coperationPage #header {
+  background: #fff;
+  padding: 20px 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.fp-viewing-anc00 #header {
+  opacity: 1;
+  visibility: visible;
+}
+.co-wrap-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.fp-viewing-anc00 .co-wrap-anchor {
+  opacity: 0;
+  visibility: hidden;
+}
+.co-wrap-anchor .anchor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.co-wrap-anchor .anchor-list > li {
+  padding: 20px 0;
+}
+.co-wrap-anchor .anchor-list > li > a {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  transition: all 0.3s ease-out;
+}
+.co-wrap-anchor .anchor-list > li:hover > a {
+  color: #3FACFC;
+}
+.co-wrap-anchor .anchor-list > li + li > a {
+  border-left: 1px solid #fff;
+}
+.co-wrap-anchor .anchor-list > li > ul {
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.co-wrap-anchor .anchor-list > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.co-wrap-anchor .anchor-list > li > ul > li {
+  padding: 10px 0;
+}
+.co-wrap-anchor .anchor-list > li > ul > li > a {
+  padding: 0 15px;
+}
+.co-wrap-anchor .anchor-list > li > ul > li + li > a {
+  border-left: 1px solid #fff;
+}
+.coperation-01 {
+  background: url('../imgs/hop-tac-phat-trien/bg-01.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.coperation-01 .co-cont {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  right: 15px;
+  text-align: center;
+}
+.coperation-01 .co-cont .ttl {
+  font-size: 64px;
+  font-weight: 1000;
+  line-height: 1.4;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+.coperation-01 .co-cont .txt {
+  font-size: 18px;
+}
+.fg-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fg-group .fg-left {
+  flex: 1;
+  padding: 0 30px 0 0;
+}
+.fg-group .fg-left .fg-img {
+  background: #fff;
+  border-radius: 13px;
+  width: 280px;
+  margin: 0 0 30px;
+  padding: 15px;
+}
+.fg-group .fg-left .fg-name {
+  color: #3FACFC;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.fg-group .fg-left .fg-web {
+  font-size: 14px;
+  font-style: italic;
+  margin: 0 0 5px;
+}
+.fg-group .fg-left .fg-txt {
+  margin: 0 0 30px;
+}
+.fg-group .fg-left .fg-btn a {
+  background: #3FACFC;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 160px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.fg-group .fg-right {
+  width: 40%;
+}
+.fg-group .fg-right .fg-video {
+  position: relative;
+}
+.fg-group .fg-right .fg-video .ico {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.fg-group .fg-right .fg-video .ico .page-icon {
+  fill: none;
+  stroke: #fff;
+  width: 78px;
+  height: 78px;
+}
+.fg-group .fg-right .fg-video .ico .page-icon path:first-child {
+  fill: #fff;
+}
+.fg-slider {
+  margin: 30px 0 0;
+  width: 100%;
+}
+.fg-slider .item {
+  padding: 0 10px;
+}
+.fg-slider .item .box {
+  position: relative;
+}
+.fg-slider .item .box .it-cont {
+  background: rgba(22,119,190,0.88);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px 5px 5px 10px;
+  text-transform: uppercase;
+}
+.fg-slider .item .box .it-cont .sub {
+  font-size: 14px;
+}
+.fg-slider .item .box .it-cont .ttl {
+  font-size: 20px;
+  font-weight: 600;
+}
+.partner-title {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 50px;
+}
+.partner-title .sub {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.partner-title .ttl {
+  font-size: 36px;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+.partner-title .ttl .num {
+  font-size: 150%;
+  line-height: 1;
+}
+.partner-title .txt {
+  font-size: 18px;
+}
+.coperation-05 {
+  background: url('../imgs/hop-tac-phat-trien/bg-02.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.coperation-06 {
+  background: url('../imgs/hop-tac-phat-trien/bg-03.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.partner-slider .item {
+  padding: 0 15px;
+}
+.partner-slider .item .box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px 15px;
+}
+.coperation-07 {
+  background: url('../imgs/hop-tac-phat-trien/bg-04.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.privacy-title {
+  text-align: center;
+  margin: 0 0 30px;
+}
+.privacy-title .ttl {
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.privacy-slider {
+  width: calc(100% - 150px);
+  margin: 0 auto;
+}
+.privacy-slider .item {
+  padding: 0 10px;
+}
+.privacy-slider .item .it-cont {
+  background: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #333;
+  padding: 30px 20px;
+  transition: all 0.3s ease-out;
+}
+.privacy-slider .item .box:hover .it-cont {
+  background: #1677BE;
+  color: #fff;
+}
+.privacy-slider .item .it-cont .ttl {
+  color: #1677BE;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+.privacy-slider .item .box:hover .it-cont .ttl {
+  color: #fff;
+}
+.privacy-slider .item .it-cont .txt {
+  font-size: 18px;
+  line-height: 1.5;
+  min-height: 110px;
+}
+.coperation-08 {
+  background: url('../imgs/hop-tac-phat-trien/bg-05.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.recruit-title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+.recruit-title .ttl {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+.recruit-title .box-select {
+  width: 310px;
+  margin: 0 auto;
+}
+.recruit-title .box-select .p-select {
+	border-radius: 10px;
+	background: #fff;
+	color: #333;
+  font-size: 14px;
+	width: 100%;
+	padding: 12px 15px 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.recruit-tbl table {
+  background: #fff;
+  color: #333;
+  width: 1140px;
+  margin: 0 auto;
+}
+.recruit-tbl table th {
+  padding: 15px;
+  border-bottom: 2px solid #004988;
+  font-weight: 900;
+}
+.recruit-tbl table tr {
+  border-bottom: 1px solid #DEDEDE;
+}
+.recruit-tbl table tr td {
+  padding: 15px 15px 12px; 
+}
+.recruit-tbl table tr td:last-child {
+  text-align: right;
+}
+.recruit-tbl table tr td .tbl-link {
+  color: #1677BE;
+  display: block;
+  text-align: right;
+}
+.recruit-tbl table tr td .tbl-link .page-icon {
+  fill: #1677BE;
+  width: 12px;
+  height: 12px;
+  transform: rotate(90deg);
 }

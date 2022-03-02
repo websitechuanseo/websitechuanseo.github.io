@@ -14,6 +14,10 @@
   min-width: 200px;
   text-align: center;
 }
+.txt-updating {
+  font-style: italic;
+  text-align: center;
+}
 /*************************
 ** HEADER ***
 *************************/
@@ -135,6 +139,7 @@
 	padding: 220px 0 160px;
 }
 .page-title .title {
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   color: #fff;
   font-size: 36px;
   font-weight: 600;

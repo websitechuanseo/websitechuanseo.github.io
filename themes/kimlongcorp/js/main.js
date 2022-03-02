@@ -114,21 +114,39 @@
 		],
 	});
 
-
-    $(".list-project,.slide-main").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
+    $(".slider-img-project, .slider-img-project").slick({
+		slidesToShow: 3,
 		dots: true,
-		// autoplay: true,
+		autoplay: true,
         arrows: true,
 		infinite: true,
 		autoplaySpeed: 2000,
 		speed: 1000,
 		pauseOnHover: false,
-        // prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-        // nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
-        prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
-        nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
+
+    $(".list-project,.slide-main").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		autoplay: true,
+        arrows: true,
+		infinite: true,
+		autoplaySpeed: 2000,
+		speed: 1000,
+		pauseOnHover: false,
+        // prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
+        // nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
 	});
 
 
@@ -161,6 +179,24 @@
     $("#files").change(function() {
         filename = this.files[0].name;
     });
+
+    $(function() {
+        $(".ttl-accordion").on("click", function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            if (!$this.hasClass("accordion-active")) {
+                $(".txt-accordion").slideUp(400);
+                $(".ttl-accordion").removeClass("accordion-active");
+            }
+            $this.toggleClass("accordion-active");
+            $this.next().slideToggle();
+        });
+    });
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
 
 
     
