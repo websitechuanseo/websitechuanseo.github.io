@@ -29,7 +29,7 @@
 					<h4 class="ft-name">CÔNG TY CỔ PHẦN<br>CÔNG NGHỆ MÔI TRƯỜNG KIM LONG</h4>
 					<p class="ft-txt">Văn phòng giao dịch: 280A17 Lương Định Của, P. An Phú, <br>TP. Thủ Đức - TP. HCM</p>
 					<p class="ft-txt">Điện thoại: <a href="tel:0908880128">090 888 0128</a></p>
-					<p class="ft-txt">Email: <a href="mail:infor@klg.com.vn">infor@klg.com.vn</a></p>
+					<p class="ft-txt">Email: <a href="mailto:infor@klg.com.vn">infor@klg.com.vn</a></p>
 				</div>
 				<div class="footer-col">
 					<h4 class="ft-ttl">ONLINE</h4>
@@ -42,8 +42,8 @@
 				<div class="footer-col">
 					<h4 class="ft-ttl">THÔNG TIN HỖ TRỢ</h4>
 					<ul class="ft-link">
-						<li><a href="#">Điều khoản sử dụng</a></li>
-						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="../dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+						<li><a href="../chinh-sach.html">Chính sách bảo mật</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
@@ -58,7 +58,22 @@
 	</div>
 </footer><!-- / #footer -->
 <div class="page-messenger">
-	<a href="#"><img src="../imgs/common/ic-messenger.png" alt="icon"></a>
+	<img src="../imgs/common/ic-messenger.png" alt="icon">
+</div>
+<div class="page-form">
+	<span class="p-close">&nbsp;</span>
+	<div class="p-wrap">
+		<p class="p-lbl">Để lại lời nhắn cho chúng tôi</p>
+		<div class="p-form">
+			<form action="#" method="POST">
+				<div class="p-row"><input type="text" class="p-input" placeholder="Họ & tên *"></div>
+				<div class="p-row"><input type="email" class="p-input" placeholder="Email *"></div>
+				<div class="p-row"><input  type="text" class="p-input" placeholder="Điện thoại *"></div>
+				<div class="p-row"><textarea class="p-textarea" placeholder="Nội dung"></textarea></div>
+				<div class="p-btn"><input type="submit" class="p-submit" value="Gửi tin nhắn"></div>
+			</form>
+		</div>
+	</div>
 </div>
 <div class="back-top">
 	<svg class="page-icon"><use xlink:href="#icon-back-top"></use></svg>

@@ -6,22 +6,61 @@
 			<nav id="gnav">
 				<ul>
 					<li>
-						<a href="../gioi-thieu.html">VỀ CHÚNG TÔI</a>
+						<a href="../ve-chung-toi.html">VỀ CHÚNG TÔI</a>
 						<ul>
-							<li><a href="#">Về KLG</a></li>
-							<li><a href="#">Giới thiệu chung</a></li>
-							<li><a href="#">Cơ cấu tổ chức</a></li>
-							<li><a href="#">Chứng nhận</a></li>
-							<li><a href="#">Hồ sơ năng lực</a></li>
+							<li><a href="../ve-chung-toi.html">Về KLG</a></li>
+							<li><a href="../ve-chung-toi.html">Giới thiệu chung</a></li>
+							<li><a href="../ve-chung-toi.html">Cơ cấu tổ chức</a></li>
+							<li><a href="../ve-chung-toi.html">Chứng nhận</a></li>
+							<li><a href="../ve-chung-toi.html">Hồ sơ năng lực</a></li>
 						</ul>
 					</li>
-					<li><a href="#">DỊCH VỤ</a></li>
-					<li><a href="#">CÔNG NGHỆ</a></li>
-					<li><a href="#">DỰ ÁN TIÊU BIỂU</a></li>
-					<li><a href="#">SẢN PHẨM</a></li>
-					<li><a href="#">HỢP TÁC PHÁT TRIỂN</a></li>
-					<li><a href="#">TIN TỨC</a></li>
-					<li><a href="#">LIÊN HỆ</a></li>
+					<li>
+						<a href="../dich-vu.html">DỊCH VỤ</a>
+						<ul class="two-col">
+							<li><a href="../dich-vu-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="../dich-vu-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="../dich-vu-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="../dich-vu-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+							<li><a href="../dich-vu-nang-cap-cai-tao.html">Nâng cấp cải tạo</a></li>
+							<li><a href="../dich-vu-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+							<li><a href="../dich-vu-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+							<li><a href="../dich-vu-ho-so-moi-truong.html">Hồ sơ mổi trường</a></li>
+							<li><a href="../dich-vu-tu-van.html">Tư vấn bảo vệ môi trường</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="../cong-nghe.html">CÔNG NGHỆ</a>
+						<ul>
+							<li><a href="../cong-nghe-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="../cong-nghe-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="../cong-nghe-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="../cong-nghe-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="../du-an-tieu-bieu.html">DỰ ÁN TIÊU BIỂU</a>
+						<ul>
+							<li><a href="../du-an-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="../du-an-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="../du-an-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="../du-an-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+							<li><a href="../du-an-nang-cap-bao-tri.html">Nâng cấp bảo trì hệ thống</a></li>
+							<li><a href="../du-an-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+							<li><a href="../du-an-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="../san-pham.html">SẢN PHẨM</a>
+						<ul>
+							<li><a href="../san-pham-may-moc-moi-truong.html">Máy móc môi trường</a></li>
+							<li><a href="../san-pham-hoa-chat.html">Hóa chất</a></li>
+							<li><a href="../san-pham-phu-gia-thuc-pham.html">Phụ gia thực phẩm</a></li>
+						</ul>
+					</li>
+					<li><a href="../hop-tac-phat-trien.html">HỢP TÁC PHÁT TRIỂN</a></li>
+					<li><a href="../tin-tuc.html">TIN TỨC</a></li>
+					<li><a href="../lien-he.html">LIÊN HỆ</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -32,6 +71,11 @@
 				<li><a href="#">EN</a></li>
 				<li><a href="#">CN</a></li>				
 			</ul>
+		</div>
+		<div class="form-search-area">
+			<form action="">
+				<input type="search" name="" id="" placeholder="Tìm kiếm">
+			</form>
 		</div>
 	</div>
 </header><!-- #header -->

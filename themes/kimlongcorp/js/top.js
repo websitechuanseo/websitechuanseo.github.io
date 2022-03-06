@@ -20,6 +20,10 @@
     var jsMvSlider = function(){
         $('.mv-slider').slick({
             dots: true,
+            autoplay: true,
+            infinite: true,
+            autoplaySpeed: 2000,
+            speed: 1000,
             prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
             nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
         });
