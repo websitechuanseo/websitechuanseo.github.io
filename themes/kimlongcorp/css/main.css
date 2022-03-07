@@ -39,6 +39,9 @@
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   color: #333;
   font-family: 'Lato', sans-serif;
@@ -46,6 +49,7 @@ body {
   font-weight: normal;
   -webkit-text-size-adjust: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 }
 p {
   line-height: 1.75;
@@ -242,6 +246,11 @@ img {
   right: 5%;
   height: 15px;
   width: 18px;
+}
+@media screen and (max-width:767px) {
+  .page-title .btn-link {
+    font-size: 13px;
+  }
 }
 
 /* related-product */

@@ -5,6 +5,8 @@
     var jsMainVisual = function(){
         $('.mv-item').eq(0).addClass('active');
         $('.mainVisual').fullpage({
+            normalScrollElements: '.h-nav',
+            verticalCentered: true,
             afterLoad: function(anchorLink, index){
                 $('.mv-nav .item').removeClass('active');
                 $('.mv-nav .item').eq(index-1).addClass('active');
@@ -26,6 +28,15 @@
             speed: 1000,
             prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
             nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                    }
+                }
+            ]
         });
     }
 

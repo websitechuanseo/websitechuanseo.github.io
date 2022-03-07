@@ -176,6 +176,13 @@
             pauseOnHover: false,
             responsive: [
                 {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
@@ -297,6 +304,10 @@
     // });
 
     $(function() {
+        $('.ico-menu, .ico-close').on('click', function(){
+            $('.h-nav').toggleClass('is-open');
+        })
+
         $(".j-toggle").on("click", function (e) {
             e.preventDefault();
             $(this).parent(".item").addClass("show");
@@ -319,8 +330,20 @@
 
     });
 
-    
-    
-
+    $(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop() + 150;
+		$('.space-anchor').each(function(i) {
+			if ($(this).position().top <= scrollDistance) {
+				var _id = $(this).attr('id');
+				// console.log(_id);
+				$('.nav-anchor li').removeClass('active');
+				$('a[href*=\\#'+_id+']').parent().addClass('active');
+				var _parent = $('a[href*=\\#'+_id+']').parent().parent();
+				if(_parent.hasClass('anchor-sub')){
+					_parent.parent().addClass('active');
+				}
+			}
+		});
+	}).scroll();
     
 })(jQuery);
