@@ -107,6 +107,9 @@ p {
   transition: all 0.5s ease-out;
   fill: #1677BE;
 }
+object {
+  max-width: 100%;
+}
 img {
   max-width: 100%;
   height: auto !important;
@@ -251,6 +254,9 @@ img {
   .page-title .btn-link {
     font-size: 13px;
   }
+  .slick-dots {
+    margin-top: 15px;
+  }
 }
 
 /* related-product */
@@ -324,6 +330,21 @@ img {
 }
 .item-product .btn:hover::after {
   background: url("../imgs/common/dupple-arrow-right01.svg") no-repeat center center;
+}
+
+@media screen and (max-width:1000px) {
+  .related-product {
+    padding: 50px 0;
+  }
+  .related-product .ttl {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .related-product .ttl {
+    font-size: 28px;
+  }
 }
 
 .page-messenger {
@@ -585,4 +606,13 @@ img {
 		opacity: 1;
 		transform: translateY(-12px);
 	}
+}
+
+/* fix-scroll */
+@media screen and (max-width:767px) {
+  .fix-scroll {
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
