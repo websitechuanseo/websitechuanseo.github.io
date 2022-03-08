@@ -44,7 +44,11 @@
   .sp {
     display: inline-block;
   }
+  .space-anchor {
+    padding-top: 40px;
+  }
 }
+
 /*************************
 ** HEADER ***
 *************************/
@@ -1439,6 +1443,9 @@ ul.breadcrumb02 li a:hover {
   .box-system {
     padding: 50px 0;
   }
+  .box-about .about-img-05 {
+    margin-top: 0;
+  }
 }
 
 .history-slider .item .it-wrap {
@@ -2024,6 +2031,10 @@ ul.breadcrumb02 li a:hover {
   .structure-list .item {
       width: 100%;
       margin: 0 0 30px;
+      order: 2;
+  }
+  .structure-list .item.sp-first {
+    order: 1;
   }
   .staff-list .item {
       flex-direction: column;
