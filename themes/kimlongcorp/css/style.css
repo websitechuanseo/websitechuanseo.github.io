@@ -2325,8 +2325,9 @@ ul.breadcrumb02 li a:hover {
     padding: 15px;
   }
   .service-list .item .box .it-img img {
-    height: unset !important;
-    object-fit: none;
+    height: 100% !important;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
