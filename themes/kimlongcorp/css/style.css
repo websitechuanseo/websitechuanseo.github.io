@@ -2324,6 +2324,10 @@ ul.breadcrumb02 li a:hover {
   .service-list .item .box .it-cont {
     padding: 15px;
   }
+  .service-list .item .box .it-img img {
+    height: unset !important;
+    object-fit: none;
+  }
 }
 
 .page-section.sec-service-detail-04 {
