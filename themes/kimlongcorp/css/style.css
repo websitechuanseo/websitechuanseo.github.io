@@ -2091,6 +2091,7 @@ ul.breadcrumb02 li a:hover {
 .service-list .item .box .it-img {
   width: 45%;
   position: relative;
+  height: 100%;
 }
 .service-list .item .box .it-img .num {
   background: #9B9B9B;
