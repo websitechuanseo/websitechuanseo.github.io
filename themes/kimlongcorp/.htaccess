@@ -1,0 +1,112 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes -FollowSymLinks
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    #RewriteCond %{HTTP:Authorization} .
+    #RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_URI} (.+)/$
+    #RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteRule ^ index.php [L]
+</IfModule>
+#Options FollowSymLinks
+#AllowOverride All
+#RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} "css/" [OR]
+RewriteCond %{REQUEST_URI} "controllers/" [OR]
+RewriteCond %{REQUEST_URI} "includes/" [OR]
+RewriteCond %{REQUEST_URI} "fonts/" [OR]
+RewriteCond %{REQUEST_URI} "img/" [OR]
+RewriteCond %{REQUEST_URI} "views/" [OR]
+RewriteCond %{REQUEST_URI} "modules/" [OR]
+RewriteCond %{REQUEST_URI} "images/" [OR]
+RewriteCond %{REQUEST_URI} "class/" [OR]
+RewriteCond %{REQUEST_URI} "userfiles/" [OR]
+RewriteCond %{REQUEST_URI} "plupload/" [OR]
+RewriteCond %{REQUEST_URI} "lib/" [OR]
+RewriteCond %{REQUEST_URI} "EmailTemplate/" [OR]
+RewriteCond %{REQUEST_URI} "templates/" [OR]
+RewriteCond %{REQUEST_URI} "ckfinder/" [OR]
+RewriteCond %{REQUEST_URI} "ckeditor/" [OR]
+RewriteCond %{REQUEST_URI} "ajax/" [OR]
+RewriteCond %{REQUEST_URI} "js/" [OR]
+RewriteCond %{REQUEST_URI} "cms/" [OR]
+RewriteCond %{REQUEST_URI} "htcms/" [OR]
+RewriteCond %{REQUEST_URI} "kimlongcorp/" [OR]
+RewriteCond %{REQUEST_URI} "uploads/"
+RewriteRule (.*) $1 [L]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+	#define Tieng Anh
+RewriteRule ^en/tag/articles/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?do=articles&act=tag&keyword=$1&page=$2&lg=en
+RewriteRule ^en/tag/articles/([a-zA-Z0-9\-]+)$ index.php?do=articles&act=tag&keyword=$1&lg=en
+RewriteRule ^en/tag/products/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?do=products&act=tag&keyword=$1&page=$2&lg=en
+RewriteRule ^en/tag/products/([a-zA-Z0-9\-]+)$ index.php?do=products&act=tag&keyword=$1&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5&unique_key=$6&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5&page=$6&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&unique_key=$5&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&page=$5&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&unique_key=$4&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&page=$4&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&unique_key=$3&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?cat1=$1&cat2=$2&page=$3&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&unique_key=$2&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)-page-([0-9]+)$ index.php?cat1=$1&page=$2&lg=en
+RewriteRule ^en/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&lg=en
+	#define link Tieng Anh
+RewriteRule ^en/payment-guide.html index.php?do=cart&act=payment&lg=en
+RewriteRule ^en/order-finish.html index.php?do=cart&act=thankyou&lg=en
+RewriteRule ^en/checkout.html index.php?do=cart&act=checkout&lg=en
+RewriteRule ^en/view-cart.html index.php?do=cart&act=view&lg=en
+RewriteRule ^en/register.html index.php?do=member&act=register&lg=en
+RewriteRule ^en/login.html index.php?do=member&act=login&lg=en
+RewriteRule ^en/logout.html index.php?do=member&act=logout&lg=en
+RewriteRule ^en/change-password.html index.php?do=member&act=changepassword&lg=en
+RewriteRule ^en/forgot-password.html index.php?do=member&act=forgotpassword&lg=en
+RewriteRule ^en/member-detail.html index.php?do=member&act=detail&lg=en
+RewriteRule ^en$ index.php?lg=en
+	#TIẾNG VIỆT	
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5&unique_key=$6
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-trang-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5&page=$6
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&cat5=$5
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&unique_key=$5
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-trang-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4&page=$5
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&cat4=$4
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&cat3=$3&unique_key=$4
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-trang-([0-9]+)$ index.php?cat1=$1&cat2=$2&cat3=$3&page=$4
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2&cat3=$3
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&cat2=$2&unique_key=$3
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)-trang-([0-9]+)$ index.php?cat1=$1&cat2=$2&page=$3
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$ index.php?cat1=$1&cat2=$2
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+).html index.php?cat1=$1&unique_key=$2
+RewriteRule ^([a-zA-Z0-9\-]+)-trang-([0-9]+)$ index.php?cat1=$1&page=$2
+
+RewriteRule ^([a-zA-Z0-9\-]+)$ index.php?cat1=$1
+RewriteRule ^nhan-vat/([a-zA-Z0-9\-]+).html index.php?do=teams&act=detail&unique_key=$1
+RewriteRule ^huong-dan-thanh-toan.html index.php?do=cart&act=payment&lg=vn
+RewriteRule ^hoan-tat-don-hang.html index.php?do=cart&act=thankyou&lg=vn
+RewriteRule ^thanh-toan.html index.php?do=cart&act=checkout&lg=vn
+RewriteRule ^xem-gio-hang.html index.php?do=cart&act=view&lg=vn
+RewriteRule ^dang-ky.html index.php?do=member&act=register&lg=vn
+RewriteRule ^dang-nhap.html index.php?do=member&act=login&lg=vn
+RewriteRule ^dang-xuat.html index.php?do=member&act=logout&lg=vn
+RewriteRule ^doi-mat-khau.html index.php?do=member&act=changepassword&lg=vn
+RewriteRule ^quen-mat-khau.html index.php?do=member&act=forgotpassword&lg=vn
+RewriteRule ^chi-tiet-thanh-vien.html index.php?do=member&act=detail2&lg=vn
+RewriteRule ^index.html index.php?cat1=index

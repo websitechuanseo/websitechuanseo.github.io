@@ -36,7 +36,7 @@
 					<ul class="ft-social">
 						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
 						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
-						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon ic-ytb"><use xlink:href="#icon-youtube"></use></svg></a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="footer-copyright">
-				<p class="txt">2021 <a href="#">KIM LONG CORP</a> All rights reserved</p>
+				<p class="txt">2021 <a href="#">KIM LONG CORP</a> All RIGHTS RESERVED</p>
 			</div>
 		</div>
 	</div>

@@ -6,6 +6,7 @@
         $('.mv-item').eq(0).addClass('active');
         $('.mainVisual').fullpage({
             normalScrollElements: '.h-nav',
+            scrollOverflow: true,
             verticalCentered: true,
             afterLoad: function(anchorLink, index){
                 $('.mv-nav .item').removeClass('active');

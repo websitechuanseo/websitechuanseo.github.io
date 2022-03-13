@@ -101,6 +101,7 @@
         $('.space-right').css({
             'padding-right': $margin
         });
+
     });
 
  
@@ -140,6 +141,13 @@
             });
         });
     
+
+        $.fancybox.defaults.hideScrollbar = false;
+        $('[data-fancybox]').fancybox({
+            loop : false,
+            animationDuration: 500,
+        })
+
     var top = 70;
     /* smooth scroll
     --------------------------------------------------*/
@@ -274,12 +282,12 @@
     $(".btn-submit").click(function() {
         $(".form-area").show();
     });
+
     $(".close").click(function() {
         $(".form-area").hide();
     });
 
-
-    });
+});
 
     $("#files").change(function() {
         filename = this.files[0].name;
@@ -297,11 +305,7 @@
             $this.next().slideToggle();
         });
     });
-
-    // lightbox.option({
-    //     'resizeDuration': 200,
-    //     'wrapAround': true
-    // });
+   
 
     $(function() {
         $('.ico-menu, .ico-close').on('click', function(){

@@ -759,6 +759,7 @@
 .about-05-list .item .it-img img {
   height: 100% !important;
   object-fit: cover;
+width: 100%;
 }
 .about-05-list .item .it-cont {
   background: #fff;
@@ -1068,6 +1069,7 @@
 .service-list .item .box .it-img img {
   height: 100% !important;
   object-fit: cover;
+width: 100%;
 }
 .service-list .item .box .it-cont {
   background: #fff;
@@ -1144,6 +1146,7 @@
 .sec-service-detail-01 .overview-list .item .it-img img {
   height: 100% !important;
   object-fit: cover;
+width: 100%;
 }
 .sec-service-detail-01 .overview-list .item .it-cont {
   background: #f0f0f0 url('../imgs/common/bg-dots-small.png') repeat top left;
@@ -1256,6 +1259,7 @@
 .sec-service-detail-04 .s-left img {
   height: 100% !important;
   object-fit: cover;
+width: 100%;
 }
 .sec-service-detail-04 .s-right {
   width: 50%;

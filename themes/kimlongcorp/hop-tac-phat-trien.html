@@ -6,15 +6,19 @@
     <title>KIM LONG CORP</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/slick/slick.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/lightbox/lightbox.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery.fancybox.min.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/mCustomScrollbar.min.css'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>    
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
-    <script src="js/lightbox/lightbox.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.matchHeight-min.js"></script>
+	<script src="js/mousewheel.min.js"></script>
+    <script src="js/mCustomScrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js" integrity="sha512-FzESM/E7XJBqcJyrXa08gRcpp5rDHO661C0L3vH4NsZfUWUsjN4+t6Lg8h+e8TMR2aYijIrcT+CPGq7tSugRzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
     <script src="js/main.js"></script>
     <link rel="icon" href="imgs/common/favicon.png">
@@ -41,36 +45,46 @@
 					<li>
 						<a href="dich-vu.html">DỊCH VỤ</a>
 						<ul class="two-col">
-							<li><a href="dich-vu-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
-							<li><a href="dich-vu-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
-							<li><a href="dich-vu-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
-							<li><a href="dich-vu-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
-							<li><a href="dich-vu-nang-cap-cai-tao.html">Nâng cấp cải tạo</a></li>
-							<li><a href="dich-vu-tong-thau-epco.html">Tổng thầu EPCO</a></li>
-							<li><a href="dich-vu-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
-							<li><a href="dich-vu-ho-so-moi-truong.html">Hồ sơ môi trường</a></li>
-							<li><a href="dich-vu-tu-van.html">Tư vấn bảo vệ môi trường</a></li>
+							<li>
+								<ul>
+									<li><a href="dich-vu-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+									<li><a href="dich-vu-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+									<li><a href="dich-vu-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+									<li><a href="dich-vu-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="dich-vu-nang-cap-cai-tao.html">Nâng cấp cải tạo</a></li>
+									<li><a href="dich-vu-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+									<li><a href="dich-vu-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+									<li><a href="dich-vu-ho-so-moi-truong.html">Hồ sơ môi trường</a></li>
+									<li><a href="dich-vu-tu-van.html">Tư vấn bảo vệ môi trường</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li>
 						<a href="cong-nghe.html">CÔNG NGHỆ</a>
-						<ul>
-							<li><a href="cong-nghe-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
-							<li><a href="cong-nghe-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
-							<li><a href="cong-nghe-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
-							<li><a href="cong-nghe-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
-						</ul>
 					</li>
 					<li>
 						<a href="du-an-tieu-bieu.html">DỰ ÁN TIÊU BIỂU</a>
-						<ul>
-							<li><a href="du-an-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
-							<li><a href="du-an-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
-							<li><a href="du-an-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
-							<li><a href="du-an-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
-							<li><a href="du-an-nang-cap-bao-tri.html">Nâng cấp bảo trì hệ thống</a></li>
-							<li><a href="du-an-tong-thau-epco.html">Tổng thầu EPCO</a></li>
-							<li><a href="du-an-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+						<ul class="two-col">
+							<li>
+								<ul>
+									<li><a href="du-an-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+									<li><a href="du-an-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+									<li><a href="du-an-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+									<li><a href="du-an-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="du-an-nang-cap-bao-tri.html">Nâng cấp bảo trì hệ thống</a></li>
+									<li><a href="du-an-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+									<li><a href="du-an-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -81,8 +95,21 @@
 							<li><a href="san-pham-phu-gia-thuc-pham.html">Phụ gia thực phẩm</a></li>
 						</ul>
 					</li>
-					<li><a href="hop-tac-phat-trien.html">HỢP TÁC PHÁT TRIỂN</a></li>
-					<li><a href="tin-tuc.html">TIN TỨC</a></li>
+					<li>
+						<a href="hop-tac-phat-trien.html">HỢP TÁC PHÁT TRIỂN</a>
+						<ul>
+							<li><a href="hop-tac-phat-trien-chi-tiet.html">Qingdao Sping</a></li>
+							<li><a href="hop-tac-phat-trien-chi-tiet.html">Solenis</a></li>
+							<li><a href="hop-tac-phat-trien-chi-tiet.html">Break</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="tin-tuc.html">TIN TỨC</a>
+						<ul>
+							<li><a href="hop-tac-phat-trien-chi-tiet.html">Tin tổng hợp</a></li>
+							<li><a href="hop-tac-phat-trien-chi-tiet.html">Hoạt động, sự kiện</a></li>
+						</ul>
+					</li>
 					<li><a href="lien-he.html">LIÊN HỆ</a></li>
 				</ul>
 			</nav>
@@ -130,11 +157,6 @@
 				<h2 class="ttl">Hợp tác & <br class="sp">phát triển</h2>
 				<p class="txt">KLG xác định mối quan hệ dựa trên lợi ích lâu dài giữa các bên, xây dựng tình hữu nghị và hợp tác toàn diện <br class="pc-only">trong lĩnh vực kinh doanh, nghiên cứu khoa học và phát triển công nghệ. </p>
 			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
-			</div>
 		</section>
 
 		<section data-anchor="anc01" class="section coperation-02 bg-01">
@@ -142,11 +164,11 @@
 				<div class="inner01">
 					<div class="fg-group">
 						<div class="fg-left">
-							<div class="fg-img"><img src="imgs/hop-tac-phat-trien/img-02.png" alt="Hoà Long đầu tư HLI"></div>
+							<div class="fg-img"><a href="https://hoalonginvest.com/" target="_blank"><img src="imgs/hop-tac-phat-trien/img-02.png" alt="Hoà Long đầu tư HLI"></a></div>
 							<h2 class="fg-name">Hoà Long đầu tư HLI</h2>
 							<p class="fg-web">Website: <a href="https://hoalonginvest.com/" target="_blank">www.hoalongcorp.com.vn</a></p>
 							<p class="fg-txt">CÔNG TY CỔ PHẦN SẢN XUẤT CƠ KHÍ HÒA LONG (HLM) là đơn vị có nhiều năm kinh nghiệm, chuyên cung cấp các giải pháp Kệ công nghiệp đa dạng  các loại kệ tiêu chuẩn, kệ bán tự động đến kệ tự động. Giúp doanh nghiệp lưu trữ hiệu quả và tiết kiệm chi phí, không gian.</p>
-							<p class="fg-btn"><a href="https://hoalonginvest.com/">Tìm hiểu thêm</a></p>
+							<!-- <p class="fg-btn"><a href="https://hoalonginvest.com/">Tìm hiểu thêm</a></p> -->
 						</div>
 						<div class="fg-right">
 							<div class="fg-video">
@@ -229,11 +251,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
-			</div>
 		</section>
 
 		<section data-anchor="anc02" class="section coperation-03 bg-02">
@@ -241,11 +258,11 @@
 				<div class="inner01">
 					<div class="fg-group">
 						<div class="fg-left">
-							<div class="fg-img"><img src="imgs/hop-tac-phat-trien/img-05.png" alt="Hoà Long Cơ khí - Công ty sản xuất kệ công nghiệp "></div>
+							<div class="fg-img"><a href="https://hoalongcorp.com.vn" target="_blank"><img src="imgs/hop-tac-phat-trien/img-05.png" alt="Hoà Long Cơ khí - Công ty sản xuất kệ công nghiệp "></a></div>
 							<h2 class="fg-name">Hoà Long Cơ khí - Công ty sản xuất kệ công nghiệp </h2>
 							<p class="fg-web">Website: <a href="https://hoalongcorp.com.vn" target="_blank">www.hoalongcorp.com.vn</a></p>
 							<p class="fg-txt">CÔNG TY CỔ PHẦN SẢN XUẤT CƠ KHÍ HÒA LONG (HLM) là đơn vị có nhiều năm kinh nghiệm, chuyên cung cấp các giải pháp Kệ công nghiệp đa dạng  các loại kệ tiêu chuẩn, kệ bán tự động đến kệ tự động. Giúp doanh nghiệp lưu trữ hiệu quả và tiết kiệm chi phí, không gian.</p>
-							<p class="fg-btn"><a href="https://hoalongcorp.com.vn">Tìm hiểu thêm</a></p>
+							<!-- <p class="fg-btn"><a href="https://hoalongcorp.com.vn">Tìm hiểu thêm</a></p> -->
 						</div>
 						<div class="fg-right">
 							<div class="fg-video">
@@ -328,11 +345,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
-			</div>
 		</section>
 
 		<section data-anchor="anc03" class="section coperation-04 bg-01">
@@ -340,11 +352,11 @@
 				<div class="inner01">
 					<div class="fg-group">
 						<div class="fg-left">
-							<div class="fg-img"><img src="imgs/hop-tac-phat-trien/img-06.png" alt="SKYAT"></div>
+							<div class="fg-img"><a href="#" target="_blank"><img src="imgs/hop-tac-phat-trien/img-06.png" alt="SKYAT"></a></div>
 							<h2 class="fg-name">SKYAT</h2>
 							<p class="fg-web">Website: Đang cập nhật</p>
 							<p class="fg-txt">CÔNG TY.....SKYAT là đơn vị cung cấp các giải pháp tự động hóa ứng dụng trong ngành công nghiệp: Hệ thống Kệ tự động, Robot công nghiệp</p>
-							<p class="fg-btn"><a href="#">Tìm hiểu thêm</a></p>
+							<!-- <p class="fg-btn"><a href="#">Tìm hiểu thêm</a></p> -->
 						</div>
 						<div class="fg-right">
 							<div class="fg-video">
@@ -427,11 +439,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
-			</div>
 		</section>
 
 		<section data-anchor="anc04" class="section coperation-05">
@@ -482,11 +489,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
-			</div>
 		</section>
 
 		<section data-anchor="anc05" class="section coperation-06">
@@ -499,48 +501,43 @@
 					</div>
 					<div class="partner-slider slider-style-02">
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-10.png" alt="photos"></div>
 							</div>
 						</div>
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-11.png" alt="photos"></div>
 							</div>
 						</div>
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-12.png" alt="photos"></div>
 							</div>
 						</div>
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-10.png" alt="photos"></div>
 							</div>
 						</div>
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-11.png" alt="photos"></div>
 							</div>
 						</div>
 						<div class="item">
-							<a href="./hop-tac-phat-trien-chi-tiet.html"></a>
+							<a href="#"></a>
 							<div class="box">
 								<div class="it-img"><img src="imgs/hop-tac-phat-trien/img-12.png" alt="photos"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
 			</div>
 		</section>
 
@@ -624,11 +621,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
 			</div>
 		</section>
 		<section data-anchor="anc07" class="section coperation-08">
@@ -742,11 +734,6 @@
 						</table>
 					</div>
 				</div>
-			</div>
-			<div class="wheel">
-				<a class="j-down" href="#anc00">
-				  <span></span>
-				</a>
 			</div>
 		</section>
 		<section data-anchor="anc08" class="section sec-footer">
@@ -921,22 +908,28 @@
 				<path d="M35.9 53.7256L50 40.7946C50.1861 40.6323 50.3352 40.432 50.4374 40.2073C50.5396 39.9825 50.5925 39.7385 50.5925 39.4916C50.5925 39.2447 50.5396 39.0006 50.4374 38.7759C50.3352 38.5511 50.1861 38.3509 50 38.1886C49.979 38.1706 49.948 38.1627 49.926 38.1447L35.8979 25.2446C35.5026 24.8969 34.9941 24.7051 34.4675 24.7051C33.941 24.7051 33.4324 24.8969 33.037 25.2446C33.0334 25.2538 33.0286 25.2626 33.0229 25.2706C32.8321 25.4331 32.6783 25.6347 32.572 25.8617C32.4657 26.0887 32.4095 26.336 32.407 26.5867V52.3866C32.4109 52.6415 32.4701 52.8925 32.5802 53.1224C32.6903 53.3524 32.8489 53.5558 33.045 53.7186L33.037 53.7256C33.432 54.0749 33.9412 54.2677 34.4685 54.2677C34.9958 54.2677 35.505 54.0749 35.9 53.7256Z" fill="#ffffff"/>
 				<path d="M39 76.5C59.7107 76.5 76.5 59.7107 76.5 39C76.5 18.2893 59.7107 1.5 39 1.5C18.2893 1.5 1.5 18.2893 1.5 39C1.5 59.7107 18.2893 76.5 39 76.5Z" stroke-width="3" stroke-linejoin="round"/>
 			</symbol>
+			<symbol id="icon-fgroup" viewBox="0 0 123.14 114.25">
+				<path d="M15.72,112.12A68.43,68.43,0,1,1,121.09,24.77L119.55,26a66.43,66.43,0,0,0-102.29,84.8Z"/>
+				<path d="M118.23,27.13a2.77,2.77,0,1,1,3.91.37A2.77,2.77,0,0,1,118.23,27.13Z"/>
+				<path d="M14.36,113.25a2.77,2.77,0,1,1,3.9.36A2.76,2.76,0,0,1,14.36,113.25Z"/>
+			</symbol>
 		</defs>
 	</svg>
-</div><!-- #EndLibraryItem --><script>
+</div><!-- #EndLibraryItem --><script>	
 	$('.sec-coperation').fullpage({
-		// scrollOverflow: true,
 		normalScrollElements: '.scrollable-content',
+		fadingEffect: true,
+		scrollOverflow: true,
 	});
-	$(window).on("load", function () {
-		var vw = $(window).width();
-		if (vw < 768) {
-			$(".fix-scroll .inner01").mCustomScrollbar({
-				axis:"yx",
-			 });
-		} 
-	});
-
+	// var vw = $(window).width();
+	// if (vw < 768) {
+	// 	$('.sec-coperation').fullpage({
+	// 		normalScrollElements: '.sec-footer',
+	// 		autoScrolling: true,
+	// 		fadingEffect: true,
+	// 		fitToSection: true
+	// 	});
+	// }
 	$('.fg-slider').slick({
 		slidesToShow: 3,
 		dots: true,

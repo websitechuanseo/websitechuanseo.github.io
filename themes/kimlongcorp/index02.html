@@ -7,22 +7,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/slick/slick.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/lightbox/lightbox.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/mCustomScrollbar.min.css'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-	<script src="js/jquery.matchHeight-min.js"></script>
-    <script src="js/lightbox/lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style02.css'>
+    
     <link rel="icon" href="imgs/common/favicon.png">
+    <script src="js/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/lightbox/lightbox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script src="js/mousewheel.min.js"></script>
+    <script src="js/mCustomScrollbar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/top.js"></script>
 </head>
-<body>
+<body class="topPage">
   <div id="wrapper"><!-- #BeginLibraryItem "/Library/header.lbi" -->
 <header id="header">
 	<div class="h-inner">
 		<div class="h-logo"><a href="./"><img src="imgs/common/logo.png" alt="KIM LONG CORP"></a></div>
 		<div class="h-nav">
+			<span class="ico-close"></span>
 			<nav id="gnav">
 				<ul>
 					<li>
@@ -35,10 +44,49 @@
 							<li><a href="ve-chung-toi.html">Hồ sơ năng lực</a></li>
 						</ul>
 					</li>
-					<li><a href="dich-vu.html">DỊCH VỤ</a></li>
-					<li><a href="cong-nghe.html">CÔNG NGHỆ</a></li>
-					<li><a href="du-an-tieu-bieu.html">DỰ ÁN TIÊU BIỂU</a></li>
-					<li><a href="san-pham.html">SẢN PHẨM</a></li>
+					<li>
+						<a href="dich-vu.html">DỊCH VỤ</a>
+						<ul class="two-col">
+							<li><a href="dich-vu-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="dich-vu-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="dich-vu-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="dich-vu-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+							<li><a href="dich-vu-nang-cap-cai-tao.html">Nâng cấp cải tạo</a></li>
+							<li><a href="dich-vu-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+							<li><a href="dich-vu-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+							<li><a href="dich-vu-ho-so-moi-truong.html">Hồ sơ môi trường</a></li>
+							<li><a href="dich-vu-tu-van.html">Tư vấn bảo vệ môi trường</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="cong-nghe.html">CÔNG NGHỆ</a>
+						<ul>
+							<li><a href="cong-nghe-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="cong-nghe-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="cong-nghe-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="cong-nghe-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="du-an-tieu-bieu.html">DỰ ÁN TIÊU BIỂU</a>
+						<ul>
+							<li><a href="du-an-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+							<li><a href="du-an-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+							<li><a href="du-an-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+							<li><a href="du-an-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+							<li><a href="du-an-nang-cap-bao-tri.html">Nâng cấp bảo trì hệ thống</a></li>
+							<li><a href="du-an-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+							<li><a href="du-an-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="san-pham.html">SẢN PHẨM</a>
+						<ul>
+							<li><a href="san-pham-may-moc-moi-truong.html">Máy móc môi trường</a></li>
+							<li><a href="san-pham-hoa-chat.html">Hóa chất</a></li>
+							<li><a href="san-pham-phu-gia-thuc-pham.html">Phụ gia thực phẩm</a></li>
+						</ul>
+					</li>
 					<li><a href="hop-tac-phat-trien.html">HỢP TÁC PHÁT TRIỂN</a></li>
 					<li><a href="tin-tuc.html">TIN TỨC</a></li>
 					<li><a href="lien-he.html">LIÊN HỆ</a></li>
@@ -53,611 +101,277 @@
 				<li><a href="#">CN</a></li>				
 			</ul>
 		</div>
-	</div>
-</header><!-- #header --><!-- #EndLibraryItem --><main id="main">
-	<div class="page-title">
-		<h2 class="title">KIM LONG CORP</h2>
-	</div>
-	<div class="page-anchor">
-		<ul class="nav-anchor">
-			<li><a href="#anc01">Về KLG</a></li>
-			<li>
-				<a href="#anc02">Giới thiệu chung </a>
-				<ul class="anchor-sub">
-					<li><a href="#anc02">Giới thiệu</a></li>
-					<li><a href="#anc03">Lịch sử phát triển</a></li>
-					<li><a href="#anc04">Định hướng doanh nghiệp</a></li>
-					<li><a href="#anc05">Văn hóa doanh nghiệp</a></li>
-					<li><a href="#anc06">Trách nhiệm xã hội</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#anc07">Cơ cấu tổ chức</a>
-				<ul class="anchor-sub">
-					<li><a href="#anc07">Hội đồng quản trị</a></li>
-					<li><a href="#anc08">Ban giám đốc</a></li>
-					<li><a href="#anc09">Đội ngũ chuyên gia</a></li>
-				</ul>
-			</li>
-			<li><a href="#anc10">Chứng nhận</a></li>
-			<li><a href="#anc11">Hồ sơ năng lực</a></li>
-		</ul>
-	</div>
-	<div class="page-breadcrumb">
-		<div class="inner01">
-			<ul class="breadcrumb h-anchor">
-				<li><a href="./">Trang chủ</a></li>
-				<li><a href="#">Về chúng tôi</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="space-anchor" id="anc01"></div>
-	<section class="page-section sec-about-01">
-		<div class="inner01">
-			<div class="box-klg">
-				<div class="headline js-fadeup">
-					<h3 class="head-title-01">KIM LONG CORP</h3>
-					<p class="head-sub">ỨNG DỤNG CÔNG NGHỆ HIỆN ĐẠI TRONG XỬ LÝ MÔI TRƯỜNG</p>
-					<p class="head-txt">Công nghệ là một trong những yếu tố then chốt, khẳng định vị trí ngày một tăng của thương hiệu KIM LONG <br>CORP trong lĩnh vực môi trường và xử lý nước thải. Giải pháp của chúng tôi không chỉ đáp ứng nhu cầu của <br>nhà đầu tư mà còn là một mắc xích quan trọng trong kế hoạch phát triển bền vững của doanh nghiệp, góp phần <br>duy trì sự đa dạng sinh học, môi trường trong lành cho thế hệ mai sau.</p>
-				</div>
-				<div class="klg-list">
-					<div class="item js-fadeup">
-						<div class="box">
-							<div class="it-img"><img src="imgs/gioi-thieu/img-01.png" alt="Công trình môi trường"></div>
-							<div class="it-cont">
-								<h4 class="ttl">Công trình môi trường</h4>
-								<ul>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Mô hình dịch vụ toàn diện</li>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Đáp ứng nhu cầu của nhà đầu tư</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="item js-fadeup">
-						<div class="box">
-							<div class="it-img"><img src="imgs/gioi-thieu/img-02.png" alt="Công nghệ hiện đại, tự động hóa"></div>
-							<div class="it-cont">
-								<h4 class="ttl">Công nghệ hiện đại, tự động hóa</h4>
-								<ul>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Ứng dụng công nghệ, kỹ thuật tiên tiến</li>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Quản lý và vận hành tự động</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="item js-fadeup">
-						<div class="box">
-							<div class="it-img"><img src="imgs/gioi-thieu/img-03.png" alt="Mang đến lợi thế cho khác hàng"></div>
-							<div class="it-cont">
-								<h4 class="ttl">Mang đến lợi thế cho khác hàng</h4>
-								<ul>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Dịch vụ công trình môi trường chất lượng</li>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Chi phí hợp lý</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="item js-fadeup">
-						<div class="box">
-							<div class="it-img"><img src="imgs/gioi-thieu/img-04.png" alt="Phát triển bền vững"></div>
-							<div class="it-cont">
-								<h4 class="ttl">Phát triển bền vững</h4>
-								<ul>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Bảo vệ môi trường</li>
-									<li><svg class="page-icon"><use xlink:href="#icon-double-arrow"></use></svg>Tích cực đóng góp cho hoạt động cộng đồng</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="space-anchor" id="anc02"></div>
-	<section class="page-section sec-about-02">
-		<div class="inner01">
-			<div class="box-about">
-				<div class="headline js-fadeup">
-					<h3 class="head-title-01">KIM LONG CORP</h3>
-					<p class="head-sub">THÀNH VIÊN CỦA TẬP ĐOÀN ĐẦU TƯ FGROUP</p>
-					<p class="head-txt">Công ty Cổ Phần Công nghệ Môi Trường Kim Long (KIM LONG CORP, KLG) là thành viên thuộc khối công nghệ <br>của Tập đoàn Đầu tư FGroup cùng với các thương hiệu uy tín, dày dặn kinh nghiệm trong việc cung cấp các <br>công nghệ cao, tự động hóa cho các nhà máy, khu chế xuất, cơ sở sản xuất, kinh doanh như Hòa Long Đầu Tư <br>HLI, Hòa Long Đầu Tư HLM, Skyat. </p>
-				</div>
-				<div class="about-img-05 js-fadeup">
-					<img src="imgs/gioi-thieu/img-05.png" alt="THÀNH VIÊN CỦA TẬP ĐOÀN ĐẦU TƯ FGROUP">
-				</div>
-			</div>
-			<div class="box-system">
-				<div class="box-left js-fadeup">
-					<div class="headline">
-						<h3 class="head-title-01">HỆ THỐNG</h3>
-						<p class="head-sub">CHI NHÁNH RỘNG KHẮP</p>
-						<p class="head-txt">Với hệ thống văn phòng đặt tại Hong Kong và các tỉnh, thành phố lớn của Việt Nam như Hải Phòng, Phú Yên, Tây Ninh, Thành phố Hồ Chí Minh, KIM LONG CORP luôn sẵn sàng cung cấp các giải pháp xử lý nước thải, nước cấp, khí thải, chất thải rắn chất lượng cao và cung ứng máy móc, thiết bị, hóa chất môi trường cho khách hàng, đối tác ở trong và ngoài nước theo phương án nội địa hóa. </p>
-					</div>
-				</div>
-				<div class="box-right js-fadeup">
-					<img src="imgs/gioi-thieu/img-06.png" alt="CHI NHÁNH RỘNG KHẮP">
-				</div>
-			</div>
-		</div>		
-	</section>
-	
-	<div class="space-anchor" id="anc03">
-	<section class="page-section sec-about-03">
-		<div class="inner01">
-			<div class="box-history">
-				<div class="headline js-fadeup">
-					<h3 class="head-title-01">LỊCH SỬ</h3>
-					<p class="head-sub">hình thành & phát triển</p>
-					<p class="head-txt">Trong những năm qua, Công ty Cổ phần Công nghệ Môi trường Kim Long đã không ngừng phát triển, nâng cao <br>chất lượng dịch vụ nhằm đáp ứng nhu cầu, kỳ vọng của nhà đầu tư. Từ đó, tạo dựng cho mình là một thương hiệu <br>uy tín trong lĩnh vực môi trường. </p>
-				</div>
-				<div class="history">
-					<div class="history-slider">
-						<div class="item">
-							<div class="it-wrap color-03">
-								<div class="ic"><img src="imgs/gioi-thieu/img-07.png" alt="Dự Án cao su Hòa Hiệp Hưng"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 10</p>
-									<p class="year">2020</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Dự Án cao su <br>Hòa Hiệp Hưng</h4>
-									<p class="txt">Công trình cải tạo nâng cấp và sửa chữa hệ thống xử lý nước thải công suất 4300m3/ ngày của Công ty cổ phần cao su Hòa Hiệp Hưng, Huyện Tân Biên, Tây Ninh</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="it-wrap color-01">
-								<div class="ic"><img src="imgs/gioi-thieu/img-08.png" alt="Gia nhập Hiệp hội cấp thoát nước Việt Nam"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 12</p>
-									<p class="year">2020</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Gia nhập Hiệp hội cấp <br>thoát nước Việt Nam</h4>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="it-wrap color-02">
-								<div class="ic"><img src="imgs/gioi-thieu/img-09.png" alt="Gia nhập Tập đoàn F-Group"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 04</p>
-									<p class="year">2021</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Gia nhập <br>Tập đoàn F-Group</h4>
-									<p class="txt">Thành viên chính thức thuộc khối công nghệ của tập đoàn FGroup</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="it-wrap color-03">
-								<div class="ic"><img src="imgs/gioi-thieu/img-10.png" alt="Dự Án thủy sản Hùng Bang"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 07</p>
-									<p class="year">2021</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Dự Án thủy sản <br>Hùng Bang</h4>
-									<p class="txt">Công trình cải tạo hệ thống xử lý nước thải thủy sản công suất 400m3/ngày của Công ty Hùng Bang thuộc KCN Hòa Hiệp, Phú Yên</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="it-wrap color-03">
-								<div class="ic"><img src="imgs/gioi-thieu/img-10.png" alt="Dự Án thủy sản Hùng Bang"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 07</p>
-									<p class="year">2021</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Dự Án thủy sản <br>Hùng Bang</h4>
-									<p class="txt">Công trình cải tạo hệ thống xử lý nước thải thủy sản công suất 400m3/ngày của Công ty Hùng Bang thuộc KCN Hòa Hiệp, Phú Yên</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="it-wrap color-02">
-								<div class="ic"><img src="imgs/gioi-thieu/img-10.png" alt="Dự Án thủy sản Hùng Bang"></div>
-								<div class="img-bg"><svg class="page-icon"><use xlink:href="#icon-bg-slider"></use></svg></div>
-								<div class="time">
-									<p class="month">THÁNG 07</p>
-									<p class="year">2021</p>
-								</div>
-								<div class="cont">
-									<h4 class="ttl">Dự Án thủy sản <br>Hùng Bang</h4>
-									<p class="txt">Công trình cải tạo hệ thống xử lý nước thải thủy sản công suất 400m3/ngày của Công ty Hùng Bang thuộc KCN Hòa Hiệp, Phú Yên</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc04">
-	<section class="page-section sec-about-04">
-		<div class="inner01">
-			<div class="about-img-11 js-fadeup"><img src="imgs/gioi-thieu/img-11.png" alt="MÔI TRƯỜNG KIM LONG TRONG SẠCH SINH ĐỘNG"></div>
-			<div class="about-04-list">
-				<div class="about-col js-fadeup">
-					<h3 class="ttl">MÔI TRƯỜNG KIM LONG <br>TRONG SẠCH SINH ĐỘNG</h3>
-					<p class="txt">KIM LONG CORP được đặt theo tên cá Kim Long - Một loài cá yêu cầu rất cao về chất lượng nguồn nước. Điều này đã khẳng định được giá trị thương hiệu, cũng như trách nhiệm đối với môi trường của chúng tôi.</p>
-					<p class="txt">KIM LONG CORP không đơn giản chỉ một công ty cung cấp dịch vụ hay một nhà cung cấp giải pháp xử lý nước thải, chúng tôi còn là người bạn, người đồng hành cùng các doanh nghiệp, nhà đầu tư trong việc bảo vệ môi trường, đóng góp cho xã hội và cộng đồng.</p>
-				</div>
-				<div class="about-col js-fadeup">
-					<div class="col-wrap">
-						<div class="ic"><img src="imgs/gioi-thieu/img-12.png" alt="Sứ mệnh"></div>
-						<h4 class="ttl">Sứ mệnh</h4>
-						<p class="txt">Bảo vệ môi trường, cùng khách hàng nâng cao giá trị cuộc sống.</p>
-					</div>
-				</div>
-				<div class="about-col js-fadeup">
-					<div class="col-wrap">
-						<div class="ic"><img src="imgs/gioi-thieu/img-13.png" alt="Tầm nhìn"></div>
-						<h4 class="ttl">Tầm nhìn</h4>
-						<p class="txt">Trở thành một biểu tượng và thương hiệu đáng tin cậy trong ngành.</p>
-					</div>
-				</div>
-				<div class="about-col js-fadeup">
-					<div class="col-wrap">
-						<div class="ic"><img src="imgs/gioi-thieu/img-14.png" alt="Giá trị cốt lõi"></div>
-						<h4 class="ttl">Giá trị cốt lõi</h4>
-						<p class="txt">Chân thành, Chuyên nghiệp, Sáng tạo. Khách hàng hàng đầu, Tinh thần hợp tác.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc05">
-	<section class="page-section sec-about-05">
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<h3 class="head-title-01">VĂN HOÁ DOANH NGHIỆP</h3>
-				<p class="head-txt">Luôn quan tâm đến cuộc sống, sự phát triển của mỗi nhân viên. Chúng tôi xây dựng môi trường thân thiện, sáng <br>tạo, nơi mà mỗi nhân viên đều có thể phát huy được những thế mạnh, sở trường của bản thân.</p>
-				<p class="head-txt">Đặc thù lĩnh vực bảo vệ môi trường và xử lý nước thải luôn đòi hỏi sự chính xác và kỷ luật cao trong từng hạng <br>mục công trình, Kim Long Corp lấy sự kiên định và tập trung làm kim chỉ nam trong mọi hoạt động của công ty, <br>trên cơ sở hợp tác, tin tưởng, tôn trọng giữa các phòng ban, ban lãnh đạo và nhân viên trở thành một tập thể <br>vững mạnh. Mỗi cá nhân đều là mắc xích quan trọng trong sự thành công của doanh nghiệp. Tất cả đều cùng <br>nhau tiến lên, hỗ trợ lẫn nhau, cùng nhau phát triển.</p>
-			</div>
-			<div class="about-05-list">
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-15.jpg" alt="Độc lập"></div>
-					<div class="it-cont">
-						<h4 class="ttl">Độc lập</h4>
-						<p class="txt">Luôn quan tâm đến cuộc sống, sự phát triển của mỗi nhân viên. Chúng tôi xây dựng môi trường thân thiện, sáng tạo, nơi mà mỗi nhân viên đều có thể phát huy được những thế mạnh, sở trường của bản thân.</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-16.jpg" alt="Bao dung"></div>
-					<div class="it-cont">
-						<h4 class="ttl">Bao dung</h4>
-						<p class="txt">Nhân viên hợp tác, bao dung và hỗ trợ lẫn nhau, cùng nhau phát triển.</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-17.jpg" alt="Kiên nhẫn"></div>
-					<div class="it-cont">
-						<h4 class="ttl">Kiên nhẫn</h4>
-						<p class="txt">Duy trì tinh thần kiên nhẫn tiếp tục học hỏi và không ngừng nâng cao chất lượng và hiệu quả công việc.</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-18.jpg" alt="Sáng tạo"></div>
-					<div class="it-cont">
-						<h4 class="ttl">Sáng tạo</h4>
-						<p class="txt">Luôn quan tâm đến cuộc sống, sự phát triển của mỗi nhân viên. Chúng tôi xây dựng môi trường thân thiện, sáng tạo, nơi mà mỗi nhân viên đều có thể phát huy được những thế mạnh, sở trường của bản thân.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc06">
-	<section class="page-section sec-about-06">
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<h3 class="head-title-01">MÔI TRƯỜNG</h3>
-				<p class="head-sub-02">là vấn đề mang tính toàn cầu, ảnh hưởng trực tiếp đến đời sống kinh tế, xã <br>hội và phát triển bền vững của mỗi quốc gia.</p>
-			</div>
-		</div>
-		<div class="about-06-picture">
-			<div class="picture-left">
-				<div class="it-img js-fadeup"><img src="imgs/gioi-thieu/img-19.jpg" alt="photos"></div>
-			</div>
-			<div class="picture-right">
-				<div class="list-img">
-					<div class="it-img js-fadeup"><img src="imgs/gioi-thieu/img-20.jpg" alt="photos"></div>
-					<div class="it-img js-fadeup"><img src="imgs/gioi-thieu/img-21.jpg" alt="photos"></div>
-					<div class="it-img js-fadeup"><img src="imgs/gioi-thieu/img-22.jpg" alt="photos"></div>
-					<div class="it-img js-fadeup"><img src="imgs/gioi-thieu/img-23.jpg" alt="photos"></div>
-				</div>
-			</div>
-		</div>
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<p class="head-sub-02">Hoạt động trong lĩnh vực bảo vệ môi trường và xử lý nước thải, Kim Long <br>Corp đã và đang cùng với nhà đầu tư góp phần giảm thiểu và quản lý chất <br>gây ô nhiễm, xây dựng môi trường trong sạch, sinh động.</p>
-			</div>
-			<div class="about-06-list">
-				<div class="it-box js-fadeup">
-					<div class="box">
-						<div class="box-img"><img src="imgs/gioi-thieu/img-24.jpg" alt="Tái sinh tài nguyên"></div>
-						<div class="box-cont">
-							<h4 class="ttl">Tái sinh tài nguyên</h4>
-							<p class="txt">Áp dụng công nghệ, kỹ thuật tiên tiến trong xử lý chất thải, hướng đến việc tái sử dụng/tái chế để tiết kiệm tài nguyên.</p>
-						</div>
-					</div>
-				</div>
-				<div class="it-box js-fadeup">
-					<div class="box">
-						<div class="box-img"><img src="imgs/gioi-thieu/img-25.jpg" alt="Giáo dục môi trường"></div>
-						<div class="box-cont">
-							<h4 class="ttl">Giáo dục môi trường</h4>
-							<p class="txt">Lan tỏa thông điệp bảo vệ môi trường cho thế hệ hiện tại và tương lai</p>
-						</div>
-					</div>
-				</div>
-				<div class="it-box js-fadeup">
-					<div class="box">
-						<div class="box-img"><img src="imgs/gioi-thieu/img-26.jpg" alt="Phát triển bền vững"></div>
-						<div class="box-cont">
-							<h4 class="ttl">Phát triển bền vững</h4>
-							<p class="txt">Chung tay giải quyết các vấn đề về tài nguyên và môi trường, hướng đến sự phát triển bền vững cho đất nước</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc07">
-	<section class="page-section sec-about-07">
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<h3 class="head-title-01">CƠ CẤU TỔ CHỨC</h3>
-				<p class="head-txt">KIM LONG CORP tổ chức hệ thống nhân sự chuyên nghiệp và luôn tận tâm với công việc bao gồm đội ngũ chuyên gia dày dặn trong việc quản lý <br>dự án, đội ngũ kỹ sư giỏi, làm việc tích cực có nhiều kinh nghiệm trong lĩnh vực xây  dựng và công nghệ xử lý chất thải</p>
-			</div>
-			<h4 class="structure-ttl js-fadeup">hội đồng quản trị</h4>
-			<div class="structure-list">
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-27.png" alt="Ông Chau Kin Hang Kelvin"></div>
-					<h4 class="it-name">
-						<span class="sex">Ông</span> Chau Kin Hang Kelvin
-						<span class="pos">Thành viên HĐQT & CEO</span>
-					</h4>
-					<p class="it-txt">Chuyên gia hơn 20 năm kinh nghiệm về quản lý dự án, thương mại xuất nhập khẩu, chuyển giao máy móc và công nghệ. Ông Chau Kin Hang Kelvin từng giữ vai trò quan trọng ở các tập đoàn đa quốc gia. Hiện ông giữ chức Tổng giám đốc Công ty Môi trường Kim Long, Thành viên HĐQT HLI, HLM.</p>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-28.png" alt="Bà NGÔ THỊ PHƯƠNG THỦY"></div>
-					<h4 class="it-name">
-						<span class="sex">Bà</span> NGÔ THỊ PHƯƠNG THỦY
-						<span class="pos">Chủ tịch HĐQT</span>
-					</h4>
-					<p class="it-txt">Chuyên gia hơn 20 năm kinh nghiệm về quản lý dự án, thương mại xuất nhập khẩu, chuyển giao máy móc và công nghệ. Ông Chau Kin Hang Kelvin từng giữ vai trò quan trọng ở các tập đoàn đa quốc gia. Hiện ông giữ chức Tổng giám đốc Công ty Môi trường Kim Long, Thành viên HĐQT HLI, HLM.</p>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-29.png" alt="Ông Ông Lê Việt Tùng"></div>
-					<h4 class="it-name">
-						<span class="sex">Ông</span> Ông Lê Việt Tùng
-						<span class="pos">Thành viên HĐQT & CEO</span>
-					</h4>
-					<p class="it-txt">Chuyên gia với hơn 10 năm kinh nghiệm trong quản trị vận hành doanh nghiệp, Ông Tùng hiện là Thành viên HDQT Fgroup Holding, HLM,HLI, KLG, đồng thời giữ chức CEO Fgroup Houding.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc08">
-	<section class="page-section sec-about-08">
-		<div class="inner01">
-			<h4 class="structure-ttl js-fadeup">ban giám đốc</h4>
-			<div class="structure-list">
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-30.png" alt="Ông Chau Kin Hang Kelvin"></div>
-					<h4 class="it-name">
-						<span class="sex">Ông</span> Chau Kin Hang Kelvin
-						<span class="pos">Giám đốc điều hành</span>
-					</h4>
-					<p class="it-txt">Chuyên gia hơn 20 năm kinh nghiệm về quản lý dự án, thương mại xuất nhập khẩu, chuyển giao máy móc và công nghệ.</p>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-31.png" alt="Ông Paris Lin"></div>
-					<h4 class="it-name">
-						<span class="sex">Ông</span> Paris Lin
-						<span class="pos">Giám đốc phát triển thị trường</span>
-					</h4>
-					<p class="it-txt">Chuyên gia với hơn 20 năm kinh nghiệm về quản lý kinh doanh và phát triển thị trường.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc09">
-	<section class="page-section sec-about-09">
-		<div class="inner01">
-			<h4 class="structure-ttl js-fadeup">ĐỘI NGŨ CHUYÊN GIA</h4>
-			<div class="staff-list">
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-32.png" alt="Giám ĐỐC KỸ THUẬT"></div>
-					<div class="it-cont">
-						<p class="pos">Giám ĐỐC KỸ THUẬT</p>
-						<p class="txt">Từng tham gia trao đổi công nghệ bảo vệ môi trường và đào tạo kỹ thuật ở Đức</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-33.png" alt="GIÁM ĐỐC KẾ HOẠCH, VẬT TƯ"></div>
-					<div class="it-cont">
-						<p class="pos">GIÁM ĐỐC KẾ HOẠCH, VẬT TƯ</p>
-						<p class="txt">Hơn 10 năm kinh nghiệm xử lý nước thải công nghiệp, sinh hoạt, chăn nuôi... Giám sát thi công kỹ thuật và quản lý dự án</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-34.png" alt="CHỈ HUY TRƯỞNG XÂY DỰNG"></div>
-					<div class="it-cont">
-						<p class="pos">CHỈ HUY TRƯỞNG XÂY DỰNG</p>
-						<p class="txt">Hơn 5 năm kinh nghiệm thiết kế nhà máy kiến trúc xử lý nước thải. Giám sát, tổ chức và chỉ huy xây dựng kỹ thuật</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-35.png" alt="GIÁM ĐỐC TÀI CHÍNH"></div>
-					<div class="it-cont">
-						<p class="pos">GIÁM ĐỐC TÀI CHÍNH</p>
-						<p class="txt">Hơn 10 năm kinh nghiệm thiết kế chương trình bảo vệ môi trường KCN. Quản lý bản vẽ thi công và ngân sách.</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-36.png" alt="CHỈ HUY TRƯỞNG HOÀN THIỆN"></div>
-					<div class="it-cont">
-						<p class="pos">CHỈ HUY TRƯỞNG HOÀN THIỆN</p>
-						<p class="txt">10 năm kinh nghiệm quản lý xây dựng, quản lý xuất nhập khẩu</p>
-					</div>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-37.png" alt="CHỈ HUY TRƯỞNG XÂY DỰNG"></div>
-					<div class="it-cont">
-						<p class="pos">CHỈ HUY TRƯỞNG XÂY DỰNG</p>
-						<p class="txt">Hơn 5 năm kinh nghiệm thiết kế nhà máy kiến trúc xử lý nước thải. Giám sát, tổ chức và chỉ huy xây dựng kỹ thuật</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc10">
-	<section class="page-section sec-about-10">
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<h3 class="head-title-01">TỰ HÀO</h3>
-				<p class="head-sub">các CHỨNG NHẬN & GIẢI THƯỞNG</p>
-			</div>
-			<div class="certificate-list">
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-38.png" alt="Chứng nhận doanh nghiệp cổ phần"></div>
-					<p class="txt">Chứng nhận doanh nghiệp cổ phần</p>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-39.png" alt="Chứng nhận Đại sứ cựu sinh viên toàn cầu"></div>
-					<p class="txt">Chứng nhận Đại sứ cựu sinh viên toàn cầu</p>
-				</div>
-				<div class="item js-fadeup">
-					<div class="it-img"><img src="imgs/gioi-thieu/img-40.png" alt="Quyết định gia nhập Hiệp hội cấp thoát nước Việt Nam"></div>
-					<p class="txt">Quyết định gia nhập Hiệp hội <br>cấp thoát nước Việt Nam</p>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-	<div class="space-anchor" id="anc11">
-	<section class="page-section sec-about-11">
-		<div class="inner01">
-			<div class="headline js-fadeup">
-				<h3 class="head-title-01">NĂNG LỰC</h3>
-				<p class="head-sub">KIM LONG CORP</p>
-				<p class="head-txt">Kim Long Corp luôn chú trọng về mặt tiêu chuẩn và chất lượng, hỗ trợ tối đa cho nhà đầu tư trong việc đáp ứng <br>các tiêu chuẩn, quy chuẩn về môi trường của Việt Nam và quốc tế.</p>
-				<p class="head-txt">Chúng tôi cam kết đồng hành cùng khách hàng trong suốt thời gian hoạt động của hệ thống. </p>
-			</div>
-			<div class="box-ability">
-				<div class="ability-slider">
-					<div class="item"><img src="imgs/gioi-thieu/img-41.jpg" alt="KIM LONG CORP"></div>
-					<div class="item"><img src="imgs/gioi-thieu/img-42.jpg" alt="KIM LONG CORP"></div>
-					<div class="item"><img src="imgs/gioi-thieu/img-43.jpg" alt="KIM LONG CORP"></div>
-					<div class="item"><img src="imgs/gioi-thieu/img-44.jpg" alt="KIM LONG CORP"></div>
-					<div class="item"><img src="imgs/gioi-thieu/img-45.jpg" alt="KIM LONG CORP"></div>
-					<div class="item"><img src="imgs/gioi-thieu/img-46.jpg" alt="KIM LONG CORP"></div>
-				</div>
-			</div>
-			<p class="ability-txt js-fadeup">Nội dung chi tiết hoạt động của KLG trong những năm qua, cũng như dự án tiêu biểu và quan hệ của chúng <br>tôi với đối tác, khách hàng đã được thể hiện rõ trong <span class="f-bold">HỒ SƠ NĂNG LỰC.</span></p>
-			<div class="ability-btn js-fadeup"><a class="btn-download" href="#">TẢI HỒ SƠ NĂNG LỰC <svg class="page-icon"><use xlink:href="#icon-download"></use></svg></a></div>
-		</div>
-	</section>
-</div>
-    </main><!-- #BeginLibraryItem "/Library/footer.lbi" -->
-<footer id="footer">
-	<div class="inner01">
-		<div class="form-contact">
-			<h2 class="f-title">LIÊN HỆ TƯ VẤN</h2>
-			<div class="f-wrap">
-				<form action="#" method="GET">
-					<div class="f-content">
-						<div class="f-row">
-							<div class="f-input"><input id="name" class="page-input" type="text" placeholder="Họ & Tên"></div>
-						</div>
-						<div class="f-row">
-							<div class="f-input"><input id="email" class="page-input" type="email" placeholder="Email"></div>
-						</div>
-						<div class="f-row">
-							<div class="f-input"><input id="phone" class="page-input" type="text" placeholder="Số điện thoại"></div>
-						</div>
-						<div class="f-row full">
-							<div class="f-textarea"><textarea id="message" class="page-input" rows="1" placeholder="Nội dung"></textarea></div>
-						</div>
-					</div>
-					<div class="f-btn"><input class="page-btn" type="submit" value="Gửi"></div>
-				</form>
-			</div>
-		</div>
-		<div class="footer-inner">
-			<div class="footer-wrap">
-				<div class="footer-col">
-					<h4 class="ft-name">CÔNG TY CỔ PHẦN<br>CÔNG NGHỆ MÔI TRƯỜNG KIM LONG</h4>
-					<p class="ft-txt">Văn phòng giao dịch: 280A17 Lương Định Của, P. An Phú, <br>TP. Thủ Đức - TP. HCM</p>
-					<p class="ft-txt">Điện thoại: <a href="tel:0908880128">090 888 0128</a></p>
-					<p class="ft-txt">Email: <a href="mailto:infor@klg.com.vn">infor@klg.com.vn</a></p>
-				</div>
-				<div class="footer-col">
-					<h4 class="ft-ttl">ONLINE</h4>
-					<ul class="ft-social">
-						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
-						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
-						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4 class="ft-ttl">THÔNG TIN HỖ TRỢ</h4>
-					<ul class="ft-link">
-						<li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
-						<li><a href="chinh-sach.html">Chính sách bảo mật</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4 class="ft-ttl">QR CODE</h4>
-					<p class="qr-code"><img src="imgs/common/img_qr.jpg" alt="CÔNG TY CỔ PHẦN CÔNG NGHỆ MÔI TRƯỜNG KIM LONG"></p>
-				</div>
-			</div>
-			<div class="footer-copyright">
-				<p class="txt">2021 <a href="#">KIM LONG CORP</a> All rights reserved</p>
-			</div>
-		</div>
-	</div>
-</footer><!-- / #footer -->
-<div class="page-messenger">
-	<img src="imgs/common/ic-messenger.png" alt="icon">
-</div>
-<div class="page-form">
-	<span class="p-close">&nbsp;</span>
-	<div class="p-wrap">
-		<p class="p-lbl">Để lại lời nhắn cho chúng tôi</p>
-		<div class="p-form">
-			<form action="#" method="POST">
-				<div class="p-row"><input type="text" class="p-input" placeholder="Họ & tên *"></div>
-				<div class="p-row"><input type="email" class="p-input" placeholder="Email *"></div>
-				<div class="p-row"><input  type="text" class="p-input" placeholder="Điện thoại *"></div>
-				<div class="p-row"><textarea class="p-textarea" placeholder="Nội dung"></textarea></div>
-				<div class="p-btn"><input type="submit" class="p-submit" value="Gửi tin nhắn"></div>
+		<div class="form-search-area">
+			<form action="">
+				<input type="search" name="" id="" placeholder="Tìm kiếm">
 			</form>
 		</div>
+		<span class="ico-menu"></span>
 	</div>
-</div>
-<div class="back-top">
-	<svg class="page-icon"><use xlink:href="#icon-back-top"></use></svg>
-	<span class="txt">Lên đầu trang</span>
-</div><!-- #EndLibraryItem --></div><!-- #BeginLibraryItem "/Library/svg.lbi" -->
+</header><!-- #header --><!-- #EndLibraryItem --><main id="main">
+	<div class="mv-btn-next"><svg class="page-icon"><use xlink:href="#icon-mv-down"></use></svg></div>
+	<div class="mv-nav">
+		<div class="item">
+			<a href="#section01">
+				<span class="num">01</span>
+				<span class="txt">KLG</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section02">
+				<span class="num">02</span>
+				<span class="txt">XỬ LÝ<br>NƯỚC THẢI</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section03">
+				<span class="num">03</span>
+				<span class="txt">XỬ LÝ<br>NƯỚC CẤP</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section04">
+				<span class="num">04</span>
+				<span class="txt">XỬ LÝ<br>KHÍ THẢI</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section05">
+				<span class="num">05</span>
+				<span class="txt">XỬ LÝ CHẤT<br>THẢI RẮN</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section06">
+				<span class="num">06</span>
+				<span class="txt">DỰ ÁN<br>TIÊU BIỂU</span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="#section07">
+				<span class="num">07</span>
+				<span class="txt">LIÊN HỆ</span>
+			</a>
+		</div>
+	</div>
+    <div class="mainVisual">
+		<div data-anchor="section01" class="section mv-item">
+            <div class="mv-img mv-img-01"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<h3 class="ttl">KIM LONG CORP</h3>
+					<p class="txt">KIÊN ĐỊNH VỚI SỨ MỆNH BẢO VỆ MÔI TRƯỜNG</p>
+					<a href="./ve-chung-toi.html" class="mv-readmore">
+						<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+						<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section02" class="section mv-item">
+			<div class="mv-img mv-img-02"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<h3 class="ttl">TIẾT KIỆM DIỆN TÍCH</h3>
+					<p class="txt">CÔNG NGHỆ THUẦN HOÁ VI SINH & MBBR HIỆN ĐẠI</p>
+					<a href="./dich-vu-xu-ly-nuoc-thai.html" class="mv-readmore">
+						<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+						<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section03" class="section mv-item">
+			<div class="mv-img mv-img-03"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<h3 class="ttl">TIÊU CHUẨN CAO</h3>
+					<p class="txt">PHÙ HỢP TIÊU CHUẨN, QUY CHUẨN VIỆT NAM & QUỐC TẾ</p>
+					<a href="./dich-vu-xu-ly-nuoc-cap.html" class="mv-readmore">
+						<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+						<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section04" class="section mv-item">
+			<div class="mv-img mv-img-04"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<h3 class="ttl">CÔNG NGHỆ TIÊN TIẾN</h3>
+					<p class="txt">GIẢI PHÁP TOÀN DIỆN ĐỂ XỬ LÝ KHÍ BỤI & KHÍ MÙI</p>
+					<a href="./dich-vu-xu-ly-khi-thai.html" class="mv-readmore">
+						<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+						<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section05" class="section mv-item">
+			<div class="mv-img mv-img-05"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<h3 class="ttl">TỐI ƯU CHI PHÍ</h3>
+					<p class="txt">GIẢM TỐI ĐA LƯỢNG BÙN & PHƯƠNG ÁN TÁI CHẾ </p>
+					<a href="./dich-vu-xu-ly-chat-ran.html" class="mv-readmore">
+						<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+						<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section06" class="section mv-item">
+			<div class="mv-img mv-img-06"></div>
+			<div class="sp-scroll">
+				<div class="mv-info">
+					<div class="fix-scrolls">
+						<div class="mv-slider">
+							<div class="slide-item">
+								<div class="s-wrap">
+									<div class="it-img"><img src="imgs/top/slider-01.jpg" alt="NHÀ MÁY CHẾ BIẾN THỦY SẢN HÙNG BANG"></div>
+									<div class="it-info">
+										<p class="ttl-small">XỬ LÝ NƯỚC THẢI</p>
+										<h4 class="ttl-large">NHÀ MÁY CHẾ BIẾN THỦY SẢN HÙNG BANG</h4>
+										<ul class="it-list">
+											<li><span>Công suất :</span><span>400m<sup>3</sup>/ ngày</span></li>
+											<li><span>Địa điểm :</span><span>KCN Hòa Hiệp, Huyện Đông Hòa, Tỉnh Phú Yên</span></li>
+											<li><span>Thời gian :</span><span>07/2021</span></li>
+											<li><span>Chủ đầu tư :</span><span>CÔNG TY TNHH HÙNG BANG</span></li>
+											<li><span>Gói thầu :</span><span>Xây dựng hệ thống xử lý nước thải thủy sản</span></li>
+										</ul>
+										<a href="./du-an-chi-tiet.html" class="mv-readmore">
+											<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+											<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="s-wrap">
+									<div class="it-img"><img src="imgs/top/slider-02.jpg" alt="NHÀ MÁY CHẾ BIẾN THỦY SẢN XIN BANG"></div>
+									<div class="it-info">
+										<p class="ttl-small">XỬ LÝ NƯỚC THẢI</p>
+										<h4 class="ttl-large">NHÀ MÁY CHẾ BIẾN THỦY SẢN <br>XIN BANG</h4>
+										<ul class="it-list">
+											<li><span>Công suất :</span><span>150<sup>3</sup>/ ngày</span></li>
+											<li><span>Địa điểm :</span><span>KCN Hòa Hiệp, Huyện Đông Hòa, Tỉnh Phú Yên</span></li>
+											<li><span>Thời gian :</span><span>01/06/2019</span></li>
+											<li><span>Chủ đầu tư :</span><span>CÔNG TY TNHH XIN BANG</span></li>
+											<li><span>Gói thầu :</span><span>Cung cấp & lắp đặt vật tư, thiết bị xử lý nước thải</span></li>
+										</ul>
+										<a href="./du-an-chi-tiet.html" class="mv-readmore">
+											<svg class="page-icon ico-arrow"><use xlink:href="#icon-mv-arrow"></use></svg>
+											<svg class="page-icon"><use xlink:href="#icon-mv-readmore"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-anchor="section07" class="section mv-item fp-auto-height mv-auto-height">
+			<div class="mv-img mv-img-07"></div>
+				<div class="sp-scroll">
+					<div class="mv-info">
+						<div class="fix-scrolls">
+							<div class="form-contact">
+								<h2 class="f-title">LIÊN HỆ TƯ VẤN</h2>
+								<div class="f-wrap">
+									<form action="#" method="GET">
+										<div class="f-content">
+											
+											<div class="f-row">
+												<div class="f-input"><input id="name" class="page-input" type="text" placeholder="Họ & Tên"></div>
+											</div>
+											<div class="f-row">
+												<div class="f-input"><input id="email" class="page-input" type="email" placeholder="Email"></div>
+											</div>
+											<div class="f-row">
+												<div class="f-input"><input id="phone" class="page-input" type="text" placeholder="Số điện thoại"></div>
+											</div>
+											<div class="f-row full">
+												<div class="f-textarea"><textarea id="message" class="page-input" rows="1" placeholder="Nội dung"></textarea></div>
+											</div>
+											
+										</div>
+										<div class="f-btn"><input class="page-btn" type="submit" value="Gửi"></div>
+									</form>
+								</div>
+							</div>
+							<div class="footer-inner">
+								<div class="footer-wrap">
+									<div class="footer-col">
+										<h4 class="ft-name">CÔNG TY CỔ PHẦN<br>CÔNG NGHỆ MÔI TRƯỜNG KIM LONG</h4>
+										<p class="ft-txt">Văn phòng giao dịch: 280A17 Lương Định Của, P. An Phú, <br>TP. Thủ Đức - TP. HCM</p>
+										<p class="ft-txt">Điện thoại: <a href="tel:0908880128">090 888 0128</a></p>
+										<p class="ft-txt">Email: <a href="mailto:infor@klg.com.vn">infor@klg.com.vn</a></p>
+									</div>
+									<div class="footer-col">
+										<h4 class="ft-ttl">ONLINE</h4>
+										<ul class="ft-social">
+											<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+											<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
+											<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
+										</ul>
+									</div>
+									<div class="footer-col">
+										<h4 class="ft-ttl">THÔNG TIN HỖ TRỢ</h4>
+										<ul class="ft-link">
+											<li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+											<li><a href="chinh-sach.html">Chính sách bảo mật</a></li>
+										</ul>
+									</div>
+									<div class="footer-col">
+										<h4 class="ft-ttl">QR CODE</h4>
+										<p class="qr-code"><img src="imgs/common/img_qr.jpg" alt="CÔNG TY CỔ PHẦN CÔNG NGHỆ MÔI TRƯỜNG KIM LONG"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	  	<div class="mv-copyright">
+			<div class="inner01">
+				<div class="copyright">
+					<p class="c-txt">2022 Kim long Corp All rights reserved</p>
+					<ul class="c-social">
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-youtube"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page-messenger">
+			<img src="imgs/common/ic-messenger.png" alt="icon">
+		</div>
+		<div class="page-form">
+			<span class="p-close">&nbsp;</span>
+			<div class="p-wrap">
+				<p class="p-lbl">Để lại lời nhắn cho chúng tôi</p>
+				<div class="p-form">
+					<form action="#" method="POST">
+						<div class="p-row"><input type="text" class="p-input" placeholder="Họ & tên *"></div>
+						<div class="p-row"><input type="email" class="p-input" placeholder="Email *"></div>
+						<div class="p-row"><input  type="text" class="p-input" placeholder="Điện thoại *"></div>
+						<div class="p-row"><textarea class="p-textarea" placeholder="Nội dung"></textarea></div>
+						<div class="p-btn"><input type="submit" class="p-submit" value="Gửi tin nhắn"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="back-top">
+			<a href="#section01">
+				<svg class="page-icon"><use xlink:href="#icon-back-top"></use></svg>
+				<span class="txt">Lên đầu trang</span>
+			</a>
+		</div>
+    </main>
+</div><!-- #BeginLibraryItem "/Library/svg.lbi" -->
 <div class="svg-hidden" style="position: absolute; width: 0; height: 0; overflow: hidden;">
 	<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
@@ -745,76 +459,6 @@
 			</symbol>
 		</defs>
 	</svg>
-</div><!-- #EndLibraryItem --><script type="text/javascript">
-	// $(document).ready(function() {
-	// 	$('a[href*=#]').bind('click', function(e) {
-	// 		e.preventDefault();
-	// 		var target = $(this).attr("href");
-	// 		$('html, body').stop().animate({
-	// 			scrollTop: $(target).offset().top
-	// 		}, 600, function() {
-	// 			location.hash = target;
-	// 		});
-	// 		return false;
-	// 	});
-	// });
-
-	$(window).scroll(function() {
-		var scrollDistance = $(window).scrollTop();
-		$('.space-anchor').each(function(i) {
-			if ($(this).position().top <= scrollDistance) {
-				var _id = $(this).attr('id');
-				// console.log(_id);
-				$('.nav-anchor li').removeClass('active');
-				$('a[href*=\\#'+_id+']').parent().addClass('active');
-				var _parent = $('a[href*=\\#'+_id+']').parent().parent();
-				if(_parent.hasClass('anchor-sub')){
-					_parent.parent().addClass('active');
-				}
-			}
-		});
-	}).scroll();
-
-	$(".history-slider").slick({
-		slidesToShow: 4,
-		dots: false,
-		autoplay: false,
-        arrows: true,
-		// prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
-		// nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
-		infinite: false,
-		autoplaySpeed: 2000,
-		speed: 1000,
-		pauseOnHover: false,
-		responsive: [
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
-			},
-		],
-	});
-
-	$('.ability-slider').slick({
-		slidesToShow: 2,
-		autoplaySpeed: 2000,
-		speed: 1000,
-		pauseOnHover: false,
-		dots: true,
-		// prevArrow: '<span class="prev-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
-		// nextArrow: '<span class="next-arrow"><svg class="page-icon"><use xlink:href="#icon-slider-arrow"></use></svg></span>',
-		responsive: [
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				},
-			},
-		],
-	});
-</script>
+</div><!-- #EndLibraryItem -->
 </body>
 </html>
