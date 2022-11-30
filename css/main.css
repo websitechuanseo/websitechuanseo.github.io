@@ -187,7 +187,22 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+.fullWidth {
+  width 100%;
+}
 
-.section {
-  height: 200vh;
+/* .main */
+.main-slider {
+  height: 100vh;
+  overflow: hidden;
+}
+.main-slider .item {
+  height: 100vh;
+  overflow: hidden;
+}
+.main-slider .item .main-img {
+  height: 100% !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
