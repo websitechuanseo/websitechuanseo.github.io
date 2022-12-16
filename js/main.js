@@ -20,6 +20,10 @@
                 cssEase: 'linear'
             });
         }
-    });
+
+        $('.btn-menu').on('click', function(){
+            $('body').toggleClass('mn-opened');
+        });
+    });    
     
 })(jQuery);
