@@ -1,10 +1,17 @@
 (function($){
-
     $(window).on('load', function(){
         $('#preloader').fadeOut(1000);
     });
 
+    $(window).on('load resize', function(){
+        if($(".key-content").length) {
+            var _h = $('.key-content').innerHeight();
+            $('#footer').css('padding-bottom',_h + 'px');
+        }
+    });
+
     $(document).ready(function(){
+
         if($(".js-main-slider").length) {
             $(".js-main-slider").slick({
                 autoplay: true,

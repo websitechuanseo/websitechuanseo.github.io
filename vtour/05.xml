@@ -1,0 +1,37 @@
+﻿<krpano>
+	<action name="startup" autorun="onstart">
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
+	</action>
+	<scene name="videopano" title="周辺動画⑤">
+		<include url="skin/videointerfaceEx.xml" />
+        <include url="skin/vtourskin_proud.xml" />
+
+        <events name="buttonevents" keep="true"
+            onxmlcomplete="if(istouchdevice, set_drag_cursor(), set_qtvr_cursor() );"
+            onenterfullscreen="set(layer[openfs_fullscreen].visible,false); set(layer[closefs_fullscreen].visible,true);"
+            onexitfullscreen ="set(layer[openfs_fullscreen].visible,true); set(layer[closefs_fullscreen].visible,false);"
+        />
+        <layer name="openfs_fullscreen" type="image" url="skin/fullscreen_button.png" width="51" height="51" crop="0|0|64|64" align="righttop" x="5" y="5" scale="1" onclick="set(fullscreen,true);" visible="true" devices="fullscreensupport" />
+        <layer name="closefs_fullscreen" type="image" url="skin/fullscreen_button.png" width="51" height="51" crop="0|64|64|64" align="righttop" x="5" y="5" scale="1" onclick="set(fullscreen,false);" visible="false" devices="fullscreensupport" />
+
+		<plugin name="video"
+            videourl="assets/movie/movie05.mp4"
+            url.html5="plugins/videoplayer.js"
+            url.flash="plugins/videoplayer.swf"
+            pausedonstart="true"
+            loop="true"
+            volume="0.0"
+            onloaded="videointerface_addsource();"
+        />
+
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+	</scene>
+</krpano>
