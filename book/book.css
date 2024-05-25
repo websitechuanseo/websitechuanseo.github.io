@@ -1,0 +1,53 @@
+.section {
+    padding: 100px 0;
+}
+.site_title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+.form_wrap {
+    width: 100%;
+    max-width: 530px;
+    margin: 50px auto 0;
+    padding: 30px 60px;
+    border: 1px solid #dddddd;
+    box-shadow: 5px 5px 5px #ddd;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fr-ttl {
+    font-size: 16px;
+    font-weight: bold;
+}
+.fr-row {
+    width: calc(50% - 30px);
+    padding: 15px 0;
+}
+.fr-row.full {
+    width: 100%;
+}
+.fr-input {
+    padding: 5px 15px;
+    color: #333;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+.fr-button {
+    text-align: center;
+}
+.fr-button .btn {
+    display: inline-block;
+    background: rgb(255, 45, 45);
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 7px 30px;
+}

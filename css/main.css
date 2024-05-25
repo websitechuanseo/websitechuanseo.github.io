@@ -591,7 +591,57 @@ img {
 }
 
 #footer {
-  background: #48038C;
+  background: #333333;
   color: #ffffff;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+.f-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.f-row .f-col {
+  width: 50%;
+  padding: 0 15px;
+}
+.ft-title {
+  border-bottom: 1px solid #555555;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  padding: 0 0 5px;
+}
+.ft-link {
+  padding: 5px 0 0;
+}
+.ft-link li {
+  position: relative;
+  padding-left: 15px;
+}
+.ft-link li:before {
+  content: "";
+  background: #fafafa;
+  height: 1px;
+  width: 7px;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transition: all 0.3s ease-out;
+}
+.ft-link li:hover:before {
+  background: #ffffff;
+  height: 7px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.ft-link li a {
+  color: #fafafa;
+  display: inline-block;
+  padding: 5px 0;
+  transition: all 0.3s ease-out;
+}
+.ft-link li a:hover {
+  color: #ffffff;
 }
