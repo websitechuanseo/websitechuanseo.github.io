@@ -237,7 +237,8 @@ img {
   overflow: hidden;
 }
 .main-slider .item {
-  height: 65vh;
+  width: 100vw;
+  aspect-ratio: 2.8/1;
   overflow: hidden;
 }
 .main-slider .item .main-img {
@@ -317,7 +318,7 @@ img {
 
 /* .main-menu */
 .main-menu {
-  background: #48038c;
+  background: rgba(72, 3, 140, 0.72);
   color: #ffffff;
   position: fixed;
   top: 0;
@@ -329,6 +330,7 @@ img {
   visibility: hidden;
   clip-path: inset(0 100% 0 100%);
   z-index: 998;
+  backdrop-filter: blur(10px);
 }
 .main-menu .menu-list {
   display: flex;
@@ -644,4 +646,7 @@ img {
 }
 .ft-link li a:hover {
   color: #ffffff;
+}
+.ft-map iframe {
+  width: 100%;
 }
