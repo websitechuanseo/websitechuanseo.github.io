@@ -1,0 +1,107 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<header id="header">
+	<div class="h-inner">
+		<div class="h-logo"><a href="./"><img src="../imgs/common/logo.png" alt="KIM LONG CORP"></a></div>
+		<div class="h-nav">
+			<span class="ico-close"></span>
+			<nav id="gnav">
+				<ul>
+					<li class="has-sub">
+						<a href="../ve-chung-toi.html">VỀ CHÚNG TÔI</a>
+						<ul>
+							<li><a href="../ve-chung-toi.html#anc01">Về KLG</a></li>
+							<li><a href="../ve-chung-toi.html#anc02">Giới thiệu chung</a></li>
+							<li><a href="../ve-chung-toi.html#anc07">Cơ cấu tổ chức</a></li>
+							<li><a href="../ve-chung-toi.html#anc10">Chứng nhận</a></li>
+							<li><a href="../ve-chung-toi.html#anc11">Hồ sơ năng lực</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="../dich-vu.html">DỊCH VỤ</a>
+						<ul class="two-col">
+							<li>
+								<ul>
+									<li><a href="../dich-vu-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+									<li><a href="../dich-vu-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+									<li><a href="../dich-vu-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+									<li><a href="../dich-vu-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="../dich-vu-ho-so-moi-truong.html">Hồ sơ môi trường</a></li>
+									<li><a href="../dich-vu-nang-cap-cai-tao.html">Nâng cấp cải tạo</a></li>
+									<li><a href="../dich-vu-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+									<li><a href="../dich-vu-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+									<li><a href="../dich-vu-tu-van.html">Tư vấn bảo vệ môi trường</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../cong-nghe.html">CÔNG NGHỆ</a>
+					</li>
+					<li class="has-sub">
+						<a href="../du-an-tieu-bieu.html">DỰ ÁN TIÊU BIỂU</a>
+						<ul class="two-col">
+							<li>
+								<ul>
+									<li><a href="../du-an-xu-ly-nuoc-thai.html">Xử lý nước thải</a></li>
+									<li><a href="../du-an-xu-ly-nuoc-cap.html">Xử lý nước cấp</a></li>
+									<li><a href="../du-an-xu-ly-khi-thai.html">Xử lý khí thải</a></li>
+									<li><a href="../du-an-xu-ly-chat-ran.html">Xử lý chất thải rắn</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="../du-an-nang-cap-bao-tri.html">Nâng cấp bảo trì hệ thống</a></li>
+									<li><a href="../du-an-tong-thau-epco.html">Tổng thầu EPCO</a></li>
+									<li><a href="../du-an-van-hanh-he-thong.html">Vận hành hệ thống</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="../san-pham.html">SẢN PHẨM</a>
+						<ul>
+							<li><a href="../he-thong-va-may-moc.html">Hệ thống & Máy móc</a></li>
+							<li><a href="../san-pham-hoa-chat.html">Hóa chất</a></li>
+							<li><a href="../san-pham-phu-gia-thuc-pham.html">Phụ gia thực phẩm</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="../hop-tac-phat-trien.html">HỢP TÁC PHÁT TRIỂN</a>
+						<ul>
+							<li><a href="../hop-tac-phat-trien.html#anc01">Fgroup Holding</a></li>
+							<li><a href="../hop-tac-phat-trien.html#anc04">Đối tác chiến lược</a></li>
+							<li><a href="../hop-tac-phat-trien.html#anc05">Đối tác thương mại</a></li>
+							<li><a href="../hop-tac-phat-trien.html#anc06">Tuyển dụng</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="../tin-tuc.html">TIN TỨC</a>
+						<ul>
+							<li><a href="../tin-tuc.html">Tin tổng hợp</a></li>
+							<li><a href="../tin-tuc-hoat-dong-su-kien.html">Hoạt động, sự kiện</a></li>
+						</ul>
+					</li>
+					<li><a href="../lien-he.html">LIÊN HỆ</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="h-lang">
+			<ul>
+				<li class="icon-search"><a href="javascript:void(0)"><svg class="page-icon"><use xlink:href="#icon-search"></use></svg></a></li>
+				<li><a href="#" class="current">VN</a></li>
+				<li><a href="#">EN</a></li>
+				<li><a href="#">CN</a></li>				
+			</ul>
+		</div>
+		<div class="form-search-area">
+			<form action="">
+				<input type="search" name="" id="" placeholder="Tìm kiếm">
+			</form>
+		</div>
+		<span class="ico-menu"></span>
+	</div>
+</header><!-- #header -->

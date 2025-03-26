@@ -1,0 +1,81 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<footer id="footer">
+	<div class="inner01">
+		<div class="form-contact">
+			<h2 class="f-title">LIÊN HỆ TƯ VẤN</h2>
+			<div class="f-wrap">
+				<form action="#" method="GET">
+					<div class="f-content">
+						<div class="f-row">
+							<div class="f-input"><input id="name" class="page-input" type="text" placeholder="Họ & Tên"></div>
+						</div>
+						<div class="f-row">
+							<div class="f-input"><input id="email" class="page-input" type="email" placeholder="Email"></div>
+						</div>
+						<div class="f-row">
+							<div class="f-input"><input id="phone" class="page-input" type="text" placeholder="Số điện thoại"></div>
+						</div>
+						<div class="f-row full">
+							<div class="f-textarea"><textarea id="message" class="page-input" rows="1" placeholder="Nội dung"></textarea></div>
+						</div>
+					</div>
+					<div class="f-btn"><input class="page-btn" type="submit" value="Gửi"></div>
+				</form>
+			</div>
+		</div>
+		<div class="footer-inner">
+			<div class="footer-wrap">
+				<div class="footer-col">
+					<h4 class="ft-name">CÔNG TY CỔ PHẦN<br>CÔNG NGHỆ MÔI TRƯỜNG KIM LONG</h4>
+					<p class="ft-txt">Văn phòng giao dịch: 280A17 Lương Định Của, P. An Phú, <br>TP. Thủ Đức - TP. HCM</p>
+					<p class="ft-txt">Điện thoại: <a href="tel:0908880128">090 888 0128</a></p>
+					<p class="ft-txt">Email: <a href="mailto:infor@klg.com.vn">infor@klg.com.vn</a></p>
+				</div>
+				<div class="footer-col">
+					<h4 class="ft-ttl">ONLINE</h4>
+					<ul class="ft-social">
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-linkedin"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon"><use xlink:href="#icon-facebook"></use></svg></a></li>
+						<li><a href="#"><svg class="page-icon ic-ytb"><use xlink:href="#icon-youtube"></use></svg></a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4 class="ft-ttl">THÔNG TIN HỖ TRỢ</h4>
+					<ul class="ft-link">
+						<li><a href="../dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+						<li><a href="../chinh-sach.html">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4 class="ft-ttl">QR CODE</h4>
+					<p class="qr-code"><img src="../imgs/common/img_qr.jpg" alt="CÔNG TY CỔ PHẦN CÔNG NGHỆ MÔI TRƯỜNG KIM LONG"></p>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p class="txt">2021 <a href="#">KIM LONG CORP</a> All RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</div>
+</footer><!-- / #footer -->
+<div class="page-messenger">
+	<img src="../imgs/common/ic-messenger.png" alt="icon">
+</div>
+<div class="page-form">
+	<span class="p-close">&nbsp;</span>
+	<div class="p-wrap">
+		<p class="p-lbl">Để lại lời nhắn cho chúng tôi</p>
+		<div class="p-form">
+			<form action="#" method="POST">
+				<div class="p-row"><input type="text" class="p-input" placeholder="Họ & tên *"></div>
+				<div class="p-row"><input type="email" class="p-input" placeholder="Email *"></div>
+				<div class="p-row"><input  type="text" class="p-input" placeholder="Điện thoại *"></div>
+				<div class="p-row"><textarea class="p-textarea" placeholder="Nội dung"></textarea></div>
+				<div class="p-btn"><input type="submit" class="p-submit" value="Gửi tin nhắn"></div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="back-top">
+	<svg class="page-icon"><use xlink:href="#icon-back-top"></use></svg>
+	<span class="txt">Lên đầu trang</span>
+</div>
