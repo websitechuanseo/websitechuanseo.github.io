@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas {
+	margin:0;
+	padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, menu { display:block; }
+audio:not([controls]) {
+	display:none;
+	height:0;
+}
+[hidden] { display:none; }
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+ul, ol, menu { list-style:none; }
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before, q:after { content:''; }
+abbr, acronym {
+	border:none;
+	font-variant:normal;
+}
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+legend { color:#000; }
+a img, map a { border:none; }
+a:hover, a:active, a:focus { outline:0; }
+embed { width:100%; }
+audio, canvas, video { display:inline-block; }
+audio:not([controls]) {
+	display:none;
+	height:0;
+}
+img, object, embed {
+	max-width:100%;
+	height:auto;
+}
+object, embed { height:100%; }
+img {
+	-ms-interpolation-mode:bicubic;
+	vertical-align: middle;
+}
+form img, input, select { vertical-align:middle; }
+.clearfix { zoom:1; }
+.clearfix:after {
+	display:block;
+	clear:both;
+	content:"";
+}
+.clear { clear:both !important; }
+.hover:hover {
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+/****************** end common ********************/

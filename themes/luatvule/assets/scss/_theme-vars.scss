@@ -1,0 +1,82 @@
+// Generated from theme.json
+
+// @font-face {
+//   font-family: "Mulish";
+//   src: url("/assets/fonts/Mulish/Mulish-VariableFont_wght.woff2");
+//   font-weight: 100 900;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Mulish";
+//   src: url("/assets/fonts/Mulish/Mulish-Italic-VariableFont_wght.woff2");
+//   font-weight: 100 900;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: '"Playfair Display"';
+//   src: url("/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.woff2");
+//   font-weight: 100 900;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: '"Playfair Display"';
+//   src: url("/assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.woff2");
+//   font-weight: 100 900;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: '"Fira Code"';
+//   src: url("/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2");
+//   font-weight: 300 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: '"Roboto Slab"';
+//   src: url("/assets/fonts/roboto-slab/RobotoSlab-VariableFont_wght.woff2");
+//   font-weight: 100 900;
+//   font-style: normal;
+// }
+$wp-color-base: #ffffff;
+$wp-color-contrast: #940909;
+$wp-color-black-1: #000000;
+$wp-color-black-2: #0a0a0a;
+$wp-color-black-3: #131313;
+$wp-color-gray-1: #6a6f78;
+$wp-color-gray-2: #f9f9f9;
+$wp-gradient-sunset: linear-gradient(90deg, #ff512f, #dd2476);
+$wp-gradient-ocean: linear-gradient(90deg, #00c9ff, #92fe9d);
+$wp-layout-content-size: 1280px;
+$wp-layout-wide-size: 1920px;
+$wp-spacing-20: 10px;
+$wp-spacing-30: 20px;
+$wp-spacing-40: 30px;
+$wp-spacing-50: clamp(30px, 5vw, 50px);
+$wp-spacing-60: clamp(30px, 7vw, 70px);
+$wp-spacing-70: clamp(50px, 7vw, 90px);
+$wp-spacing-80: clamp(70px, 10vw, 140px);
+$wp-font-size-x-small: 0.625rem;
+$wp-font-size-x-small-fluid: 0.625rem;
+$wp-font-size-small: 0.812rem;
+$wp-font-size-small-fluid: 0.812rem;
+$wp-font-size-normal: 1rem;
+$wp-font-size-normal-fluid: 1rem;
+$wp-font-size-medium: 1.125rem;
+$wp-font-size-medium-fluid: clamp(1.125rem, 1.125rem, 1.375rem);
+$wp-font-size-large: 1.562rem;
+$wp-font-size-large-fluid: clamp(1.562rem, 1.562rem, 1.75rem);
+$wp-font-size-x-large: 1.938rem;
+$wp-font-size-x-large-fluid: clamp(1.938rem, 1.938rem, 2.125rem);
+$wp-font-size-xx-large: 2.438rem;
+$wp-font-size-xx-large-fluid: clamp(2.438rem, 2.438rem, 2.625rem);
+$wp-font-size-xxx-large: 3.062rem;
+$wp-font-size-xxx-large-fluid: 3.062rem;
+$wp-font-size-huge: 3.062rem;
+$wp-font-size-huge-fluid: 3.062rem;
+$wp-font-size-mega: 4.75rem;
+$wp-font-size-mega-fluid: 4.75rem;
+$wp-line-height-xs: 1;
+$wp-line-height-sm: 1.2;
+$wp-line-height-md: 1.5;
+$wp-line-height-lg: 1.7;
+
+// Generated completed!

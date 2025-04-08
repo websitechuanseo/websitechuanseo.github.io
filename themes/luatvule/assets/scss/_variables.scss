@@ -1,0 +1,96 @@
+$primary-color: #940909;
+$second-color: #ECECEC;
+$third-color: #F4F5F8;
+$fourth-color: #EEEEEE;
+$fifth-color: #F7F7F7;
+$sixth-color: #A62020;
+$seventh-color: #E4E4E4;
+$eighth-color: #369A3A;
+$nineth-color: #F6F6F6;
+$tenth-color: #09944F;
+$text-color-1: #333333;
+$text-color-2: #75727B;
+$text-color-3: #EE5D5D;
+$text-color-4: #6A6F78;
+$text-color-5: #E1E1E1;
+$text-color-6: #FFC979;
+$text-color-7: #0A0A0A;
+$text-color-8: #094E94;
+$text-color-9: #31333E;
+$border-color-1: #E8E8E8;
+$border-color-2: #E1E1E1;
+$border-color-3: #DEDEDE;
+$border-color-4: #E7E7E7;
+$border-color-5: #B62929;
+$border-color-6: #D9D9D9;
+$border-color-7: #E6E6E6;
+$border-color-8: #D8D8D8;
+$border-color-9: #B7B7B7;
+$border-color-10: #1c1c1c;
+$font-stack: "Mulish", sans-serif;
+$font-heading: "Playfair", serif;
+$font-family_1: "Font Awesome 5 Free";
+$transition-all: all 0.3s linear;
+
+//Media queries
+$pc-wqhd: 2560px;
+$pc-fullhd: 1920px;
+$pc-laptop: 1440px;
+$pc-hd: 1280px;
+$pc: 1024px;
+$tab: 991px;
+$smp: 767px;
+$smp-550: 550px;
+$smp-xs: 320px;
+
+//Media queries
+@mixin wqhd {
+    @media only screen and (min-width: ($pc-fullhd + 1)) {   
+        @content;
+    }
+}
+@mixin fullhd {
+    @media only screen and (max-width: ($pc-fullhd)) {   
+        @content;
+    }
+}
+@mixin laptop {
+    @media only screen and (max-width: ($pc-laptop)) {   
+        @content;
+    }
+}
+@mixin hd {
+    @media only screen and (max-width: ($pc-hd)) {
+        @content;
+    }
+}
+@mixin pc{
+    @media only screen and (max-width: ($pc)) {   
+        @content;
+    }
+}
+@mixin pc_hover {
+    @media only screen and (min-width: ($pc + 1)) {   
+        @content;
+    }
+}
+@mixin tab {
+    @media only screen and (max-width: ($tab)) {   
+        @content;
+    }
+}
+@mixin smp {
+    @media only screen and (max-width: ($smp)) {   
+        @content;
+    }
+}
+@mixin smp-550 {
+    @media only screen and (max-width: ($smp-550)) {   
+        @content;
+    }
+}
+@mixin smp_xs {
+    @media only screen and (max-width: ($smp-xs)) {   
+        @content;
+    }
+}

@@ -1,0 +1,77 @@
+@use "_variables" as *;
+@use "_theme-vars" as *;
+
+.page_about {
+    .single_block {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 10%;
+        grid-template-columns: 42% 48%;
+    }
+    .count_list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 25%;
+        grid-gap: 50px;
+        padding: 150px 0;
+        text-align: center;
+        .item {
+            position: relative;
+            z-index: 0;
+            .ttl {
+                text-transform: uppercase;
+                color: $wp-color-black-1;
+                font-size: 20px;
+                font-weight: 500;
+                position: relative;
+                z-index: 1;
+                &:before {
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background: rgba(0,0,0,0.1);
+                    position: absolute;
+                    bottom: 24%;
+                    left: 0;
+                }
+            }
+            .number {
+                font-size: 120px;
+                color: $text-color-5;
+                line-height: 1;
+                bottom: -70%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+        }        
+    }
+}
+
+.block_vision {
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+    .item {
+        padding: 50px 0;
+        .ttl {
+            font-size: 49px;
+            line-height: 1.2;
+            margin: 0 0 15px;
+        }
+        .txt {
+            color: $text-color-4;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+    }
+    .image {
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
