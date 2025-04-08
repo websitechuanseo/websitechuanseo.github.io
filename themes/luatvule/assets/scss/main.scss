@@ -119,6 +119,7 @@ a:hover {opacity: 0.7;}
 			border-radius: 0;
 			background: $text-color-7;
 			padding: 15px 75px 15px 15px;
+			box-shadow: none;
 		}
 		@include smp {
 			padding: 10px 50px 10px 10px;
