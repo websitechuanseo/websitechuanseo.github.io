@@ -865,11 +865,19 @@
 		.cont {
 			padding: 0 0 55px;
 			border-bottom: 4px solid #F8F8F8;
+			@include smp {
+				padding: 0 0 15px;
+				border-width: 2px;
+			}
 			.date {
 				background: #F3F4F7;
 				color: $wp-color-gray-1;
 				padding: 5px 30px;
 				margin: 0 0 10px;
+				@include smp {
+					padding: 5px 15px;
+					font-size: 12px;
+				}
 				.icon {
 					color: $wp-color-contrast;
 					display: inline-block;
@@ -905,7 +913,8 @@
     column-gap: 15px;
 	@include smp {
 		flex-wrap: wrap;
-		padding: 0 7px;
+		padding-left: 7px;
+		padding-right: 7px;
 	}
     .image {
         width: 50%;
@@ -943,6 +952,9 @@
 				@include tab {
 					padding: 20px 15px;
 				}
+				@include smp {
+					padding: 15px;
+				}
                 &.box01 {
                     background: $primary-color;
                     color: $wp-color-base;
@@ -959,6 +971,9 @@
 						@include pc {
 							font-size: 8vw;
 						}
+						@include smp {
+							font-size: 50px;
+						}
                         .plus {
                             font-weight: 600;
                         }
@@ -968,11 +983,21 @@
                     font-size: 20px;
 					font-size: 1.04vw;
                     line-height: 1.7;
+					@include smp {
+						font-size: 10px;
+						line-height: 1.4;
+						margin-top: 7px;
+					}
                 }
                 .ttl {
                     font-size: 31px;
 					font-size: 1.61vw;
                     line-height: 1.4;
+					@include smp {
+						font-size: 16px;
+						line-height: 1.4;
+						letter-spacing: -0.02em;
+					}
                 }
             }            
         }
@@ -1001,6 +1026,10 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+		@include smp {
+			margin-bottom: 40px;
+			justify-content: flex-start;
+		}
     }
 }
 .contact_info {
@@ -1012,6 +1041,9 @@
 	@include tab {
 		padding: 30px 15px;
 	}
+	@include smp {
+		padding: 0 15px;
+	}
     .box {
         padding: 15px 0;
         & + .box {
@@ -1019,11 +1051,17 @@
         }
         .ttl {
             font-size: 31px;
+			@include smp {
+				font-size: 18px;
+			}
         }
         .txt {
             color: $text-color-2;
             font-size: 16px;
             line-height: 1.7;
+			@include smp {
+				font-size: 12px;
+			}
             a {
                 color: $text-color-2;
             }
@@ -1032,6 +1070,10 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 40px;
+			@include smp {
+				margin-top: 0;
+				justify-content: center;
+			}
             li {
                 margin-left: 10px;
                 a {
@@ -1091,6 +1133,7 @@
 		font-size: 14px;
 	}
     .inp {
+		border-radius: 0px;
         padding: 18px 15px;
         border: 1px solid #E7DFDF;
         width: 100%;
@@ -1102,6 +1145,7 @@
     .inp_submit {
         cursor: pointer;
         border: none;
+		border-radius: 0px;
         background: $wp-color-contrast;
         color: $wp-color-base;
         font-size: 14px;
