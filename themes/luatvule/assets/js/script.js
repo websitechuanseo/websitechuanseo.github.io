@@ -52,7 +52,7 @@
     });
 
     $('.sub_btn').on('click',function(){
-        $(this).next().slideToggle();
+        $(this).next().slideToggle('200');
     });
 
     $('.js_slider_staff').slick({

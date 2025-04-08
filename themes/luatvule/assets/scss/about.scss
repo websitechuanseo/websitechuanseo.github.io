@@ -7,14 +7,35 @@
         grid-auto-flow: column;
         grid-gap: 10%;
         grid-template-columns: 42% 48%;
+        @include hd {
+            grid-gap: 30px;
+            grid-template-columns: 50% 50%;
+            padding-right: 30px;
+        }
+        @include smp {
+            padding-right: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px 0;
+        }
     }
     .count_list {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 25%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 50px;
         padding: 150px 0;
         text-align: center;
+        @include tab {
+            grid-gap: 30px;
+            padding: 100px 0 30px;
+        }
+        @include smp {
+            grid-gap: 60px 30px;
+            padding: 60px 0 30px;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-flow: unset;
+        }
         .item {
             position: relative;
             z-index: 0;
@@ -25,6 +46,9 @@
                 font-weight: 500;
                 position: relative;
                 z-index: 1;
+                @include tab {
+                    font-size: 14px;
+                }
                 &:before {
                     content: "";
                     height: 2px;
@@ -44,6 +68,12 @@
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: -1;
+                @include tab {
+                    font-size: 12vw;
+                }
+                @include smp {
+                    font-size: 20vw;
+                }
             }
         }        
     }
@@ -53,17 +83,39 @@
     padding: 50px 0;
     position: relative;
     z-index: 0;
+    @include smp {
+        padding: 0;
+    }
     .item {
         padding: 50px 0;
+        @include tab {
+            padding: 30px 0;
+        }
+        @include smp {
+            padding: 30px 0 0;
+        }
         .ttl {
             font-size: 49px;
             line-height: 1.2;
             margin: 0 0 15px;
+            @include tab {
+                font-size: 36px;
+                margin: 0 0 7px;
+            }
+            @include smp {
+                font-size: 26px;
+            }
         }
         .txt {
             color: $text-color-4;
             font-size: 16px;
             line-height: 1.7;
+            @include tab {
+                font-size: 14px;
+            }
+            @include smp {
+                font-size: 12px;
+            }
         }
     }
     .image {
@@ -73,5 +125,11 @@
         right: 0;
         position: absolute;
         z-index: -1;
+        @include smp {
+            width: 100%;
+            top: auto;
+            transform: translateY(0);
+            bottom: 0;
+        }
     }
 }

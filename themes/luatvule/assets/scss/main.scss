@@ -203,6 +203,9 @@ a:hover {opacity: 0.7;}
 			@include pc {
 				padding: 10px 15px;
 			}
+			@include smp {
+				font-size: 13px;
+			}
 		}
 		.current {
 			.link {
@@ -278,6 +281,9 @@ a:hover {opacity: 0.7;}
 				padding: 7px 15px;
 				@include pc {
 					color: $wp-color-base;
+				}
+				@include smp {
+					font-size: 12px;
 				}
 				&:hover {
 					background: #EEEEEE;
@@ -356,7 +362,9 @@ a:hover {opacity: 0.7;}
 				margin-left: 5px;
 			}
 			@include smp {
-				padding-left: 30px;
+				padding-left: 35px;
+				margin: 0;
+				border: none;
 			}
 			.icon_search {
 				font-size: 20px;
@@ -539,9 +547,15 @@ a:hover {opacity: 0.7;}
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
+			@include smp {
+				flex-direction: column-reverse;
+			}
 		}
 		.cpr {
 			color: #B8BFC5;
+			@include hd {
+				font-size: 12px;
+			}
 		}
 	}
 	.social_list {
@@ -565,57 +579,112 @@ a:hover {opacity: 0.7;}
 	}
 	.ft_top {
 		padding: 80px 0 0;
-	}
-	.ft_logo {
-		width: 100%;
-		max-width: 160px;
-	}
-	.ft_block {
-		padding: 0 5%;
-		.ttl {
-			font-size: 36px;
-			line-height: 1.4;
-			margin: 0 0 15px;
+		@include smp {
+			padding: 60px 0 0;
 		}
-		.links {
-			.item {
-				a {
-					color: $wp-color-base;
-					line-height: 2;
+	}
+	.ft_content {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		gap: 30px;
+		justify-content: space-between;
+		@include tab {
+			grid-template-columns: auto auto auto;
+		}
+		@include smp {
+			display: block;
+		}
+		.ft_logo {
+			width: 100%;
+			max-width: 160px;
+			@include hd {
+				max-width: 110px;
+			}
+			@include tab {
+				max-width: 160px;
+				grid-area: span 2;
+				align-content: center;
+			}
+			@include smp {
+				max-width: 90px;
+				margin: 0 auto 30px;
+			}
+		}
+		.ft_block {
+			@include smp {
+				margin: 0 0 30px;
+			}
+			.ttl {
+				font-size: 36px;
+				line-height: 1.4;
+				margin: 0 0 15px;
+				@include hd {
+					font-size: 26px;
+				}
+				@include smp {
+					font-size: 22px;
+					margin: 0 0 5px;
+				}
+			}
+			.links {
+				.item {
+					a {
+						color: $wp-color-base;
+						line-height: 2;
+						@include hd {
+							font-size: 14px;
+							line-height: 1.4;
+						}
+					}
 				}
 			}
 		}
-	}
-	.ft_frm {
-		position: relative;
-		.inp_txt {
-			border-radius: 5px;
-			border: 1px solid rgba(241,238,246,0.5);
-			background: #fff;
-			padding: 10px 40px 10px 10px;
-			width: 100%;
-		}
-		.btn_submit {
-			background: none;
-			border: none;
-			color: $wp-color-contrast;
-			cursor: pointer;
-			padding: 10px;
-			width: 40px;
-			height: 100%;
-			right: 0;
-			top: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: absolute;
-			z-index: 1;
-			transition: $transition-all;
-			&:hover {
-				opacity: 0.7;
+		.ft_frm {
+			position: relative;
+			@include tab {
+				width: 100%;
+				max-width: 360px;
+			}
+			.inp_txt {
+				border-radius: 5px;
+				border: 1px solid rgba(241,238,246,0.5);
+				background: #fff;
+				padding: 10px 40px 10px 10px;
+				width: 100%;
+			}
+			.btn_submit {
+				background: none;
+				border: none;
+				color: $wp-color-contrast;
+				cursor: pointer;
+				padding: 10px;
+				width: 40px;
+				height: 100%;
+				right: 0;
+				top: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				z-index: 1;
+				transition: $transition-all;
+				&:hover {
+					opacity: 0.7;
+				}
 			}
 		}
-	}
+		.block_inquiry {
+			width: 350px;
+			@include tab {
+				grid-column: span 2;
+			}
+			@include smp {
+				width: 280px;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}	
 	.ft_info {
 		border-top: 1px solid #C86767;
 		padding: 15px 0;
@@ -623,13 +692,28 @@ a:hover {opacity: 0.7;}
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+		@include smp {
+			margin-top: 40px;
+			display: block;
+		}
 		.item {
 			font-size: 18px;
 			position: relative;
 			padding-left: 20px;
 			margin-left: 3%;
+			@include hd {
+				font-size: 16px;
+			}
+			@include tab {
+				font-size: 12px;
+				line-height: 1.2;
+			}
+			@include smp {
+				font-size: 11px;
+				padding-left: 10px;
+				margin-left: 0;
+			}
 			&:nth-child(1) {
-				width: 50%;
 				margin-right: auto;
 				margin-left: 0;
 			}
@@ -643,6 +727,14 @@ a:hover {opacity: 0.7;}
 				top: 8px;
 				left: 0;
 				line-height: 1.4;
+				@include tab {
+					top: 2px;
+				}
+				@include smp {
+					width: 6px;
+					height: 6px;
+					top: 4px;
+				}
 			}
 			a {
 				color: $wp-color-base;
@@ -690,6 +782,9 @@ a:hover {opacity: 0.7;}
 		border-bottom-left-radius: 7px;
 		padding: 22px 20px;
 		border-right: none;
+		@include pc {
+			padding: 15px 15px;
+		}
 	}
 	.inp_submit {
 		border: none;
@@ -731,6 +826,9 @@ a:hover {opacity: 0.7;}
 	display: flex;
 	justify-content: center;
 	margin-top: 80px;
+	@include tab {
+		margin-top: 40px;
+	}
 	&.align_left {
 		justify-content: flex-start;
 	}
@@ -739,6 +837,7 @@ a:hover {opacity: 0.7;}
 		flex-wrap: wrap;
 		.item {
 			padding: 0 5px;
+			margin: 0 0 10px;
 			&.is_current {
 				.link {
 					background: $wp-color-contrast;
@@ -756,6 +855,11 @@ a:hover {opacity: 0.7;}
 				height: 50px;
 				border-radius: 50%;
 				overflow: hidden;
+				@include pc {
+					width: 36px;
+					height: 36px;
+					font-size: 12px;
+				}
 			}
 			.link {
 				background: $third-color;
@@ -781,16 +885,35 @@ a:hover {opacity: 0.7;}
 		gap: 30px;
 		padding: 0 0 30px;
 		margin: 0 0 30px;
+		@include hd {
+			padding: 0 0 20px;
+			margin: 0 0 20px;
+		}
+		@include smp {
+			flex-wrap: wrap;
+			gap: 15px;
+		}
 		.img {
 			width: 186px;
+			@include smp {
+				width: 100%;
+			}
 		}
 		.cont {
 			flex: 1;
+			@include smp {
+				width: 100%;
+				flex: unset;
+			}
 			.date {
 				color: $text-color-4;
 				font-size: 14px;
 				text-transform: uppercase;
 				margin: 0 0 15px;
+				@include hd {
+					font-size: 12px;
+					margin: 0 0 5px;
+				}
 				.icon {
 					display: inline-block;
 					color: $wp-color-contrast;
@@ -802,11 +925,26 @@ a:hover {opacity: 0.7;}
 				font-weight: 600;
 				line-height: 1.2;
 				margin: 0 0 15px;
+				@include hd {
+					font-size: 18px;
+					margin: 0 0 10px;
+				}
+				@include smp {
+					font-size: 16px;
+				}
 			}
 			.txt {
 				color: $text-color-4;
 				line-height: 1.7;
 				margin: 0 0 20px;
+				@include hd {
+					margin: 0 0 15px;
+					font-size: 14px;
+				}
+				@include smp {
+					font-size: 12px;
+					margin: 0 0 5px;
+				}
 			}
 			.view_more02 {
 				color: $text-color-9;

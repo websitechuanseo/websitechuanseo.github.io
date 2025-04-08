@@ -188,6 +188,9 @@
 	@include pc {
 		font-size: 14px;
 	}
+	@include smp {
+		font-size: 12px;
+	}
 	.arrow {
 		color: $wp-color-black-1;
 		display: inline-block;
@@ -242,21 +245,30 @@
 		padding: 50px 0 1px;
 	}
 }
-.block_title {
-    color: $wp-color-contrast;
-    font-size: 16px;
-    margin: 0 0 25px;
+.page_section {
+    padding: 100px 0;
 	@include smp {
-		font-size: 14px;
-		margin-bottom: 15px;
+		padding: 40px 0;
 	}
-    .large {
-        font-size: 300%;
-        line-height: 1.3;
-        color: $wp-color-black-1;
-        display: block;
-    }
+	.block {
+		.block_title {
+			color: $wp-color-contrast;
+			font-size: 16px;
+			margin: 0 0 25px;
+			@include smp {
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+			.large {
+				font-size: 300%;
+				line-height: 1.3;
+				color: $wp-color-black-1;
+				display: block;
+			}
+		}
+	}	
 }
+
 
 .mainvisual {
 	position: relative;
@@ -357,7 +369,7 @@
 	justify-content: center;
 	margin: 0 -7px;
 	@include smp {
-		margin-bottom: 30px;
+		margin-bottom: 80px;
 	}
 	.item {
 		width: 50%;
@@ -374,7 +386,7 @@
 		padding-left: 0;
 	}
 	@include smp {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.txt {
 		color: $wp-color-gray-1;
@@ -433,6 +445,9 @@
 			flex: 1;
 			@include pc {
 				font-size: 14px;
+			}
+			@include smp {
+				font-size: 12px;
 			}
 		}
 	}
@@ -825,6 +840,9 @@
 .blog_list {
 	.item {
 		margin: 0 0 50px;
+		@include smp {
+			margin: 0 0 30px;
+		}
 		.img {
 			position: relative;
 			.lbl {
@@ -888,16 +906,15 @@
 			.ttl {
 				font-size: 24px;
 				margin: 0 0 15px;
-				@include tab {
+				@include laptop {
 					font-size: 18px;
-					letter-spacing: -0.02em;
 				}
 			}
 			.txt {
 				color: $wp-color-gray-1;
 				line-height: 1.8;
 				margin: 0 0 15px;
-				@include tab {
+				@include laptop {
 					font-size: 14px;
 				}
 			}
@@ -932,12 +949,14 @@
         width: 50%;
         display: grid;
         grid-auto-flow: column;
-        grid-gap: 7px;
+        grid-gap: 15px;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;        
-        padding: 0 7px 7px 0;
+        grid-template-rows: 50% 50%;
+        padding: 0 15px 15px 0;
 		@include smp {
 			width: 100%;
+			grid-gap: 7px;
+			padding: 0 7px 7px 0;
 		}
         .item {
             img {
@@ -1009,6 +1028,9 @@
 	background: url(../imgs/top/bg_contact.png) no-repeat center right / 100% auto;
     position: relative;
     z-index: 0;
+	@include smp {
+		background-size: cover;
+	}
     .block_title {
         .large {
             font-size: 243%;
@@ -1021,6 +1043,10 @@
         left: 0;
         position: absolute;
 		z-index: -1;
+		@include smp {
+			top: auto;
+			bottom: 0;
+		}
     }
     .contact_form {
         display: flex;
@@ -1138,6 +1164,10 @@
         padding: 18px 15px;
         border: 1px solid #E7DFDF;
         width: 100%;
+		@include hd {
+			padding: 12px 10px;
+			font-size: 14px;
+		}
         &.inp_textarea {
             height: 198px;
             resize: none;
@@ -1192,6 +1222,14 @@
             font-size: 61px;
             line-height: 1.3;
             margin: 0 0 15px;
+			@include hd {
+				font-size: 40px;
+				line-height: 1.2;
+				margin: 0 0 5px;
+			}
+			@include smp {
+				font-size: 30px;
+			}
         }
     }
     .image {
@@ -1212,11 +1250,18 @@
     .bread_nav {
         display: inline-flex;
         flex-wrap: wrap;
+		justify-content: center;
         li {
             color: $wp-color-base;
             font-size: 15px;
             text-transform: uppercase;
             position: relative;
+			@include tab {
+				font-size: 12px;
+			}
+			@include smp {
+				font-size: 10px;
+			}
             & + li {
                 padding-left: 10px;
             }
@@ -1231,9 +1276,6 @@
     }    
 }
 
-.page_section {
-    padding: 100px 0;
-}
 .page_single {
 	.block {
 		h1,h2,h3,h4,h5,h6 {
@@ -1241,18 +1283,41 @@
 			line-height: 1.2;
 			margin: 0 0 15px;
 			font-family: $font-heading;
+			@include pc {
+				font-size: 26px;
+			}
+			@include smp {
+				font-size: 20px;
+			}
 		}
 		ul {
 			color: $wp-color-gray-1;
 			padding-left: 1.2em;
 			list-style: inherit;
 			margin: 0 0 35px;
+			@include pc {
+				font-size: 14px;
+			}
+			@include smp {
+				font-size: 12px;
+				margin-bottom: 15px;
+			}
 		}
 		p {
 			color: $wp-color-gray-1;
 			line-height: 1.7;
+			@include pc {
+				font-size: 14px;
+			}
+			@include smp {
+				line-height: 1.55;
+				font-size: 12px;
+			}
 			& + p {
 				margin-top: 35px;
+				@include smp {
+					margin-top: 15px;
+				}
 			}
 			& + h1,
 			& + h2,
@@ -1280,24 +1345,59 @@
 	margin: 0 auto 40px;
 	position: relative;
 	transition: $transition-all;
+	@include hd {
+		grid-auto-columns: 190px auto;
+		align-items: flex-end;
+	}
+	@include smp {
+		display: block;
+	}
 	&:hover {
 		opacity: 0.8;
 	}
 	.cont {
 		padding: 15px 40px 15px 0;
+		@include hd {
+			padding: 15px 15px 15px 0;
+		}
+		@include smp {
+			padding: 15px 0 0;
+			text-align: center;
+		}
 		.ttl {
 			font-size: 49px;
 			line-height: 1.4;
 			margin: 0 0 15px;
+			@include hd {
+				font-size: 34px;
+				margin: 0 0 7px;
+			}
+			@include smp {
+				font-size: 24px;
+				margin: 0;
+			}
 		}
 		.sub {
 			color: $wp-color-contrast;
 			font-size: 16px;
 			margin: 0 0 30px;
+			@include hd {
+				margin-bottom: 10px;
+			}
+			@include smp {
+				font-size: 14px;
+			}
 		}
 		.txt {
 			color: $wp-color-gray-1;
 			line-height: 1.7;
+			@include hd {
+				font-size: 14px;
+			}
+			@include smp {
+				font-size: 12px;
+				text-align: left;
+			}
 		}
 	}
 }
@@ -1310,10 +1410,22 @@
 	column-gap: 100px;
 	grid-auto-flow: column;
 	grid-auto-columns: 590px auto;
+	@include hd {
+		grid-auto-columns: 390px auto;
+		justify-content: center;
+	}
+	@include smp {
+		display: block;
+		padding: 0 0 25px;
+		margin: 0 0 25px;
+	}
 	.image {
 		border: 1px solid $border-color-3;
 		position: relative;
 		z-index: 0;
+		@include smp {
+			margin: 0 0 30px;
+		}
 		&:before {
 			content: "";
 			height: 10px;
@@ -1328,12 +1440,25 @@
 	.cont {
 		.box {
 			margin: 0 0 40px;
+			@include smp {
+				margin: 0 0 15px;
+			}
 			.ttl {
 				font-size: 31px;
 				line-height: 1.4;
+				@include hd {
+					font-size: 24px;
+					line-height: 1.4;
+				}
+				@include smp {
+					font-size: 20px;
+				}
 			}
 			.txt {
 				color: $wp-color-gray-1;
+				@include hd {
+					font-size: 14px;
+				}
 				&.sub {
 					color: $wp-color-contrast;
 				}
@@ -1378,6 +1503,14 @@
 	grid-template-columns: auto auto auto auto;
 	grid-column-gap: 30px;
 	grid-row-gap: 65px;
+	@include tab {
+		grid-template-columns: auto auto;
+		grid-row-gap: 35px;
+	}
+	@include smp {
+		grid-column-gap: 20px;
+		grid-row-gap: 30px;
+	}
 	.item {
 		.img {
 			margin: 0 0 15px;
@@ -1387,10 +1520,24 @@
 			font-weight: 600;
 			line-height: 1.4;
 			margin: 0 0 10px;
+			@include laptop {
+				font-size: 18px;
+			}
+			@include smp {
+				font-size: 16px;
+				line-height: 1.25;
+			}
 		}
 		.txt {
 			color: $wp-color-gray-1;
 			line-height: 1.7;
+			@include laptop {
+				font-size: 14px;
+			}
+			@include smp {
+				line-height: 1.55;
+				font-size: 12px;
+			}
 		}
 	}
 }
@@ -1399,11 +1546,21 @@
 	display: grid;
 	grid-template-columns: auto 400px;
 	grid-column-gap: 30px;
+	@include pc {
+		grid-template-columns: auto 320px;
+	}
+	@include tab {
+		grid-template-columns: auto;
+		gap: 40px;
+	}
 	.single_head {
 		.cate {
 			color: $wp-color-contrast;
 			text-transform: uppercase;
 			font-size: 15px;
+			@include pc {
+				font-size: 12px;
+			}
 			a {
 				color: $wp-color-contrast;
 			}
@@ -1412,6 +1569,12 @@
 			font-size: 31px;
 			line-height: 1.3;
 			margin: 0 0 10px;
+			@include pc {
+				font-size: 26px;
+			}
+			@include smp {
+				font-size: 20px;
+			}
 		}
 		.single_meta {
 			display: flex;
@@ -1422,6 +1585,9 @@
 				color: $wp-color-gray-1;
 				font-size: 15px;
 				text-transform: uppercase;
+				@include pc {
+					font-size: 12px;
+				}
 				.icon {
 					display: inline-block;
 					color: $wp-color-contrast;
@@ -1435,6 +1601,9 @@
 			overflow: hidden;
 			box-shadow: 0px 0px 50px rgba(5,5,5,0.18);
 			margin: 0 0 50px;
+			@include hd {
+				margin: 0 0 30px;
+			}
 		}
 		.text {
 			color: $text-color-4;
@@ -1459,16 +1628,30 @@
 
 .page_viewmore {
 	margin-top: 80px;
+	@include tab {
+		margin-top: 40px;
+	}
 	.ttl {
 		font-size: 31px;
 		line-height: 1.3;
 		margin: 0 0 20px;
+		@include pc {
+			font-size: 26px;
+			margin: 0 0 10px;
+		}
+		@include smp {
+			font-size: 20px;
+		}
 	}
 	.list {
 		li {
 			margin-bottom: 15px;
 			position: relative;
 			padding-left: 25px;
+			@include pc {
+				margin-bottom: 7px;
+				padding-left: 20px;
+			}
 			.icon {
 				position: absolute;
 				width: 12px;
@@ -1479,6 +1662,9 @@
 				color: $wp-color-gray-1;
 				font-size: 16px;
 				line-height: 1.7;
+				@include pc {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -1495,6 +1681,11 @@
 		border-radius: 7px;
 		background: $third-color;
 		margin: 0 0 35px;
+		@include pc {
+			padding: 20px 15px 30px;
+			margin-bottom: 0;
+			margin-top: 30px;
+		}
 		&.box_search {
 			padding: 0;
 		}
@@ -1504,6 +1695,12 @@
 			padding: 0 0 15px;
 			margin: 0 0 30px;
 			position: relative;
+			@include pc {
+				font-size: 24px;
+			}
+			@include smp {
+				font-size: 20px;
+			}
 			&:before {
 				content: "";
 				background: $fourth-color;
@@ -1513,6 +1710,9 @@
 				left: 0;
 				height: 3px;
 				position: absolute;
+				@include smp {
+					height: 2px;
+				}
 			}
 			&:after {
 				content: "";
@@ -1523,6 +1723,9 @@
 				left: 0;
 				height: 3px;
 				position: absolute;
+				@include smp {
+					height: 2px;
+				}
 			}
 		}
 	}
@@ -1532,6 +1735,10 @@
 				display: grid;
 				grid-template-columns: 76px auto;
 				grid-column-gap: 20px;
+				@include pc {
+					grid-template-columns: 60px auto;
+					grid-column-gap: 15px;
+				}
 				& + .item {
 					margin-top: 25px;
 				}
@@ -1539,10 +1746,16 @@
 					font-size: 18px;
 					line-height: 1.2;
 					margin: 0 0 5px;
+					@include pc {
+						font-size: 16px;
+					}
 				}
 				.date {
 					font-size: 14px;
 					color: $wp-color-gray-1;
+					@include pc {
+						font-size: 12px;
+					}
 				}
 				.img {
 					height: auto;
@@ -1569,6 +1782,10 @@
 				line-height: 1.7;
 				padding: 10px 15px;
 				transition: $transition-all;
+				@include pc {
+					font-size: 12px;
+					padding: 5px 7px;
+				}
 				&:hover {
 					color: $wp-color-contrast;
 				}
@@ -1585,12 +1802,32 @@
 		text-align: center;
 		width: 100%;
 		max-width: 1000px;
+		@include hd {
+			font-size: 29px;
+		}
+		@include tab {
+			font-size: 24px;
+		}
+		@include smp {
+			font-size: 20px;
+			margin: 0 0 30px;
+		}
 	}
 	.service_list {
 		.item {
 			margin: 0 0 50px;
+			@include smp {
+				margin-bottom: 30px;
+			}
 			.ttl {
 				font-size: 31px;
+				@include hd {
+					font-size: 24px;
+				}
+				@include tab {
+					font-size: 22px;
+					letter-spacing: -0.03em;
+				}
 			}
 			.img {
 				margin: 0 0 10px;
@@ -1607,9 +1844,15 @@
 		text-align: center;
 		.item {
 			margin: 0 0 85px;
+			@include smp {
+				margin: 0 0 35px;
+			}
 			.ttl {
 				font-size: 25px;
 				font-weight: 600;
+				@include hd {
+					font-size: 20px;
+				}
 			}
 		}
 	}
@@ -1637,10 +1880,16 @@
 		.ttl {
 			font-size: 49px;
 			line-height: 1.3;
+			@include hd {
+				font-size: 38px;
+			}
 		}
 		.txt {
 			font-size: 20px;
 			line-height: 1.7;
+			@include hd {
+				font-size: 16px;
+			}
 		}
 	}
 	.list_check {
@@ -1682,6 +1931,9 @@
 			line-height: 1.7;
 			text-transform: uppercase;
 			margin: 0 0 55px;
+			@include hd {
+				font-size: 16px;
+			}
 		}
 		.box_price {
 			display: inline-flex;
@@ -1723,9 +1975,15 @@
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
+			@include tab {
+				flex-direction: column;
+			}
 			.item {
 				position: relative;
 				min-width: 370px;
+				@include pc {
+					min-width: unset;
+				}
 				&:last-child {
 					&:before {
 						display: none;
@@ -1744,6 +2002,11 @@
 					font-size: 20px;
 					line-height: 1.7;
 					padding: 0 80px;
+					@include hd {
+						font-size: 16px;
+						line-height: 1.7;
+						padding: 0 30px;
+					}
 				}
 			}
 		}
@@ -1764,6 +2027,10 @@
 				padding-right: 30px;
 				.txt {
 					margin: 0 0 40px;
+					@include hd {
+						margin: 0 0 30px;
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -1979,6 +2246,9 @@
 				position: relative;
 				padding-left: 45px;
 				z-index: 0;
+				@include hd {
+					padding-left: 35px;
+				}
 				&:before {
 					content: "";
 					background: $eighth-color url(../imgs/common/icon_check_w.png) no-repeat center center / 54% auto;
@@ -1989,16 +2259,26 @@
 					top: 0;
 					left: 0;
 					z-index: -1;
+					@include hd {
+						width: 26px;
+						height: 26px;
+					}
 				}
 				.ttl {
 					font-size: 25px;
 					font-weight: 600;
 					line-height: 1.3;
 					margin: 0 0 10px;
+					@include hd {
+						font-size: 20px;
+					}
 				}
 				.txt {
 					color: $wp-color-gray-1;
 					line-height: 1.7;
+					@include hd {
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -2218,6 +2498,14 @@
 						font-weight: 600;
 						line-height: 1.2;
 						margin: 0 0 5px;
+						@include hd {
+							font-size: 20px;
+						}
+					}
+					.txt {
+						@include hd {
+							font-size: 14px;
+						}
 					}
 				}
 			}
@@ -2230,6 +2518,10 @@
 		}
 		.notice_list {
 			justify-content: center;
+			@include tab {
+				justify-content: flex-start;
+				row-gap: 30px;
+			}
 			.item {
 				.img {
 					margin: 0 0 10px;
@@ -2238,10 +2530,16 @@
 					font-size: 25px;
 					font-weight: 600;
 					margin: 0 0 15px;
+					@include hd {
+						font-size: 20px;
+					}
 				}
 				.txt {
 					color: $wp-color-gray-1;
 					line-height: 1.7;
+					@include hd {
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -2294,16 +2592,35 @@
 					font-size: 15px;
 					line-height: 1.4;
 					text-transform: uppercase;
+					@include laptop {
+						font-size: 12px;
+						margin: 0 0 5px;
+					}
+					@include smp {
+						font-size: 10px;
+					}
 				}
 				.ttl {
 					font-size: 25px;
 					font-weight: 600;
 					line-height: 1.3;
 					margin: 0 0 5px;
+					@include laptop {
+						font-size: 18px;
+					}
+					@include smp {
+						font-size: 16px;
+					}
 				}
 				.txt {
 					color: $wp-color-gray-1;
 					line-height: 1.7;
+					@include laptop {
+						font-size: 14px;
+					}
+					@include smp {
+						font-size: 12px;
+					}
 				}
 			}
 		}
@@ -2316,25 +2633,53 @@
 	}
 	.blog_block {
 		margin: 0 0 80px;
+		@include tab {
+			margin: 0 0 40px;
+		}
 		.title {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-end;
 			margin: 0 0 40px;
+			@include tab {
+				margin: 0 0 20px;
+			}
 			.ttl {
 				font-size: 48px;
 				line-height: 1;
+				@include laptop {
+					font-size: 38px;
+				}
+				@include tab {
+					font-size: 30px;
+				}
+				@include smp {
+					font-size: 24px;
+				}
 			}
 			.page_btn {
 				border-radius: 0px;
 				width: 138px;
 				margin-bottom: 10px;
+				@include laptop {
+					margin-bottom: 0;
+					font-size: 12px;
+					padding: 13px 5px;
+				}
+				@include smp {
+					font-size: 10px;
+					padding: 8px 5px;
+					width: 80px;
+				}
 			}
 		}
 		.blog_list {
 			border-top: 1px solid $border-color-2;
 			border-bottom: 1px solid $border-color-2;
 			padding: 50px 0 0;
+			@include tab {
+				padding: 20px 0 0;
+			}
 			.item {
 				.img {
 					margin: 0 0 15px;
@@ -2344,16 +2689,35 @@
 					font-size: 15px;
 					line-height: 1.4;
 					text-transform: uppercase;
+					@include laptop {
+						font-size: 12px;
+						margin: 0 0 5px;
+					}
+					@include smp {
+						font-size: 10px;
+					}
 				}
 				.ttl {
 					font-size: 25px;
 					font-weight: 600;
 					line-height: 1.3;
 					margin: 0 0 5px;
+					@include laptop {
+						font-size: 18px;
+					}
+					@include smp {
+						font-size: 16px;
+					}
 				}
 				.txt {
 					color: $wp-color-gray-1;
 					line-height: 1.7;
+					@include laptop {
+						font-size: 14px;
+					}
+					@include smp {
+						font-size: 12px;
+					}
 				}
 			}
 		}
@@ -2376,19 +2740,50 @@
 			grid-template-columns: 2fr 1fr 1fr;
 			grid-column-gap: 25px;
 			align-items: center;
+			@include hd {
+				padding: 20px 5px;
+			}
+			@include smp {
+				padding: 15px 0;
+				grid-template-columns: auto;
+			}
 			.ttl {
 				font-size: 31px;
 				line-height: 1.4;
+				@include hd {
+					font-size: 24px;
+				}
+				@include smp {
+					font-size: 16px;
+				}
 			}
 			.pos {
 				font-size: 31px;
 				line-height: 1.4;
+				@include hd {
+					font-size: 24px;
+				}
+				@include smp {
+					font-size: 14px;
+					grid-area: 2/1/2/1;
+				}
 			}
 			.link {
 				margin-left: auto;
+				@include smp {
+					grid-area: 2 / 2 / 1;
+					grid-row: span 2;
+				}
 				.page_btn {
 					border-radius: 0;
 					width: 148px;
+					@include hd {
+						padding: 12px 10px;
+					}
+					@include smp {
+						padding: 10px 5px;
+						width: 90px;
+					}
 				}
 			}
 		}
@@ -2399,6 +2794,10 @@
 		border-bottom: 1px solid $border-color-2;
 		padding: 0 0 50px;
 		margin: 0 0 50px;
+		@include smp {
+			padding: 0 0 30px;
+			margin: 0 0 30px;
+		}
 	}
 	.recruit_form {
 		width: 100%;
@@ -2407,6 +2806,13 @@
 			font-size: 49px;
 			line-height: 1.2;
 			margin: 0 0 30px;
+			@include pc {
+				font-size: 32px;
+			}
+			@include smp {
+				font-size: 22px;
+				margin: 0 0 15px;
+			}
 		}
 	}	
 }
@@ -2420,6 +2826,13 @@
 		font-size: 49px;
 		line-height: 1.3;
 		margin: 0 0 20px;
+		@include hd {
+			font-size: 30px;
+		}
+		@include smp {
+			font-size: 26px;
+			margin: 0 0 10px;
+		}
 	}
 	.block_map {
 		line-height: 0;
@@ -2438,11 +2851,18 @@
 			color: $wp-color-gray-1;
 			line-height: 1.7;
 			margin: 0 0 50px;
+			@include hd {
+				margin: 0 0 30px;
+				font-size: 14px;
+			}
+			@include smp {
+				font-size: 12px;
+			}
 		}
 		.info_list {
 			li {
 				display: flex;
-				align-items: center;
+				// align-items: center;
 				& + li {
 					margin-top: 20px;
 				}
@@ -2451,6 +2871,19 @@
 					width: 70px;
 					height: 70px;
 					padding: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@include hd {
+						width: 50px;
+						height: 50px;
+						padding: 10px;
+					}
+					@include smp {
+						width: 40px;
+						height: 40px;
+						padding: 0 10px;						
+					}
 				}
 				.cont {
 					flex: 1;
@@ -2459,9 +2892,15 @@
 						font-size: 26px;
 						line-height: 1.2;
 						margin: 0 0 5px;
+						@include hd {
+							font-size: 20px;
+						}
 					}
 					.txt {
 						color: $wp-color-gray-1;
+						@include hd {
+							font-size: 14px;
+						}
 						a {
 							color: $wp-color-gray-1;
 						}
@@ -2472,6 +2911,9 @@
 	}
 	.contact_form {
 		margin: 0 0 130px;
+		@include smp {
+			margin: 40px 0;
+		}
 	}
 }
 
@@ -2480,9 +2922,17 @@
 	.lbl {
 		color: $wp-color-black-1;
 		font-size: 31px;
-		line-height: 1.2;
+		line-height: 1.55;
 		padding-right: 15px;
 		width: 120px;
+		@include hd {
+			font-size: 22px;
+		}
+		@include smp {
+			font-size: 18px;
+			letter-spacing: -0.02em;
+			width: 80px;
+		}
 	}
 	.categories_list {
 		display: flex;
@@ -2492,6 +2942,13 @@
 			display: flex;
 			align-items: center;
 			margin: 5px 0;
+			@include hd {
+				padding: 0 15px;
+			}
+			@include smp {
+				padding: 0 15px 0 0;
+				margin-bottom: 0;
+			}
 			&.is_current {
 				.links {
 					color: $wp-color-contrast;
@@ -2503,6 +2960,9 @@
 				text-transform: uppercase;
 				color: $text-color-4;
 				font-size: 15px;
+				@include hd {
+					font-size: 13px;
+				}
 				&:hover {
 					color: $wp-color-contrast;
 				}
@@ -2516,6 +2976,10 @@
 		border-top: 1px solid $border-color-2;
 		padding: 55px 0 0;
 		margin: 40px 0 0;
+		@include smp {
+			padding: 30px 0 0;
+			margin: 25px 0 0;
+		}
 		.blog_list {
 			padding: 0;
 			border: none;
@@ -2536,6 +3000,10 @@
 		padding-bottom: 60px;
 		margin-bottom: 60px;
 		border-bottom: 1px solid $border-color-2;
+		@include hd {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -2545,11 +3013,17 @@
 		.ttl {
 			font-size: 31px;
 			line-height: 1.2;
+			@include hd {
+				font-size: 26px;
+			}
 		}
 		.sub {
 			color: $text-color-4;
 			line-height: 1.7;
 			margin: 0 0 20px;
+			@include hd {
+				font-size: 14px;
+			}
 		}
 	}
 }
