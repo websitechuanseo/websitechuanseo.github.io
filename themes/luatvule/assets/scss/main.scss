@@ -747,6 +747,12 @@ a:hover {opacity: 0.7;}
 	color: $wp-color-gray-1;
 	line-height: 1.7;
 	margin: 0 0 80px;
+	@include pc {
+		font-size: 12px;
+	}
+	@include smp {
+		margin-bottom: 40px;
+	}
 }
 
 .tbl_style {
@@ -759,6 +765,14 @@ a:hover {opacity: 0.7;}
 		text-align: center;
 		font-size: 26px;
 		font-weight: 600;
+		@include pc {
+			padding: 20px 15px;
+			font-size: 18px;
+		}
+		@include smp {
+			padding: 10px 15px;
+			font-size: 14px;
+		}
 		&:nth-child(1) {
 			text-align: left;
 			border-left: none;

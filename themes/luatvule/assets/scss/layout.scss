@@ -43,10 +43,6 @@
 		transform: translateY(-50%);
 		width: 40px;
 		height: 40px;
-		display: inline-flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
 		transition: all 0.3s ease-out;
 		@include smp {
 			width: 30px;
@@ -66,6 +62,10 @@
 			font-size: 16px;
 			width: 100%;
 			text-indent: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
 			@include smp {
 				font-size: 14px;
 			}
@@ -81,6 +81,10 @@
 			font-size: 16px;
 			width: 100%;
 			text-indent: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
 			@include smp {
 				font-size: 14px;
 			}
@@ -1908,7 +1912,8 @@
 				font-size: 38px;
 			}
 			@include smp {
-				font-size: 24px;
+				font-size: 22px;
+				letter-spacing: -0.02em;
 			}
 		}
 		.txt {
@@ -2228,6 +2233,9 @@
 	}
 	.block_fee {
 		margin: 0 0 80px;
+		@include smp {
+			margin: 0 0 40px;
+		}
 		.inner {
 			max-width: 1078px;
 		}
@@ -2236,6 +2244,10 @@
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-gap: 30px;
 			margin: 0 0 55px;
+			@include smp {
+				grid-template-columns: auto;
+				grid-gap: 20px;
+			}
 			.item {
 				background: $nineth-color;
 				border-radius: 10px;
@@ -2257,6 +2269,10 @@
 					font-size: 31px;
 					font-weight: 600;
 					padding: 31px 15px;
+					@include pc {
+						font-size: 22px;
+						padding: 21px 15px;
+					}
 				}
 				.cont {
 					padding: 15px 18px;
@@ -2267,11 +2283,17 @@
 						}
 						.sub {
 							color: $text-color-7;
+							@include pc {
+								font-size: 12px;
+							}
 						}
 						.txt {
 							color: $wp-color-black-1;
 							font-size: 29px;
 							font-weight: 600;
+							@include pc {
+								font-size: 20px;
+							}
 						}
 					}
 				}
@@ -2282,26 +2304,56 @@
 			border-radius: 10px;
 			padding: 50px 40px;
 			margin-bottom: 30px;
+			@include pc {
+				padding: 30px 25px;
+			}
+			@include smp {
+				padding: 20px 15px;
+			}
 			.box_head {
 				position: relative;
 				display: flex;
 				align-items: center;
 				padding-left: 110px;
+				@include smp {
+					padding-left: 50px;
+					flex-wrap: wrap;
+				}
 				.icon {
 					position: absolute;
 					width: 56px;
 					top: 50%;
 					left: 0;
 					transform: translateY(-50%);
+					@include smp {
+						width: 36px;
+					}
 				}
 				.ttl {
 					width: 290px;
 					font-size: 26px;
 					font-weight: 600;
 					line-height: 1.2;
+					@include pc {
+						width: 190px;
+						font-size: 18px;
+					}
+					@include smp {
+						width: 100%;
+						font-size: 16px;
+					}
 				}
 				.txt {
 					flex: 1;
+					@include pc {
+						font-size: 14px;
+					}
+					@include smp {
+						flex: unset;
+						width: 100%;
+						font-size: 12px;
+						margin-top: 5px;
+					}
 				}
 			}
 			.box_cont {
@@ -2310,6 +2362,9 @@
 				margin: 30px 0;
 			}
 			.box_text {
+				@include pc {
+					font-size: 14px;
+				}
 				.page_single {
 					.block {
 						* {
@@ -2339,6 +2394,12 @@
 						border: 1px solid $border-color-8;
 						padding: 28px 30px;
 						text-align: center;
+						@include pc {
+							padding: 20px 15px;
+						}
+						@include smp {
+							padding: 10px 5px;
+						}
 						&:last-child {
 							font-weight: 600;
 						}
@@ -2348,6 +2409,20 @@
 						font-weight: 600;
 						line-height: 1.2;
 						text-align: left;
+						@include pc {
+							font-size: 16px;
+						}
+						@include smp {
+							font-size: 14px;
+						}
+					}
+					.txt {
+						@include pc {
+							font-size: 14px;
+						}
+						@include smp {
+							font-size: 12px;
+						}
 					}
 				}
 			}
@@ -2355,6 +2430,9 @@
 		.caption {
 			p + p {
 				margin-top: 40px;
+				@include smp {
+					margin-top: 10px;
+				}
 			}
 		}
 	}
@@ -2374,6 +2452,9 @@
 			margin: 0 auto 30px;
 			width: 100%;
 			max-width: 1000px;
+			@include smp {
+				padding: 20px 15px 15px;
+			}
 			& + .btn_choice {
 				margin-top: 60px;
 			}
@@ -2383,20 +2464,40 @@
 				font-weight: 600;
 				line-height: 1.2;
 				margin: 0 0 20px;
+				@include pc {
+					font-size: 29px;
+				}
+				@include smp {
+					font-size: 20px;
+				}
 			}
 			.list {
 				display: flex;
 				flex-direction: column;
 				gap: 25px;
 				margin: 0;
+				@include pc {
+					gap: 15px;
+				}
 				.item {
 					&:before {
 						top: 6px;
+						@include pc {
+							width: 22px;
+							height: 22px;
+							top: 4px;
+						}
 					}
 					.ttl {
 						font-size: 24px;
 						line-height: 1.7;
 						margin: 0;
+						@include pc {
+							font-size: 17px;
+						}
+						@include smp {
+							font-size: 13px;
+						}
 					}
 				}
 			}
