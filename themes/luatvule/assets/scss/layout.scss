@@ -60,7 +60,6 @@
 		&::before {
 			content: "\f105";
 			font-size: 16px;
-			width: 100%;
 			text-indent: 0;
 			position: absolute;
 			top: 50%;
@@ -79,7 +78,6 @@
 		&::before {
 			content: "\f104";
 			font-size: 16px;
-			width: 100%;
 			text-indent: 0;
 			position: absolute;
 			top: 50%;
@@ -164,9 +162,6 @@
 	@include pc {
 		font-size: 14px;
 	}
-	@include smp {
-		font-size: 12px;
-	}
 	.arrow {
 		position: absolute;
 		top: 50%;
@@ -191,9 +186,6 @@
 	text-transform: capitalize;
 	@include pc {
 		font-size: 14px;
-	}
-	@include smp {
-		font-size: 12px;
 	}
 	.arrow {
 		color: $wp-color-black-1;
@@ -254,7 +246,6 @@
 	font-size: 16px;
 	margin: 0 0 25px;
 	@include smp {
-		font-size: 14px;
 		margin-bottom: 15px;
 	}
 	.large {
@@ -275,7 +266,6 @@
 			font-size: 16px;
 			margin: 0 0 25px;
 			@include smp {
-				font-size: 14px;
 				margin-bottom: 15px;
 			}
 			.large {
@@ -466,7 +456,7 @@
 				font-size: 14px;
 			}
 			@include smp {
-				font-size: 12px;
+				font-size: 13px;
 			}
 		}
 	}
@@ -559,7 +549,7 @@
 					margin: 0;
 				}
 				@include smp {
-					font-size: 18px;
+					font-size: 20px;
 					line-height: 1.7;
 				}
 			}
@@ -571,7 +561,6 @@
 					font-size: 14px;
 				}
 				@include smp {
-					font-size: 12px;
 					margin-bottom: 15px;
 				}
 			}
@@ -609,9 +598,6 @@
 				line-height: 1.8;
 				margin: 0 0 30px;
 				font-size: 14px;
-			}
-			@include smp {
-				font-size: 12px;
 			}
 		}
 		.img {
@@ -676,9 +662,6 @@
 			line-height: 1.8;
 			@include tab {
 				font-size: 14px;
-			}
-			@include smp {
-				font-size: 12px;
 			}
 		}
 	}
@@ -850,9 +833,6 @@
 			@include laptop {
 				font-size: 14px;
 			}
-			@include smp {
-				font-size: 12px;
-			}
 		}
 	}
 }
@@ -914,7 +894,7 @@
 				margin: 0 0 10px;
 				@include smp {
 					padding: 5px 15px;
-					font-size: 12px;
+					font-size: 13px;
 				}
 				.icon {
 					color: $wp-color-contrast;
@@ -1023,7 +1003,7 @@
 					font-size: 1.04vw;
                     line-height: 1.7;
 					@include smp {
-						font-size: 10px;
+						font-size: 13px;
 						line-height: 1.4;
 						margin-top: 7px;
 					}
@@ -1033,7 +1013,7 @@
 					font-size: 1.61vw;
                     line-height: 1.4;
 					@include smp {
-						font-size: 16px;
+						font-size: 18px;
 						line-height: 1.4;
 						letter-spacing: -0.02em;
 					}
@@ -1106,7 +1086,7 @@
             font-size: 16px;
             line-height: 1.7;
 			@include smp {
-				font-size: 12px;
+				font-size: 14px;
 			}
             a {
                 color: $text-color-2;
@@ -1247,7 +1227,7 @@
 				margin: 0 0 5px;
 			}
 			@include smp {
-				font-size: 24px;
+				font-size: 26px;
 			}
         }
     }
@@ -1277,9 +1257,6 @@
             position: relative;
 			@include tab {
 				font-size: 12px;
-			}
-			@include smp {
-				font-size: 10px;
 			}
             & + li {
                 padding-left: 10px;
@@ -1318,7 +1295,6 @@
 				font-size: 14px;
 			}
 			@include smp {
-				font-size: 12px;
 				margin-bottom: 15px;
 			}
 		}
@@ -1330,7 +1306,6 @@
 			}
 			@include smp {
 				line-height: 1.55;
-				font-size: 12px;
 			}
 			& + p {
 				margin-top: 35px;
@@ -1414,7 +1389,6 @@
 				font-size: 14px;
 			}
 			@include smp {
-				font-size: 12px;
 				text-align: left;
 			}
 		}
@@ -1555,7 +1529,6 @@
 			}
 			@include smp {
 				line-height: 1.55;
-				font-size: 12px;
 			}
 		}
 	}
@@ -1923,7 +1896,7 @@
 				font-size: 16px;
 			}
 			@include smp {
-				font-size: 12px;
+				font-size: 14px;
 			}
 		}
 	}
@@ -2005,7 +1978,7 @@
 				font-size: 16px;
 			}
 			@include smp {
-				font-size: 12px;
+				font-size: 14px;
 				margin: 0 0 30px;
 			}
 		}
@@ -2215,9 +2188,6 @@
 					@include hd {
 						font-size: 14px;
 					}
-					@include smp {
-						font-size: 12px;
-					}
 				}
 			}
 		}
@@ -2351,7 +2321,6 @@
 					@include smp {
 						flex: unset;
 						width: 100%;
-						font-size: 12px;
 						margin-top: 5px;
 					}
 				}
@@ -2412,16 +2381,10 @@
 						@include pc {
 							font-size: 16px;
 						}
-						@include smp {
-							font-size: 14px;
-						}
 					}
 					.txt {
 						@include pc {
 							font-size: 14px;
-						}
-						@include smp {
-							font-size: 12px;
 						}
 					}
 				}
@@ -2496,7 +2459,7 @@
 							font-size: 17px;
 						}
 						@include smp {
-							font-size: 13px;
+							font-size: 14px;
 						}
 					}
 				}
@@ -2549,7 +2512,7 @@
 						font-size: 20px;
 					}
 					@include smp {
-						font-size: 16px;
+						font-size: 17px;
 						margin: 0;
 					}
 				}
@@ -2558,9 +2521,6 @@
 					line-height: 1.7;
 					@include hd {
 						font-size: 14px;
-					}
-					@include smp {
-						font-size: 12px;
 					}
 				}
 			}
@@ -2860,15 +2820,12 @@
 							font-size: 20px;
 						}
 						@include smp {
-							font-size: 16px;
+							font-size: 17px;
 						}
 					}
 					.txt {
 						@include hd {
 							font-size: 14px;
-						}
-						@include smp {
-							font-size: 12px;
 						}
 					}
 				}
@@ -2901,7 +2858,7 @@
 						font-size: 20px;
 					}
 					@include smp {
-						font-size: 14px;
+						font-size: 17px;
 						margin: 0 0 5px;
 					}
 				}
@@ -2910,9 +2867,6 @@
 					line-height: 1.7;
 					@include hd {
 						font-size: 14px;
-					}
-					@include smp {
-						font-size: 12px;
 					}
 				}
 			}
@@ -2993,9 +2947,6 @@
 						font-size: 12px;
 						margin: 0 0 5px;
 					}
-					@include smp {
-						font-size: 10px;
-					}
 				}
 				.ttl {
 					font-size: 25px;
@@ -3014,9 +2965,6 @@
 					line-height: 1.7;
 					@include laptop {
 						font-size: 14px;
-					}
-					@include smp {
-						font-size: 12px;
 					}
 				}
 			}
@@ -3064,7 +3012,6 @@
 					padding: 13px 5px;
 				}
 				@include smp {
-					font-size: 10px;
 					padding: 8px 5px;
 					width: 80px;
 				}
@@ -3090,9 +3037,6 @@
 						font-size: 12px;
 						margin: 0 0 5px;
 					}
-					@include smp {
-						font-size: 10px;
-					}
 				}
 				.ttl {
 					font-size: 25px;
@@ -3111,9 +3055,6 @@
 					line-height: 1.7;
 					@include laptop {
 						font-size: 14px;
-					}
-					@include smp {
-						font-size: 12px;
 					}
 				}
 			}
@@ -3251,9 +3192,6 @@
 			@include hd {
 				margin: 0 0 30px;
 				font-size: 14px;
-			}
-			@include smp {
-				font-size: 12px;
 			}
 		}
 		.info_list {

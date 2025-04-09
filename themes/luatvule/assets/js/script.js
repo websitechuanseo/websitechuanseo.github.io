@@ -66,6 +66,8 @@
         dots: true,
         pauseOnHover: false,
         pauseOnFocus: false,
+        prevArrow: '<span class="slick-arrow slick-prev"></span>',
+        nextArrow: '<span class="slick-arrow slick-next"></span>',
         responsive: [
             {
               breakpoint: 1025,
@@ -99,6 +101,8 @@
         dots: true,
         pauseOnHover: false,
         pauseOnFocus: false,
+        prevArrow: '<span class="slick-arrow slick-prev"></span>',
+        nextArrow: '<span class="slick-arrow slick-next"></span>',
         responsive: [
             {
               breakpoint: 1025,
