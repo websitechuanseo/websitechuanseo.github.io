@@ -326,6 +326,7 @@
 			font-weight: 600;
 			line-height: 1.2;
 			margin: 0 0 45px;
+			transition-delay: 0.5s;
 			@include tab {
 				font-size: 8vw;
 				margin: 0 0 30px;
@@ -341,6 +342,7 @@
 			margin: 0 auto 65px;
 			width: 100%;
 			max-width: 860px;
+			transition-delay: 1s;
 			@include tab {
 				font-size: 16px;
 				margin: 0 auto 35px;
@@ -352,11 +354,22 @@
 			}
 		}
 		.btns {
+			transition-delay: 1.5s;
 			.page_btn {
 				margin: 0 10px;
 				@include smp {
 					margin-top: 15px;
 				}
+			}
+		}
+	}
+}
+.loaded {
+	.mainvisual {
+		.main_cont {
+			.btns {
+				opacity: 1;
+				transform: translateY(0);
 			}
 		}
 	}
@@ -1003,7 +1016,7 @@
 					font-size: 1.04vw;
                     line-height: 1.7;
 					@include smp {
-						font-size: 13px;
+						font-size: 10px;
 						line-height: 1.4;
 						margin-top: 7px;
 					}
@@ -1013,7 +1026,7 @@
 					font-size: 1.61vw;
                     line-height: 1.4;
 					@include smp {
-						font-size: 18px;
+						font-size: 16px;
 						line-height: 1.4;
 						letter-spacing: -0.02em;
 					}
@@ -2935,6 +2948,9 @@
 		.blog_list {
 			.item {
 				margin: 0;
+				@include tab {
+					margin: 0 0 30px;
+				}
 				.img {
 					margin: 0 0 15px;
 				}

@@ -12,6 +12,22 @@
         });
     }
     jsEffect();
+
+    $("body").append('<span class="backtop" id="backtop"><i class="fas fa-arrow-right"></i></span>');
+    $(function () {
+        $("#backtop").click(function() {
+            $("html, body").animate({ scrollTop : 0 });
+            return false;
+        });
+        var topBtn = $('#backtop');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                topBtn.addClass('on');
+            } else {
+                topBtn.removeClass('on');
+            }
+        });
+    });
     
     $(window).on('load', function(){
         $('body').addClass('loaded');
