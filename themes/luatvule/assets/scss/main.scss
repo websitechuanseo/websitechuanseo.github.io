@@ -72,6 +72,17 @@ a:hover {opacity: 0.7;}
 	color: $wp-color-base;
 }
 .ac { text-align: center; }
+.sp_only {
+	display: none;
+	@include smp {
+		display: block;
+	}
+}
+.pc_only {
+	@include smp {
+		display: none;
+	}
+}
 .fadeup {
 	opacity: 0;
 	transform: translateY(20px);
@@ -81,9 +92,8 @@ a:hover {opacity: 0.7;}
 	opacity: 1;
 	transform: translateY(0);
 }
-
 #contents {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 #site_header {
@@ -93,14 +103,59 @@ a:hover {opacity: 0.7;}
 	right: 0;
 	padding: 30px 15px 0;
 	z-index: 100;
-	@include pc {
+	@include hd {
 		position: fixed;
 		padding: 0;
 	}
 	.inner {
 		max-width: 1800px;
-		@include pc {
+		@include hd {
 			padding: 0;
+		}
+	}
+	.sp_cont {
+		display: none;
+		@include hd {
+			display: block;
+			margin: 0 0 30px;
+		}
+		.cont_logo {
+			width: 100%;
+			max-width: 116px;
+			margin: 0 0 30px;
+		}
+		.page_btn {
+			font-size: 12px;
+			border-radius: 28px;
+			padding: 14px 10px;
+			width: 100%;
+		}
+		.icon_close {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			top: 10px;
+			right: 10px;
+			z-index: 10;
+			transform: rotate(45deg);
+			&:after {
+				background: #000;
+				content: "";
+				height: 100%;
+				width: 1px;
+				left: 50%;
+				position: absolute;
+				top: 0;
+			}
+			&:before {
+				background: #000;
+				content: "";
+				height: 1px;
+				width: 100%;
+				left: 0;
+				position: absolute;
+				top: 50%;
+			}
 		}
 	}
 	.hdr {
@@ -115,7 +170,7 @@ a:hover {opacity: 0.7;}
 		@include laptop {
 			padding: 0 15px 0 25px;
 		}
-		@include pc {
+		@include hd {
 			border-radius: 0;
 			background: $text-color-7;
 			padding: 15px 75px 15px 15px;
@@ -127,27 +182,26 @@ a:hover {opacity: 0.7;}
 		.hdr_navi {
 			margin-left: auto;
 			margin-right: 2.5%;
-			@include pc {
-				background: $wp-color-black-3;
+			@include hd {
+				background: $wp-color-base;
 				position: fixed;
-				top: 79px;
-				right: 0;
-				width: 100vw;
+				top: 0;
+				left: 0;
+				width: 310px;
 				max-width: 380px;
 				z-index: 9999;
 				bottom: 0;
 				overflow: auto;
 				margin: 0;
-				transform: translateX(101%);
+				transform: translateX(-101%);
 				transition: $transition-all;
-				opacity: 0;
-				visibility: hidden;
+				padding: 30px 20px 0;
 			}
 			@include tab {
-				top: 69px;				
+				top: 0;				
 			}
 			@include smp {
-				top: 54px;
+				top: 0;
 				max-width: 100%;
 			}
 		}
@@ -166,15 +220,15 @@ a:hover {opacity: 0.7;}
 		align-items: center;
 		flex-wrap: wrap;
 		margin: 0 -5px;
-		@include pc {
+		@include hd {
 			display: block;
 			margin: 0;
 		}
 		.item {
 			position: relative;
-			@include pc {
+			@include hd {
 				width: 100%;
-				border-bottom: 1px solid $border-color-10;
+				border-bottom: 1px solid $border-color-11;
 			}
 			&:hover {
 				> .sub_menu {
@@ -185,7 +239,17 @@ a:hover {opacity: 0.7;}
 				.link {
 					color: #dddddd;
 					opacity: 1;
+					@include hd {
+						color: $text-color-10;
+					}
 				}
+			}
+		}
+		.opened {
+			> .sub_btn {
+				&:after {
+					transform: translate(-50%, -50%) rotate(45deg);
+				}					
 			}
 		}
 		.link {
@@ -201,8 +265,9 @@ a:hover {opacity: 0.7;}
 				padding: 28px 7px;
 				letter-spacing: -0.02em;
 			}
-			@include pc {
-				padding: 10px 15px;
+			@include hd {
+				color: $text-color-10;
+				padding: 10px 0;
 			}
 			@include smp {
 				font-size: 13px;
@@ -211,29 +276,35 @@ a:hover {opacity: 0.7;}
 		.current {
 			.link {
 				color: #dddddd;
+				@include hd {
+					color: $text-color-10;
+				}
 			}
 		}
 		.sub_btn {
 			display: none;
-			@include pc {
+			@include hd {
+				background: $text-color-11;
+				border-radius: 5px;
 				display: block;
 				position: absolute;
-				top: 0;
+				top: 8px;
 				right: 0;
-				height: 42px;
-				width: 40px;
+				height: 24px;
+				width: 24px;
+				transition: $transition-all;
 			}
 			&:after {
 				content: "";
-				border-right: 1px solid $wp-color-base;
-				border-bottom: 1px solid $wp-color-base;
+				border-right: 1px solid $wp-color-black-1;
+				border-bottom: 1px solid $wp-color-black-1;
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%) rotate(45deg);
-				width: 10px;
-				height: 10px;
-				margin-top: -3px;
+				transform: translate(-50%,-50%) rotate(-45deg);
+				width: 6px;
+				height: 6px;
+				margin-top: 0;
 			}
 		}
 		.sub_menu {
@@ -245,15 +316,20 @@ a:hover {opacity: 0.7;}
 			transition: $transition-all;
 			transform: translateY(10px);
 			top: 100%;
-			@include pc {
-				background: $border-color-10;
+			@include hd {
+				border: 1px solid $border-color-11;
+				background: none;
 				position: static;
 				opacity: 1;
 				visibility: visible;
 				display: none;
 				transform: translateY(0);
 				width: 100%;
-				padding-left: 15px;
+				padding-left: 0;
+			}
+			.sub_menu {
+				border-width: 1px 0px 0px 0px;
+				padding-left: 7px;
 			}
 			.sub_item {
 				position: relative;
@@ -281,18 +357,22 @@ a:hover {opacity: 0.7;}
 						background: #EEEEEE;
 					}
 				}
+				+ .sub_item {
+					border-top: 1px solid $border-color-11;
+				}
 				> .sub_menu {
 					transform: translateY(0);
 					top: 0;
 					left: 100%;
-					@include pc {
-						display: block;
-					}
 					.sub_link {
-						margin-bottom: 3px;
-						border-left: 1px solid #2b2b2b;
-						padding: 0 10px;
+						@include hd {
+							
+						}
 					}
+				}
+				.sub_btn {
+					background: none;
+					width: 50px;
 				}
 			}
 			.sub_link {
@@ -303,11 +383,9 @@ a:hover {opacity: 0.7;}
 				transition: $transition-all;
 				padding: 7px 5px 7px 12px;
 				letter-spacing: -0.02em;
-				@include pc {
-					color: $wp-color-base;
-				}
-				@include smp {
-					font-size: 12px;
+				@include hd {
+					font-size: 13px;
+					color: $text-color-1;
 				}
 				&:hover {
 					opacity: 1;
@@ -434,6 +512,7 @@ a:hover {opacity: 0.7;}
 						width: 100%;
 						font-size: 12px;
 						padding: 15px 10px;
+						border-radius: 48px;
 						@include tab {
 							font-size: 10px;
 							padding: 10px 5px;
@@ -495,7 +574,7 @@ a:hover {opacity: 0.7;}
 	}
 	.hdr_btnMenu {
 		display: none;
-		@include pc {
+		@include hd {
 			cursor: pointer;
 			display: flex;
 			align-items: center;
@@ -536,23 +615,39 @@ a:hover {opacity: 0.7;}
 		}
 	}
 }
+.menu_overlay {
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
 .menu_opened {
 	#site_header {
-		.hdr_btnMenu {
-			transform: translateY(-50%) rotate(45deg);
-			&:before {
-				top: 50%;
-				transform: rotate(90deg);
-			}
-			&:after {
-				display: none;
-			}
-		}
+		// .hdr_btnMenu {
+		// 	transform: translateY(-50%) rotate(45deg);
+		// 	&:before {
+		// 		top: 50%;
+		// 		transform: rotate(90deg);
+		// 	}
+		// 	&:after {
+		// 		display: none;
+		// 	}
+		// }
 		.hdr_navi {
 			transform: translateX(0);
 			opacity: 1;
 			visibility: visible;
 		}
+	}
+	.menu_overlay {
+		opacity: 1;
+		visibility: visible;
 	}
 }
 
@@ -603,7 +698,7 @@ a:hover {opacity: 0.7;}
 	.ft_top {
 		padding: 80px 0 0;
 		@include smp {
-			padding: 60px 0 0;
+			padding: 40px 0 0;
 		}
 	}
 	.ft_content {
@@ -611,11 +706,15 @@ a:hover {opacity: 0.7;}
 		grid-template-columns: auto auto auto auto;
 		gap: 30px;
 		justify-content: space-between;
+		@include laptop {
+			padding: 0 0 0 30px;
+		}
 		@include tab {
 			grid-template-columns: auto auto auto;
 		}
 		@include smp {
 			display: block;
+			padding: 0;
 		}
 		.ft_logo {
 			width: 100%;
@@ -629,13 +728,14 @@ a:hover {opacity: 0.7;}
 				align-content: center;
 			}
 			@include smp {
-				max-width: 90px;
+				max-width: 142px;
 				margin: 0 auto 30px;
 			}
 		}
 		.ft_block {
 			@include smp {
 				margin: 0 0 30px;
+				text-align: center;
 			}
 			.ttl {
 				font-size: 36px;
@@ -667,6 +767,9 @@ a:hover {opacity: 0.7;}
 			@include tab {
 				width: 100%;
 				max-width: 360px;
+			}
+			@include smp {
+				max-width: 100%;
 			}
 			.inp_txt {
 				border-radius: 5px;
@@ -702,7 +805,7 @@ a:hover {opacity: 0.7;}
 				grid-column: span 2;
 			}
 			@include smp {
-				width: 280px;
+				width: 100%;
 				text-align: center;
 				margin: 0 auto;
 			}
@@ -1021,4 +1124,8 @@ a:hover {opacity: 0.7;}
 }
 .backtop:hover {
 	opacity: 0.7 !important;
+}
+.space_anchor {
+	position: relative;
+	transform: translateY(-50px);
 }

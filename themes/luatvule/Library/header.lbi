@@ -3,11 +3,17 @@
     <div class="inner">
         <div class="hdr">
             <div class="hdr_logo"><a href="../index.html"><img src="../assets/imgs/common/logo.svg" alt="Home" class="full"></a></div>
+			<div class="menu_overlay"></div>
             <nav class="hdr_navi">
+				<div class="sp_cont">
+					<p class="icon_close"></p>
+					<p class="cont_logo"><a href="../index.html"><img src="../assets/imgs/common/logo_red.svg" alt="Home"></a></p>
+					<p class="cont_btn"><a href="../contact.html" class="page_btn btn_red">Liên hệ hỗ trợ</a></p>
+				</div>
                 <ul class="navi">
-                    <li class="item current"><a class="link" href="index.html">Trang chủ</a></li>
+                    <li class="item current"><a class="link" href="../index.html">Trang chủ</a></li>
                     <li class="item">
-                        <a class="link" href="about.html">Về Vũ Lê</a>
+                        <a class="link" href="../about.html">Về Vũ Lê</a>
                         <span class="sub_btn"></span>
                         <div class="sub_menu">
                             <ul class="sub_navi">
@@ -18,12 +24,13 @@
                         </div>
                     </li>
                     <li class="item">
-                        <a class="link" href="services.html">Lĩnh vực hoạt động chính</a>
+                        <a class="link" href="../services.html">Lĩnh vực hoạt động chính</a>
                         <span class="sub_btn"></span>
                         <div class="sub_menu">
                             <ul class="sub_navi">
                                 <li class="sub_item">
-                                    <a class="sub_link" href="">Tư vấn pháp luật</a>
+                                    <a class="sub_link" href="../services-05.html">Tư vấn pháp luật</a>
+									<span class="sub_btn"></span>
                                     <div class="sub_menu">
                                         <ul class="sub_navi">
                                             <li class="sub_item"><a class="sub_link" href="../services-single-07.html">Tư vấn pháp luật thường xuyên</a></li>
@@ -36,6 +43,7 @@
                                 <li class="sub_item"><a class="sub_link" href="#">Tham gia án hình sự</a></li>
                                 <li class="sub_item">
                                     <a class="sub_link" href="../services-02.html">Doanh nghiệp - Đầu tư</a>
+									<span class="sub_btn"></span>
                                     <div class="sub_menu">
                                         <ul class="sub_navi">
                                             <li class="sub_item"><a class="sub_link" href="../services-single-01.html">Dịch vụ thành lập doanh nghiệp</a></li>
@@ -45,9 +53,10 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="sub_item"><a class="sub_link" href="../services-03.html">Tư vấn (M&A)</a></li>
+                                <li class="sub_item"><a class="sub_link" href="../services-03.html">Tư vấn M&A</a></li>
                                 <li class="sub_item">
                                     <a class="sub_link" href="../services-04.html">Sở hữu trí tuệ</a>
+									<span class="sub_btn"></span>
                                     <div class="sub_menu">
                                         <ul class="sub_navi">
                                             <li class="sub_item"><a class="sub_link" href="../services-single-05.html">Dịch vụ đang ký nhãn hiệu (LOGO)</a></li>
@@ -77,10 +86,10 @@
             </nav>
             <div class="hdr_cont">
                 <div class="ct_hotline">
-                    <a class="tels" href="tel:0964486633">
+                    <a class="tels" href="tel:0344308228">
                         <span class="icon_call"><i class="fas fa-phone-alt"></i></span>
                         <p class="txt">Gọi ngay số</p>
-                        <p class="number playfair">096 448 6633</p>
+                        <p class="number">034 430 8228</p>
                     </a>
                 </div>
                 <div class="ct_search">

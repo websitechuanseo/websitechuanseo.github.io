@@ -126,7 +126,7 @@
 	background: #fff;
 	font-size: 14px;
 	font-weight: 600;
-	border-radius: 48px;
+	border-radius: 0;
 	display: inline-block;
 	padding: 19px 15px;
 	text-transform: uppercase;
@@ -629,6 +629,18 @@
 		max-width: 1150px;
 	}
 }
+.service_ttl {
+	font-size: 48px;
+	line-height: 1.2;
+	margin: 0 0 60px;
+	text-align: center;
+	@include tab {
+		font-size: 36px;
+	}
+	@include smp {
+		font-size: 26px;
+	}
+}
 .service_list {
 	.item {
 		margin: 0 0 35px;
@@ -994,6 +1006,7 @@
                 &.box02 {
                     background: $second-color;
                     padding: 10px 40px 40px;
+					justify-content: flex-end;
 					@include tab {
 						padding: 10px 15px 20px;
 					}
@@ -1025,10 +1038,10 @@
                     font-size: 31px;
 					font-size: 1.61vw;
                     line-height: 1.4;
+					letter-spacing: -0.02em;
 					@include smp {
 						font-size: 16px;
 						line-height: 1.4;
-						letter-spacing: -0.02em;
 					}
                 }
             }            
@@ -1115,6 +1128,20 @@
 			}
             li {
                 margin-left: 10px;
+				&.is_zalo {
+					a {
+						background-image: url(../imgs/common/icon_zalo.png);
+						background-position: center center;
+						background-size: 60% auto;
+						background-repeat: no-repeat;
+						&:hover {
+							background-image: url(../imgs/common/icon_zalo_w.png);
+						}
+						i {
+							display: none;
+						}
+					}
+				}
                 a {
                     border: 1px solid #E5E5E5;
                     border-radius: 50%;
@@ -1131,7 +1158,7 @@
 						width: 40px;
 					}
                     &:hover {
-                        background: $wp-color-contrast;
+                        background-color: $wp-color-contrast;
                         color: $wp-color-base;
                         border-color: $wp-color-contrast;
                     }
@@ -1371,6 +1398,12 @@
 			padding: 15px 0 0;
 			text-align: center;
 		}
+		.more {
+			margin-top: 20px;
+			.view_more {
+				font-size: 15px;
+			}
+		}
 		.ttl {
 			font-size: 49px;
 			line-height: 1.4;
@@ -1520,6 +1553,16 @@
 	.item {
 		.img {
 			margin: 0 0 15px;
+		}
+		.date {
+			color: $wp-color-gray-1;
+			font-size: 15px;
+			line-height: 1.4;
+			text-transform: uppercase;
+			@include laptop {
+				font-size: 12px;
+				margin: 0 0 5px;
+			}
 		}
 		.ttl {
 			font-size: 25px;
@@ -1911,6 +1954,13 @@
 			@include smp {
 				font-size: 14px;
 			}
+		}
+	}
+	.more {
+		text-align: center;
+		margin-top: 50px;
+		@include smp {
+			margin-top: 20px;
 		}
 	}
 	.list_check {
@@ -3083,65 +3133,124 @@
 		font-size: 15px;
 		color: $wp-color-gray-1;
 		padding: 0 0 25px;
-		border-bottom: 1px solid $border-color-4;
 		text-transform: uppercase;
 	}
-	.recruit_list {
-		.item {
-			border-bottom: 1px solid $border-color-4;
-			padding: 30px 5px;
-			display: grid;
-			grid-template-columns: 2fr 1fr 1fr;
-			grid-column-gap: 25px;
-			align-items: center;
-			@include hd {
-				padding: 20px 5px;
+	.recruit_tbl {
+		.tbl {
+			width: 100%;
+			th {
+				font-size: 13px;
+				color: $wp-color-gray-1;
+				padding: 10px 0;
+				text-align: center;
+				&:nth-child(1) {
+					width: 40%;
+					text-align: left;
+				}
+				&:nth-child(4) {
+					width: 150px;
+					padding: 0;
+					text-align: right;
+					@include pc {
+						width: 100px;
+					}
+					@include smp {
+						width: 65px;
+					}
+				}
 			}
-			@include smp {
-				padding: 15px 0;
-				grid-template-columns: auto;
+			tr {
+				border-bottom: 1px solid $border-color-4;
 			}
-			.ttl {
+			td {
+				text-align: center;
 				font-size: 31px;
-				line-height: 1.4;
-				@include hd {
-					font-size: 24px;
+				padding: 27px 10px;
+				@include pc {
+					font-size: 20px;
 				}
 				@include smp {
 					font-size: 16px;
+					padding: 15px 5px;
 				}
-			}
-			.pos {
-				font-size: 31px;
-				line-height: 1.4;
-				@include hd {
-					font-size: 24px;
+				&:nth-child(1) {
+					padding-left: 0;
+					text-align: left;
 				}
-				@include smp {
-					font-size: 14px;
-					grid-area: 2/1/2/1;
-				}
-			}
-			.link {
-				margin-left: auto;
-				@include smp {
-					grid-area: 2 / 2 / 1;
-					grid-row: span 2;
-				}
-				.page_btn {
-					border-radius: 0;
-					width: 148px;
-					@include hd {
-						padding: 12px 10px;
-					}
-					@include smp {
-						padding: 10px 5px;
-						width: 90px;
-					}
+				&:nth-child(4) {
+					padding-right: 0;
+					text-align: right;
 				}
 			}
 		}
+		.page_btn {
+			width: 145px;
+			@include pc {
+				width: 95px;
+				padding: 10px 5px;
+    			font-size: 12px;
+			}
+			@include smp {
+				width: 65px;
+			}
+		}
 	}
+	// .recruit_list {
+	// 	.item {
+	// 		border-bottom: 1px solid $border-color-4;
+	// 		padding: 30px 5px;
+	// 		display: grid;
+	// 		grid-template-columns: 2fr 1fr 1fr;
+	// 		grid-column-gap: 25px;
+	// 		align-items: center;
+	// 		@include hd {
+	// 			padding: 20px 5px;
+	// 		}
+	// 		@include smp {
+	// 			padding: 15px 0;
+	// 			grid-template-columns: auto;
+	// 		}
+	// 		.ttl {
+	// 			font-size: 31px;
+	// 			line-height: 1.4;
+	// 			@include hd {
+	// 				font-size: 24px;
+	// 			}
+	// 			@include smp {
+	// 				font-size: 16px;
+	// 			}
+	// 		}
+	// 		.pos {
+	// 			font-size: 31px;
+	// 			line-height: 1.4;
+	// 			@include hd {
+	// 				font-size: 24px;
+	// 			}
+	// 			@include smp {
+	// 				font-size: 14px;
+	// 				grid-area: 2/1/2/1;
+	// 			}
+	// 		}
+	// 		.link {
+	// 			margin-left: auto;
+	// 			@include smp {
+	// 				grid-area: 2 / 2 / 1;
+	// 				grid-row: span 2;
+	// 			}
+	// 			.page_btn {
+	// 				border-radius: 0;
+	// 				width: 148px;
+	// 				@include hd {
+	// 					padding: 12px 10px;
+	// 				}
+	// 				@include smp {
+	// 					padding: 10px 5px;
+	// 					width: 90px;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 .page_recruit_single {
 	.page_single {

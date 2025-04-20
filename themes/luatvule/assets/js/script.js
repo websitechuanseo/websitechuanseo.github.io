@@ -69,6 +69,11 @@
 
     $('.sub_btn').on('click',function(){
         $(this).next().slideToggle('200');
+        $(this).parent().toggleClass('opened');
+    });
+
+    $('.icon_close, .menu_overlay').on('click',function(){
+        $('body').removeClass('menu_opened');
     });
 
     $('.js_slider_staff').slick({

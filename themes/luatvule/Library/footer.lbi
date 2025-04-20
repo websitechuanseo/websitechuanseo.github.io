@@ -3,16 +3,19 @@
     <div class="ft_top">
         <div class="inner">
             <div class="ft_content">
-                <div class="ft_logo"><h3><a href="index.html"><img src="../assets/imgs/common/ft_logo.svg" alt="Vũ Lê" class="full"></a></h3></div>
+                <div class="ft_logo"><h3><a href="../index.html">
+					<img src="../assets/imgs/common/ft_logo.svg" alt="Vũ Lê" class="full pc_only">
+					<img src="../assets/imgs/common/ft_logo_sp.svg" alt="Vũ Lê" class="full sp_only">
+					</a></h3></div>
                 <div class="ft_block">
                     <h3 class="ttl playfair">Dịch vụ</h3>
                     <ul class="links">
-                        <li class="item"><a href="#">Tư vấn pháp luât</a></li>
+                        <li class="item"><a href="../services-05.html">Tư vấn pháp luât</a></li>
                         <li class="item"><a href="#">Giải quyết tranh chấp</a></li>
                         <li class="item"><a href="#">Tham gia vụ án hình sự</a></li>
-                        <li class="item"><a href="#">Doanh nghiệp và đầu tư</a></li>
-                        <li class="item"><a href="#">Tư vấn M&A</a></li>
-                        <li class="item"><a href="#">Sở hữu trí tuệ</a></li>
+                        <li class="item"><a href="../services-02.html">Doanh nghiệp và đầu tư</a></li>
+                        <li class="item"><a href="../services-03.html">Tư vấn M&A</a></li>
+                        <li class="item"><a href="../services-04.html">Sở hữu trí tuệ</a></li>
                         <li class="item"><a href="#">Tài chính & Ngân hàng</a></li>
                         <li class="item"><a href="#">Bất động sản</a></li>
                         <li class="item"><a href="#">Tư vấn thủ tục cấp phép</a></li>
@@ -22,8 +25,8 @@
                     <h3 class="ttl playfair">Theo dõi chúng tôi</h3>
                     <ul class="links">
                         <li class="item"><a href="#">Facebook</a></li>
-                        <li class="item"><a href="#">Instagram</a></li>
                         <li class="item"><a href="#">LinkedIn</a></li>
+						<li class="item"><a href="https://zalo.me/0344308228">Zalo</a></li>
                         <li class="item"><a href="#">YouTube</a></li>
                     </ul>
                 </div>
@@ -38,9 +41,9 @@
                 </div>
             </div>
             <div class="ft_info">
-                <p class="item">Số 22, Lô 6 Đền Lừ 2, P. Hoàng Văn Thụ, Q. Hoàng Mai, Hà Nội</p>
-                <p class="item"><a href="mailto:info@luatvule.vn">info@luatvule.vn</a></p>
-                <p class="item"><a href="tel:0964486633">096 448 6633</a></p>
+                <p class="item">Tầng 2, Ô 11, Lô 6 Đền Lừ 2, phường Hoàng Văn Thụ, quận Hoàng Mai, Hà Nội</p>
+                <p class="item"><a href="mailto:hotro@luatvule.vn">hotro@luatvule.vn</a></p>
+                <p class="item"><a href="tel:0344308228">034 430 8228</a></p>
             </div>
         </div>
     </div>        
